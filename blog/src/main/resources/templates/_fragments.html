@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:fragment="head(title)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:replace="${title}">Blog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/css/typo.css}">
+    <link rel="stylesheet" href="../static/css/my.css" th:href="@{/css/my.css}">
+    <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
+    <link rel="stylesheet" href="../static/lib/prism/prism.css" th:href="@{/lib/prism/prism.css}">
+    <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
+</head>
+
+<body>
+
+<nav th:fragment="menu(n)" class="ui sticky attached segment my-padding-mini my-shadow ">
+    <div class="ui container">
+        <div class="ui secondary stackable menu ">
+            <h2 class="ui teal header" style="margin-top:0.1em; margin-bottom: 0.1em;">MyBlog</h2>
+            <a href="#" class="item my-mobile-hide mitem" th:classappend="${n==1}?'active'"><i class="home icon"></i>首页</a>
+            <a href="#" class="item my-mobile-hide mitem" th:classappend="${n==2}?'active'"><i class="folder icon"></i>分类</a>
+            <a href="#" class="item my-mobile-hide mitem" th:classappend="${n==3}?'active'"><i class="tags icon"></i>标签</a>
+            <a href="#" class="item my-mobile-hide mitem" th:classappend="${n==4}?'active'"><i class="clone icon"></i>归档</a>
+            <!-- <a href="#" class="item my-mobile-hide mitem"><i class="info icon"></i>作者</a> -->
+
+            <div class="right stackable menu my-mobile-hide mitem">
+                <div class="item">
+                    <div class="ui icon transparent input">
+                        <input type="text" placeholder="搜索...">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="ui buttons my-mobile-hide mitem">
+                <button class="ui  button lightTheme"><i class="icon lightbulb outline"></i></button>
+                <div class="or"></div>
+                <button class="ui  button darkTheme"><i class="icon lightbulb"></i></button>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui icon button my-mobile-show togglemenu" style="position: absolute; right: 0;top:0.3em;">
+        <i class="bars icon"></i></a>
+</nav>
+
+<th:block th:fragment="script">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="../static/js/jquery.scrollTo.min.js" th:src="@{/js/jquery.scrollTo.min.js}"></script>
+    <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+    <script src="../static/js/heart.js" th:src="@{/js/heart.js}"></script>
+    <script src="../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
+    <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
+</th:block>
+
+</body>
+</html>

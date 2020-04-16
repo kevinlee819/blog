@@ -1,0 +1,134 @@
+.my-padding-mini {
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+}
+
+.my-padding-small {
+    padding-left: 0.8em !important;
+    padding-right: 0.8em !important;
+}
+
+.my-padding {
+    padding-left: 1.2em !important;
+    padding-right: 1.2em !important;
+}
+
+.my-padding-middle {
+    padding-left: 0.8em !important;
+    padding-right: 0.8em !important;
+    padding-top: 1.2em !important;
+    padding-bottom: 1.2em !important;
+}
+
+.my-padding-big {
+    padding-top: 4em;
+    padding-left: 3em !important;
+    padding-right: 3em !important;
+    padding-bottom: 5em !important;
+}
+
+.my-padding-large {
+    padding-left: 8em !important;
+    padding-right: 8em !important;
+}
+
+.my-margin-mini {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+}
+
+.my-margin-small {
+    margin-top: 0.8em !important;
+    margin-bottom: 0.8em !important;
+}
+
+.my-margin-big {
+    margin-top: 5em !important;
+    margin-bottom: 5em !important;
+}
+
+.my-text-opacity {
+    opacity: 0.5 !important;
+}
+
+.my-inline-block {
+    display: inline-block;
+}
+
+.my-shadow {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.my-shadow-up {
+    box-shadow: 0px -4px 5px rgba(0, 0, 0, 0.1) !important;
+}
+
+.my-mobile-show {
+    display: none !important;
+}
+
+nav {
+    margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .my-mobile-hide {
+        display: none !important;
+    }
+
+    .my-mobile-show {
+        display: block !important;
+    }
+}
+
+.main {
+    background: url("../images/bg.png");
+}
+
+.tag-list a:nth-child(12n+1) {
+    background-color: deepskyblue;
+}
+
+.tag-list a:nth-child(12n+2) {
+    background-color: #ffa900;
+}
+
+.tag-list a:nth-child(12n+3) {
+    background-color: teal;
+}
+
+.tag-list a:nth-child(12n+4) {
+    background-color: #b433ff;
+}
+
+.tag-list a:nth-child(12n+5) {
+    background-color: #b37333;
+}
+
+.tag-list a:nth-child(12n+6) {
+    background-color: pink;
+}
+
+.tag-list a:nth-child(12n+7) {
+    background-color: cadetblue;
+}
+
+.tag-list a:nth-child(12n+8) {
+    background-color: darkcyan;
+}
+
+.tag-list a:nth-child(12n+9) {
+    background-color: #00a753;
+}
+
+.tag-list a:nth-child(12n+10) {
+    background-color: firebrick;
+}
+
+.tag-list a:nth-child(12n+11) {
+    background-color: #ff002b;
+}
+
+.tag-list a:nth-child(12n) {
+    background-color: darksalmon;
+}

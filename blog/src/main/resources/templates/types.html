@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分类</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/my.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+</head>
+<body>
+<!--导航-->
+<nav th:replace="_fragments :: menu(2)" class="ui sticky attached segment my-padding-mini my-shadow">
+    <div class="ui container">
+        <div class="ui  secondary stackable menu">
+            <h2 class="ui teal header" style="margin-top:0.1em; margin-bottom: 0.1em;">MyBlog</h2>
+            <a href="#" class="item my-mobile-hide mitem"><i class="home icon"></i>首页</a>
+            <a href="#" class="item my-mobile-hide mitem"><i class="folder icon"></i>分类</a>
+            <a href="#" class="item my-mobile-hide mitem"><i class="tags icon"></i>标签</a>
+            <a href="#" class="item my-mobile-hide mitem"><i class="clone icon"></i>归档</a>
+            <!-- <a href="#" class="item my-mobile-hide mitem"><i class="info icon"></i>作者</a> -->
+
+            <div class="right stackable menu my-mobile-hide mitem">
+                <div class="item">
+                    <div class="ui icon transparent input">
+                        <input type="text" placeholder="搜索...">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="ui buttons my-mobile-hide mitem">
+                <button class="ui  button lightTheme"><i class="icon lightbulb outline"></i></button>
+                <div class="or"></div>
+                <button class="ui  button darkTheme"><i class="icon lightbulb"></i></button>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui icon button my-mobile-show togglemenu" style="position: absolute; right: 0;top:0.3em;">
+        <i class="bars icon"></i></a>
+</nav>
+
+
+<!--中间内容-->
+<div class="main ">
+    <br><br><br>
+    <div class="ui container my-padding-small">
+        <!--header-->
+        <div class="ui segment my-shadow">
+            <div class="ui teal center aligned huge header" style="font-size: 2em;">分类</div>
+            <h5 class="ui horizontal divider header">·
+            </h5>
+            <div class="ui big labels tag-list">
+                <a class="ui label"><i class="sitemap icon"></i> xxx
+                    <div class="ui  detail">xxx</div>
+                </a>
+                <a class="ui  label"><i class="sitemap icon"></i> xxx
+                    <div class="detail">xxx</div>
+                </a>
+                <a class="ui label"><i class="sitemap icon"></i> xxx
+                    <div class="detail">xxx</div>
+                </a>
+                <a class="ui label"><i class="sitemap icon"></i> xxx
+                    <div class="detail">xxx</div>
+                </a>
+                <a class="ui label"><i class="sitemap icon"></i> xxx
+                    <div class="detail">xxx</div>
+                </a>
+                <a class="ui label"><i class="sitemap icon"></i> xxx
+                    <div class="detail">xxx</div>
+                </a>
+                <a class="ui label"><i class="sitemap icon"></i> xxx
+                    <div class="detail">xxx</div>
+                </a>
+                <a class="ui label"><i class="sitemap icon"></i> xxx
+                    <div class="detail">xxx</div>
+                </a>
+                <a class="ui label"><i class="sitemap icon"></i> xxx
+                    <div class="detail">xxx</div>
+                </a>
+                <a class="ui label"><i class="sitemap icon"></i> xxx
+                    <div class="detail">xxx</div>
+                </a>
+                <a class="ui label"><i class="sitemap icon"></i> xxx
+                    <div class="detail">xxx</div>
+                </a>
+                <a class="ui label"><i class="sitemap icon"></i> xxx
+                    <div class="detail">xxx</div>
+                </a>
+                <a class="ui label"><i class="sitemap icon"></i> xxx
+                    <div class="detail">xxx</div>
+                </a>
+                <a class="ui label"><i class="sitemap icon"></i> xxx
+                    <div class="detail">xxx</div>
+                </a>
+
+            </div>
+        </div>
+        <!--body-->
+        <!--卡片形式显示,记得这里以后要更改-->
+        <div class="ui attached segment my-shadow">
+            <div class="ui  link three stackable cards" style="align-items:center;">
+                <div class=" card">
+                    <a class="image" href="#">
+                        <img src="../static/images/matthew.png">
+                    </a>
+                    <div class="content">
+                        <div class="header">Matt Giampietro</div>
+                        <div class="meta">
+                            <a></a>
+                        </div>
+                        <div class="description">
+                            Matthew is an interior designer living in New York.
+                        </div>
+                    </div>
+                    <div class="extra content">
+                                        <span class="right floated">
+                                          Joined in 2013
+                                        </span>
+                        <span>
+                                          <i class="eye icon"></i>
+                                          75 
+                                        </span>
+                    </div>
+                </div>
+
+                <div class=" card">
+                    <a class="image" href="#">
+                        <img src="../static/images/molly.png">
+                    </a>
+                    <div class="content">
+                        <div class="header">Molly</div>
+                        <div class="meta">
+                            <span class="date">Coworker</span>
+                        </div>
+                        <div class="description">
+                            Molly is a personal assistant living in Paris.
+                        </div>
+                    </div>
+                    <div class="extra content">
+                                        <span class="right floated">
+                                          Joined in 2011
+                                        </span>
+                        <span>
+                                          <i class="eye icon"></i>
+                                          35 
+                                        </span>
+                    </div>
+                </div>
+
+                <div class=" card">
+                    <a class="image" href="#">
+                        <img src="../static/images/elyse.png">
+                    </a>
+                    <div class="content">
+                        <div class="header">Elyse</div>
+                        <div class="meta">
+                            <a>Coworker</a>
+                        </div>
+                        <div class="description">
+                            Elyse is a copywriter working in New York.
+                        </div>
+                    </div>
+                    <div class="extra content">
+                                            <span class="right floated">
+                                                Joined in 2014
+                                            </span>
+                        <span>
+                                            <i class="eye icon"></i>
+                                            151 
+                                            </span>
+                    </div>
+                </div>
+
+
+                <div class=" card">
+                    <a class="image" href="#">
+                        <img src="../static/images/moon.jpg">
+                    </a>
+                    <div class="content">
+                        <div class="header">Moon</div>
+                        <div class="meta">
+                            <a>Coworker</a>
+                        </div>
+                        <div class="description">
+                            Elyse is a copywriter working in New York.
+                        </div>
+                    </div>
+                    <div class="extra content">
+                                            <span class="right floated">
+                                                Joined in 2020
+                                            </span>
+                        <span>
+                                            <i class="eye icon"></i>
+                                            151 
+                                            </span>
+                    </div>
+                </div>
+
+                <div class=" card">
+                    <a class="image" href="#">
+                        <img src="../static/images/girl.jpg">
+                    </a>
+                    <div class="content">
+                        <div class="header">Gril</div>
+                        <div class="meta">
+                            <a>Coworker</a>
+                        </div>
+                        <div class="description">
+                            Elyse is a copywriter working in New York.
+                        </div>
+                    </div>
+                    <div class="extra content">
+                                            <span class="right floated">
+                                                Joined in 2020
+                                            </span>
+                        <span>
+                                            <i class="eye icon"></i>
+                                            151 
+                                            </span>
+                    </div>
+                </div>
+
+                <div class=" card">
+                    <a class="image" href="#">
+                        <img src="../static/images/matthew.png">
+                    </a>
+                    <div class="content">
+                        <div class="header">Matt Giampietro</div>
+                        <div class="meta">
+                            <a></a>
+                        </div>
+                        <div class="description">
+                            Matthew is an interior designer living in New York.
+                        </div>
+                    </div>
+                    <div class="extra content">
+                                            <span class="right floated">
+                                              Joined in 2013
+                                            </span>
+                        <span>
+                                              <i class="eye icon"></i>
+                                              75 
+                                            </span>
+                    </div>
+                </div>
+
+                <div class=" card">
+                    <a class="image" href="#">
+                        <img src="../static/images/molly.png">
+                    </a>
+                    <div class="content">
+                        <div class="header">Molly</div>
+                        <div class="meta">
+                            <span class="date">Coworker</span>
+                        </div>
+                        <div class="description">
+                            Molly is a personal assistant living in Paris.
+                        </div>
+                    </div>
+                    <div class="extra content">
+                                            <span class="right floated">
+                                              Joined in 2011
+                                            </span>
+                        <span>
+                                              <i class="eye icon"></i>
+                                              35 
+                                            </span>
+                    </div>
+                </div>
+
+                <div class=" card">
+                    <a class="image" href="#">
+                        <img src="../static/images/elyse.png">
+                    </a>
+                    <div class="content">
+                        <div class="header">Elyse</div>
+                        <div class="meta">
+                            <a>Coworker</a>
+                        </div>
+                        <div class="description">
+                            Elyse is a copywriter working in New York.
+                        </div>
+                    </div>
+                    <div class="extra content">
+                                                <span class="right floated">
+                                                    Joined in 2014
+                                                </span>
+                        <span>
+                                                <i class="eye icon"></i>
+                                                151 
+                                                </span>
+                    </div>
+                </div>
+
+            </div><!--cards end-->
+        </div>
+        <!--footer-->
+        <div class="ui attached segment my-shadow">
+            <div class="ui middle aligned two column  grid">
+                <div class="column">
+                    <button class="ui labeled icon blue button">
+                        <i class="left arrow icon"></i>
+                        Prev
+                    </button>
+                </div>
+                <div class="right aligned column">
+                    <button class="ui right labeled icon blue button">
+                        <i class="right arrow icon"></i>
+                        Next
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <br><br><br>
+</div>
+
+<!--/*/<th:block th:replace="_fragments :: script">/*/-->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="../static/js/heart.js"></script>
+<!--/*/</th:block>/*/-->
+</body>
+</html>
