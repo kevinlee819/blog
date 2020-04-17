@@ -13,7 +13,7 @@
         <result property="typeId" column="type_id"/>
         <result property="firstPicture" column="first_picture"/>
         <result property="published" column="published"/>
-        <result property="appreciation" column="appreciation"/>
+        <!--<result property="appreciation" column="appreciation"/>-->
         <result property="description" column="description"/>
         <result property="recommend" column="recommend"/>
         <result property="createTime" column="create_time"/>
@@ -41,15 +41,25 @@
         delete from t_blog where id = #{id}
     </delete>
 
-    <select id="getBlogById" resultType="Blog">
-        select * from t_blog where id = #{id}
+    <select id="getBlogById" resultMap="blog">
+        select b.id, b.published, b.flag, b.title, b.type_id,
+               b.tag_ids, b.first_picture, b.description, b.recommend
+        from t_blog b  where  b.id = #{id};
     </select>
 
-    <select id="getAllBlogs" resultType="Blog">
+    <select id="getDetailedBlog" resultMap="blog">
+        select b.id, b.first_picture, b.flag, b.title, b.content, b.views,b.update_time,
+               u.nickname, u.avatar,
+               tag.id tagid, tag.name tagname
+        from t_blog b, t_user u, t_tag tag, t_blog_tags tb
+        where b.user_id = u.id and tb.blog_id = b.id and tb.tag_id = tag.id and  b.id = #{id}
+    </select>
+
+    <select id="getAllBlogs" resultMap="blog">
         select * from t_blog
     </select>
 
-    <select id="getByTypeId" resultType="Blog">
+    <select id="getByTypeId" resultMap="blog">
         select b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
                t.name typename, t.id typeid, u.nickname, u.avatar
         from t_blog b, t_type t, t_user u
@@ -57,7 +67,7 @@
         order by b.update_time desc
     </select>
 
-    <select id="getByTagId" resultType="Blog">
+    <select id="getByTagId" resultMap="blog">
         select b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
                t.name,
                u.nickname,u.avatar
@@ -66,7 +76,7 @@
         order by b.update_time desc
     </select>
 
-    <select id="getByTypeName" resultType="Blog">
+    <select id="getByTypeName" resultMap="blog">
         select b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
                t.name typename, t.id typeid, u.nickname, u.avatar
         from t_blog b, t_type t, t_user u
@@ -74,7 +84,7 @@
         order by b.update_time desc
     </select>
 
-    <select id="getByTagName" resultType="Blog">
+    <select id="getByTagName" resultMap="blog">
         select b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
                t.name typename, t.id typeid, u.nickname, u.avatar
         from t_blog b, t_tag t, t_user u, t_blog_tags tb
@@ -82,6 +92,75 @@
         order by b.update_time desc
     </select>
 
+    <select id="getIndexBlog" resultMap="blog">
+        select b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
+               t.name typename, t.id typeid,
+               u.nickname, u.avatar
+        from t_blog b, t_type t, t_user u
+        where b.type_id = t.id and  u.id = b.user_id order by b.update_time desc
+    </select>
+
+    <select id="getRecommendBlog" resultMap="blog">
+        select id, title, recommend from t_blog order by update_time desc;
+    </select>
+
+    <select id="getSearchBlog" resultMap="blog">
+        <bind name="pattern" value="'%' + query + '%'" />
+        select b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
+        t.name typename,
+        u.nickname, u.avatar
+        from t_blog b, t_type t, t_user u
+        where b.type_id = t.id and  u.id = b.user_id and (b.title like #{pattern} or b.content like  #{pattern})
+        order by b.update_time desc
+    </select>
+
+    <select id="searchAllBlog" parameterType="Blog" resultMap="blog">
+        <bind name="pattern" value="'%' + title + '%'" />    /*模糊查询*/
+        select b.id, b.title, b.update_time, b.recommend, b.published, b.type_id, t.id, t.name
+        from t_blog b ,t_type t
+        <where>
+            <if test="1 == 1">
+                b.type_id = t.id    /*博客类型id=类型id*/
+            </if>
+            <if test="typeId != null">
+                and b.type_id = #{typeId}       /*根据博客类型查询*/
+            </if>
+            <if test="recommend != null">
+                and b.recommend = #{recommend}   /*根据博客推荐查询*/
+            </if>
+            <if test="title != null">
+                and b.title like #{pattern}   /*根据博客title模糊查询*/
+            </if>
+        </where>
+    </select>
 
 
+    <select id="findByYear" resultMap="blog">
+        select b.title, b.update_time, b.id, b.flag
+        from t_blog b
+        where DATE_FORMAT(b.update_time, "%Y") = #{year}
+    </select>
+
+    <update id="updateBlog" parameterType="Blog">
+        update t_blog set published = #{published},flag = #{flag} ,
+                          title = #{title}, content = #{content}, type_id = #{typeId}, tag_ids = #{tagIds},
+                          first_picture = #{firstPicture} , description = #{description} , recommend = #{recommend} ,
+                          update_time = #{updateTime} where id = #{id};
+    </update>
+
+    <!--useGeneratedKeys="true"；使用自增主键获取主键值策略
+       keyProperty；指定对应的主键属性，也就是mybatis获取到主键值以后，将这个值封装给javaBean的哪个属性
+   -->
+    <insert id="saveBlog" parameterType="Blog" useGeneratedKeys="true" keyProperty="id">
+        insert into t_blog (title, content, first_picture, flag,
+                views,published,recommend, create_time, update_time,
+                            type_id, tag_ids, user_id, description)
+                values (#{title}, #{content}, #{firstPicture}, #{flag}, #{views},
+                 #{published}, #{recommend}, #{createTime},
+                #{updateTime}, #{typeId}, #{tagIds}, #{userId}, #{description});
+    </insert>
+
+    <insert id="saveBlogAndTag" useGeneratedKeys="true">
+        insert into t_blog_tags(tag_id, blog_id) VALUES (#{0},#{1});
+    </insert>
 </mapper>

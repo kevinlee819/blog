@@ -8,7 +8,7 @@
         select id, name from t_type where id = #{id}
     </select>
 
-    <insert id="saveType">
+    <insert id="saveType" parameterType="Type">
         insert into t_type values(#{id},#{name})
     </insert>
 
@@ -23,7 +23,7 @@
     </resultMap>
 
     <!--此处可能有bug，着重关注-->
-    <select id="getBlogType" resultType="com.leekejin.blog.pojo.Type">
+    <select id="getBlogType" resultMap="type">
         select t.id tid, t.name tname, b.id bid, b.title, b.type_id
         from t_type t, t_blog b
         where t.id = b.type_id

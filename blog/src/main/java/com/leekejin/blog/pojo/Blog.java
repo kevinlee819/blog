@@ -17,9 +17,9 @@ public class Blog {
     private String title;
     private String content;
     private String firstPicture;
-    private String flag;
+    private String flag; //原创或转载
     private Integer views;
-    private boolean published;
+    private boolean published; //是否发布
     private boolean recommend;
     private Date createTime;
     private Date updateTime;
