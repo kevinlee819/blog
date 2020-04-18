@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>归档</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/my.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+</head>
+
+<body>
+    <!--导航-->
+    <nav th:replace="_fragments :: menu(4)" class="ui sticky attached segment my-padding-mini my-shadow ">
+        <div class="ui container">
+            <div class="ui  secondary stackable menu ">
+                <h2 class="ui teal header" style="margin-top:0.1em; margin-bottom: 0.1em;">MyBlog</h2>
+                <a href="#" class="item my-mobile-hide mitem"><i class="home icon"></i>首页</a>
+                <a href="#" class="item my-mobile-hide mitem"><i class="folder icon"></i>分类</a>
+                <a href="#" class="item my-mobile-hide mitem"><i class="tags icon"></i>标签</a>
+                <a href="#" class="item my-mobile-hide mitem"><i class="clone icon"></i>归档</a>
+                <!-- <a href="#" class="item my-mobile-hide mitem"><i class="info icon"></i>作者</a> -->
+
+                <div class="right stackable menu my-mobile-hide mitem">
+                    <div class="item">
+                        <div class="ui icon transparent input">
+                            <input type="text" placeholder="搜索...">
+                            <i class="search link icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui buttons my-mobile-hide mitem">
+                    <button class="ui  button lightTheme"><i class="icon lightbulb outline"></i></button>
+                    <div class="or"></div>
+                    <button class="ui  button darkTheme"><i class="icon lightbulb"></i></button>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui icon button my-mobile-show togglemenu" style="position: absolute; right: 0;top:0.3em;">
+            <i class="bars icon"></i></a>
+    </nav>
+
+    <div class="main">
+        <div class="ui container my-padding-middle">
+            <br>
+            <div class="ui top attached  segment my-shadow">
+                <div class="ui middle aligned two column grid">
+                    <div class="column">
+                        <h1 class="ui  icon header" style="margin-bottom: 0; font-family:FangSong;">
+                            —归档—
+                        </h1>
+                    </div>
+                    <div class="right aligned column">
+                        <div class="ui red statistic">
+                            <div class="value" style="font-family: fangsong;">
+                                15
+                            </div>
+                            <div class="label">
+                                Total
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="ui center aligned header">2020</h2>
+
+            <div class="ui fluid vertical menu archive_menu">
+                <a href="#" target="_blank" class="item">
+                    <span>
+                        <i class="teal circle icon"></i>Java
+                        <div class="ui red horizontal label my-label"><i class="calendar alternate outline icon"></i> 2.19</div>
+                    </span>
+                    <div class="ui large orange horizontal label">原创</div>
+                </a>
+                <a href="#" target="_blank" class="item">
+                    <span>
+                        <i class="teal circle icon"></i>Python
+                        <div class="ui red horizontal label my-label"><i class="calendar alternate outline icon"></i> 2.16</div>
+                    </span>
+                    <div class="ui large orange horizontal label">原创</div>
+                </a>
+                <a href="#" target="_blank" class="item">
+                    <span>
+                        <i class="teal circle icon"></i>PHP
+                        <div class="ui red horizontal label my-label"><i class="calendar alternate outline icon"></i> 2.14</div>
+                    </span>
+                    <div class="ui large orange horizontal label">原创</div>
+                </a>
+                <a href="#" target="_blank" class="item">
+                    <span>
+                        <i class="teal circle icon"></i>JavaScript
+                        <div class="ui red horizontal label my-label"><i class="calendar alternate outline icon"></i> 2.13</div>
+                    </span>
+                    <div class="ui large orange horizontal label">原创</div>
+                </a>
+            </div>
+
+            <h2 class="ui center aligned header">2019</h2>
+
+            <div class="ui fluid vertical menu archive_menu">
+                <a href="#" target="_blank" class="item">
+                    <span>
+                        <i class="teal circle icon"></i>Java
+                        <div class="ui red horizontal label my-label"><i class="calendar alternate outline icon"></i> 2.19</div>
+                    </span>
+                    <div class="ui large orange horizontal label">原创</div>
+                </a>
+                <a href="#" target="_blank" class="item">
+                    <span>
+                        <i class="teal circle icon"></i>Python
+                        <div class="ui red horizontal label my-label"><i class="calendar alternate outline icon"></i> 2.16</div>
+                    </span>
+                    <div class="ui large orange horizontal label">原创</div>
+                </a>
+                <a href="#" target="_blank" class="item">
+                    <span>
+                        <i class="teal circle icon"></i>PHP
+                        <div class="ui red horizontal label my-label"><i class="calendar alternate outline icon"></i> 2.14</div>
+                    </span>
+                    <div class="ui large orange horizontal label">原创</div>
+                </a>
+                <a href="#" target="_blank" class="item">
+                    <span>
+                        <i class="teal circle icon"></i>JavaScript
+                        <div class="ui red horizontal label my-label"><i class="calendar alternate outline icon"></i> 2.13</div>
+                    </span>
+                    <div class="ui large orange horizontal label">原创</div>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!--页脚-->
+    <footer class="ui vertical segment my-shadow-up ">
+        <div class="ui center aligned container ">
+            <div class="ui divided stackable  grid">
+                <div class="five wide column">
+                    <div class="ui large header">Contact me</div>
+                    <div class="ui link list">
+                        <p class="item"><i class="mail icon"></i> Email:leekejin@foxmail.com</p>
+                        <p class="item"><i class="qq icon"></i>QQ:1422784284</p>
+                    </div>
+                </div>
+                <div class="five wide column ">
+                    <div class="ui large header">Reward me</div>
+                    <img src="../static/images/alipay.png" th:src="@{/images/alipay.png}" class="eight wide" alt="Alipay" style="width: 10em;">
+                    <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" class="eight wide" alt="Wechat" style="width: 10em;">
+                </div>
+                <div class="six wide column">
+                    <div class="ui large header">About me</div>
+                    <p class="my-text-opcity">Welcome to this website! This is a personal Blog developed by Leekejin. I hope you can get something form here. If you have any questions,just contact me. Have fun!
+                    </p>
+                </div>
+            </div>
+            <div class="ui section divider"></div>
+            <p class="my-text-opcity">Copyright © 2020 by Leekejin</p>
+        </div>
+    </footer>
+
+    <!--/*/<th:block th:replace="_fragments :: script">/*/-->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="../static/js/heart.js"></script>
+    <!--/*/</th:block>/*/-->
+
+</body>
+
+</html>

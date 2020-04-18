@@ -75,7 +75,6 @@ nav {
     .my-mobile-hide {
         display: none !important;
     }
-
     .my-mobile-show {
         display: block !important;
     }
@@ -131,4 +130,35 @@ nav {
 
 .tag-list a:nth-child(12n) {
     background-color: darksalmon;
+}
+
+.my-label {
+    margin-left: 4em !important;
+}
+
+.archive_menu {
+    font-size: 1.2em;
+}
+
+.m-padded-tb-big {
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+}
+
+.m-padded-tb-massive {
+    padding-top: 5em !important;
+    padding-bottom: 5em !important;
+}
+
+
+/*-----container*/
+
+.m-container {
+    max-width: 72em !important;
+    margin: auto !important;
+}
+
+.m-container-small {
+    max-width: 60em !important;
+    margin: auto !important;
 }

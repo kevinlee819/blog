@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客管理</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/my.css">
+</head>
+
+<body>
+
+    <!--导航-->
+    <nav th:replace="admin/_fragments :: menu(0)" class=" ui sticky attached segment my-padding-mini my-shadow ">
+        <div class="ui container ">
+            <div class="ui secondary stackable menu ">
+                <h2 class="ui teal header " style="margin-top:0.1em; margin-bottom: 0.1em; ">后台管理</h2>
+                <a href="# " class="active item my-mobile-hide mitem "><i class="home icon "></i>博客</a>
+                <a href="# " class="item my-mobile-hide mitem "><i class="folder icon "></i>分类</a>
+                <a href="# " class="item my-mobile-hide mitem "><i class="tags icon "></i>标签</a>
+
+                <div class="ui secondary right menu my-mobile-hide mitem ">
+                    <div class="ui item inline dropdown ">
+                        <img class="ui avatar image " src="../../static/images/touxiang.png ">
+                        <div class="text ">科锦</div>
+                        <i class="dropdown icon "></i>
+                        <div class="ui menu ">
+                            <a href="#" th:href="@{/logout}" class="item "><i class="power off icon "></i> 注销</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="# " class="ui icon button my-mobile-show togglemenu " style="position: absolute; right: 0;top:0.3em; ">
+            <i class="bars icon "></i></a>
+    </nav>
+
+
+    <!--中间内容-->
+    <div class="m-container-small m-padded-tb-big ">
+        <div class="ui container ">
+            <div class="ui success large message ">
+                <h3>Hi,</h3>
+                <p>Lee，欢迎登录！</p>
+            </div>
+
+            <img src="https://picsum.photos/1000/700" alt=" " class="ui rounded bordered fluid image ">
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+
+    <!--/*/<th:block th:replace="_fragments :: script ">/*/-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js "></script>
+    <!--/*/</th:block>/*/-->
+    <script>
+        $('.menu.toggle').click(function() {
+            $('.m-item').toggleClass('m-mobile-hide');
+        });
+
+        $('.ui.dropdown').dropdown({
+            on: 'hover'
+        });
+    </script>
+</body>
+
+</html>
