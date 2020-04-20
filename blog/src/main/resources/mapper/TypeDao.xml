@@ -9,7 +9,7 @@
     </select>
 
     <insert id="saveType" parameterType="Type">
-        insert into t_type values(#{id},#{name})
+        insert into t_type(name) values(#{name})
     </insert>
 
     <resultMap id="type" type="Type">

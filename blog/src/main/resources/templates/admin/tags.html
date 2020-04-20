@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <!--<meta charset="UTF-8">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>标签管理</title>
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.14/dist/semantic.min.css">-->
+    <!--<link rel="stylesheet" href="../../static/css/my.css">-->
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">-->
+</head>
+
+<body>
+<nav th:replace="admin/_fragments :: menu(3)"></nav>
+
+<!--中间内容-->
+<div class="main">
+    <br><br><br>
+    <div class="ui container my-padding-small">
+        <div class="ui  segment my-shadow">
+            <table class="ui center aligned  striped  very basic table">
+                <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>标签</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="tag, iterStat : ${pageInfo.list}">
+                    <td th:text="${iterStat.count}">1</td>
+                    <td th:text="${tag.name}">打渔晒网</td>
+                    <td>
+                        <a href="#"  class="ui mini teal button editTag" th:onclick="'javascript:values('+${tag.id}+');'"><i class="edit icon"></i>编辑</a>
+                        <a href="#" th:href="@{/admin/tags/{id}/delete(id=${tag.id})}" class="ui mini red button"><i class="delete icon"></i> 删除</a>
+                    </td>
+                </tr>
+                </tbody>
+                <tfoot class="full-width">
+                <tr>
+                    <th colspan="7">
+                        <div class="ui  pagination menu">
+                            <div class="item"><a th:href="@{/admin/tags}">First</a></div>
+                            <div class="item"><a th:href="@{/admin/tags(pagenum=${pageInfo.hasPreviousPage}?${pageInfo.prePage}:1)}"><i class="blue left chevron icon"></i></a></div>
+                            <div class="item"><a th:href="@{/admin/tags(pagenum=${pageInfo.hasNextPage}?${pageInfo.nextPage}:${pageInfo.pages})}"><i class="blue right chevron icon"></i></a></div>
+                            <div class="item"><a th:href="@{/admin/tags(pagenum=${pageInfo.pages})}">Last</a></div>
+                        </div>
+                        <a href="#" class="ui teal right floated button addTag"><i class="add icon"></i>新增</a>
+                    </th>
+                </tr>
+                </tfoot>
+            </table>
+            <div class="ui segment m-inline-block">
+                <p>当前第<span th:text="${pageInfo.pageNum}"></span>页，总<span th:text="${pageInfo.pages}"></span>页，共<span th:text="${pageInfo.total}"></span>条记录</p>
+            </div>
+            <div class="ui success message" th:unless="${#strings.isEmpty(msgS)}">
+                <i class="close icon"></i>
+                <div class="header">提示：</div>
+                <p th:text="${msgS}">操作成功！</p>
+            </div>
+
+            <div class="ui negative message" th:unless="${#strings.isEmpty(msgF)}">
+                <i class="close icon"></i>
+                <div class="header">验证失败：</div>
+                <p th:text="${msgF}">对不起，操作失败！</p>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+</div>
+
+<br>
+<br>
+
+<!--模态框 新增-->
+<div class="ui small modal add">
+    <i class="close icon"></i>
+    <div class="header">
+        新增分类
+    </div>
+    <div class="content">
+        <form action="#" th:action="@{/admin/tags/add}" method="POST" class="ui form">
+            <div class="ui left labeled fluid input field">
+                <label class="ui teal label">名称</label>
+                <input type="text" name="name" placeholder="输入分类名称"/>
+            </div>
+            <br><br>
+            <div class="actions">
+                <button class="ui red cancel  button " type="reset">
+                    取消
+                </button>
+                <button class="ui teal ok right labeled icon submit right floated button">
+                    提交
+                    <i class="checkmark icon"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<!--模态框 修改-->
+<div class="ui small modal edit">
+    <i class="close icon"></i>
+    <div class="header">
+        修改分类
+    </div>
+    <div class="content">
+        <form action="#" th:action="@{/admin/tags/edit}" method="POST" class="ui form">
+            <div class="ui left labeled fluid input field">
+                <input type="hidden" name="id" id="dataId">
+                <label class="ui teal label">名称</label>
+                <input type="text" name="name" placeholder="输入分类名称"/>
+            </div>
+            <br><br>
+            <div class="actions">
+                <button class="ui red cancel  button " type="reset">
+                    取消
+                </button>
+                <button class="ui teal ok right labeled icon submit right floated button">
+                    提交
+                    <i class="checkmark icon"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+
+<th:block th:replace="admin/_fragments :: script">
+    <!--/*/<th:block th:replace="admin/_fragments :: script ">/*/-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js "></script>
+    <script src="../../static/js/heart.js"></script>
+    <!--/*/</th:block>/*/-->
+</th:block>
+
+<script>
+    $('.menu.toggle').click(function() {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    $('.ui.dropdown').dropdown({
+        on: 'hover'
+    });
+
+    //消息提示关闭初始化
+    $('.message .close').on('click', function() {
+        $(this).closest('.message')
+            .transition('fade');
+    });
+
+
+    //模态框操作
+    $('.addTag').click(function() {
+        $('.ui.modal.add').modal('setting', 'closable', false);
+        $('.ui.modal.add').modal('show');
+    });
+
+    $('.editTag').click(function() {
+        $('.ui.modal.edit').modal('setting', 'closable', false);
+        $('.ui.modal.edit').modal('show');
+    });
+
+    $('.ui.modal').modal({
+        onApprove: function() {
+            $('.ui.form').form({
+                fields: {
+                    name: {
+                        indentifier: 'name',
+                        rules: [{
+                            type: 'empty',
+                            prompt: '请输入标题'
+                        }]
+                    }
+                }
+            });
+            return false;
+        }
+    });
+
+    //模态框传值
+    function values(ID){
+        $('#dataId').val(ID);
+        console.log(ID);
+    }
+</script>
+</body>
+
+</html>

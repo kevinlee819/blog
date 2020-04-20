@@ -15,4 +15,17 @@ public class Type {
     private String name;
 
     private List<Blog> blogs = new ArrayList<>();
+
+    public String getName() {
+        return name;
+    }
+
+    public Type(String name) {
+        this.name = name;
+    }
+
+    public Type(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 }

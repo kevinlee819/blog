@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 //exclude={DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class}
-@ComponentScan(basePackages={"com.leekejin.blog.controller"})
+//@ComponentScan(basePackages={"com.leekejin.blog.controller"})
 @SpringBootApplication()
 public class BlogApplication {
     public static void main(String[] args) {
