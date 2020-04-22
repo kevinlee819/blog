@@ -1,4 +1,4 @@
-package com.leekejin.blog;
+package com.leekejin.blog.exceptions;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 

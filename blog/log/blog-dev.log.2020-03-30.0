@@ -361,7 +361,7 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [error
 2020-03-30 21:27:06.759  INFO 14092 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
 2020-03-30 21:27:06.803 ERROR 14092 --- [http-nio-8082-exec-1] c.l.b.h.ControllerExceptionHandler       : Request : URL http://localhost:8082/, Exception : {}
 
-com.leekejin.blog.NotFoundException: 博客不存在
+com.leekejin.blog.exceptions.NotFoundException: 博客不存在
 	at com.leekejin.blog.controller.IndexController.index(IndexController.java:13)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -414,7 +414,7 @@ com.leekejin.blog.NotFoundException: 博客不存在
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2020-03-30 21:27:06.813  WARN 14092 --- [http-nio-8082-exec-1] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [com.leekejin.blog.NotFoundException: 博客不存在]
+2020-03-30 21:27:06.813  WARN 14092 --- [http-nio-8082-exec-1] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [com.leekejin.blog.exceptions.NotFoundException: 博客不存在]
 2020-03-30 21:33:44.249  INFO 5392 --- [restartedMain] com.leekejin.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ANKEUSD with PID 5392 (D:\MyProject\blog\target\classes started by Kevin in D:\MyProject\blog)
 2020-03-30 21:33:44.254 DEBUG 5392 --- [restartedMain] com.leekejin.blog.BlogApplication        : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
 2020-03-30 21:33:44.254  INFO 5392 --- [restartedMain] com.leekejin.blog.BlogApplication        : The following profiles are active: dev

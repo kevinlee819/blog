@@ -23,4 +23,12 @@ public class User {
     private Date updateTime;
 
     private List<Blog> blogs = new ArrayList<>();
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }

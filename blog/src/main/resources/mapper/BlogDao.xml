@@ -20,6 +20,7 @@
         <result property="typeId" column="type_id"/>
         <result property="userId" column="user_id"/>
         <result property="tagIds" column="tag_ids"/>
+        <result property="commentabled" column="commentabled" />
         <association property="type" javaType="Type">
             <id property="id" column="typeid"/>
             <result property="name" column="typename"/>
@@ -38,17 +39,18 @@
     </resultMap>
 
     <delete id="deleteBlog">
-        delete from t_blog where id = #{id}
+        delete from t_blog where id = #{id};
+        delete from t_blog_tags where blog_id = #{id};
     </delete>
 
     <select id="getBlogById" resultMap="blog">
         select b.id, b.published, b.flag, b.title, b.type_id,
-               b.tag_ids, b.first_picture, b.description, b.recommend
+               b.tag_ids, b.first_picture, b.description, b.recommend, b.commentabled
         from t_blog b  where  b.id = #{id};
     </select>
 
     <select id="getDetailedBlog" resultMap="blog">
-        select b.id, b.first_picture, b.flag, b.title, b.content, b.views,b.update_time,
+        select b.id, b.first_picture, b.flag, b.title, b.content, b.views,b.update_time,b.commentabled,
                u.nickname, u.avatar,
                tag.id tagid, tag.name tagname
         from t_blog b, t_user u, t_tag tag, t_blog_tags tb
@@ -56,7 +58,10 @@
     </select>
 
     <select id="getAllBlogs" resultMap="blog">
-        select * from t_blog
+        select b.id, b.title, b.update_time, b.recommend, b.type_id, b.published,
+               t.id typeid, t.name typename
+        from t_blog b, t_type t
+        where b.type_id = t.id    /*博客类型id=类型id*/
     </select>
 
     <select id="getByTypeId" resultMap="blog">
@@ -116,7 +121,7 @@
 
     <select id="searchAllBlog" parameterType="Blog" resultMap="blog">
         <bind name="pattern" value="'%' + title + '%'" />    /*模糊查询*/
-        select b.id, b.title, b.update_time, b.recommend, b.published, b.type_id, t.id, t.name
+        select b.id, b.title, b.update_time, b.recommend, b.published, b.type_id, t.id typeid, t.name typename
         from t_blog b ,t_type t
         <where>
             <if test="1 == 1">
@@ -134,6 +139,9 @@
         </where>
     </select>
 
+    <select id="findGroupYear" resultType="String">
+        select DATE_FORMAT(b.update_time, '%Y') from t_blog b order by b.update_time desc
+    </select>
 
     <select id="findByYear" resultMap="blog">
         select b.title, b.update_time, b.id, b.flag
@@ -145,7 +153,7 @@
         update t_blog set published = #{published},flag = #{flag} ,
                           title = #{title}, content = #{content}, type_id = #{typeId}, tag_ids = #{tagIds},
                           first_picture = #{firstPicture} , description = #{description} , recommend = #{recommend} ,
-                          update_time = #{updateTime} where id = #{id};
+                          update_time = #{updateTime}, commentabled = #{commentabled} where id = #{id};
     </update>
 
     <!--useGeneratedKeys="true"；使用自增主键获取主键值策略
@@ -154,13 +162,17 @@
     <insert id="saveBlog" parameterType="Blog" useGeneratedKeys="true" keyProperty="id">
         insert into t_blog (title, content, first_picture, flag,
                 views,published,recommend, create_time, update_time,
-                            type_id, tag_ids, user_id, description)
+                            type_id, tag_ids, user_id, description,commentabled)
                 values (#{title}, #{content}, #{firstPicture}, #{flag}, #{views},
                  #{published}, #{recommend}, #{createTime},
-                #{updateTime}, #{typeId}, #{tagIds}, #{userId}, #{description});
+                #{updateTime}, #{typeId}, #{tagIds}, #{userId}, #{description},#{commentabled});
     </insert>
 
     <insert id="saveBlogAndTag" useGeneratedKeys="true">
-        insert into t_blog_tags(tag_id, blog_id) VALUES (#{0},#{1});
+        insert into t_blog_tags(tag_id, blog_id) VALUES (#{arg0},#{arg1});
     </insert>
+
+    <delete id="deleteBlogAndTag">
+        delete from t_blog_tags where tag_id = #{arg0} and blog_id = #{arg1}
+    </delete>
 </mapper>

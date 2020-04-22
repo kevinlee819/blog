@@ -35,8 +35,14 @@
         where t.id = bt.tag_id and b.id = bt.blog_id
     </select>
 
+    <select id="getTagsByBlogId" resultType="Tag">
+        select t.id, t.name from t_tag t, t_blog_tags tbt
+        where tbt.tag_id = t.id and tbt.blog_id = #{bid}
+    </select>
+
     <delete id="deleteTag">
-        delete from blog.t_tag where id = #{id}
+        delete from blog.t_tag where id = #{id};
+        delete from t_blog_tags where tag_id = #{id};
     </delete>
 
     <update id="updateTag" parameterType="Tag">

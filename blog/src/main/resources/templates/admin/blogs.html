@@ -41,8 +41,8 @@
     <div class="ui attached menu ">
         <div class="ui container my-shadow">
             <div class="right menu">
-                <a href="#" class="item">发布</a>
-                <a href="#" class="teal active item">列表</a>
+                <a href="#" th:href="@{/admin/blogs}" class="teal active item">列表</a>
+                <a href="#" th:href="@{/admin/blogs/input}" class="item">发布</a>
             </div>
         </div>
     </div>
@@ -53,47 +53,44 @@
         <br><br><br>
         <div class="ui container my-padding-small">
             <!--header-->
-            <form action="#" method="POST" class="ui segment form">
-                <div class="inline fields">
+            <form action="#" th:action="@{/admin/blogs/search}" method="POST" class="ui segment form">
+                <div class="fluid inline fields">
                     <div class="field">
                         <input type="text" name="title" placeholder="标题">
                     </div>
+                    <!--<div class="ui right pointing large label">分类</div>-->
                     <div class="field">
-                        <select class="ui search dropdown" name="types">
-                        <option value="">分类</option>
-                        <option value="AL">Alabama</option>
-                        <option value="AK">Alaska</option>
-                        <option value="AZ">Arizona</option>
-                        <option value="AR">Arkansas</option>
-                        <option value="CA">California</option>
-                    </select>
+                        <!--<select class="ui search dropdown" name="types">-->
+                        <!--<option value="">分类</option>-->
+                        <!--<option th:each="type : ${types}" th:value="${type.id}" th:text="${type.name}"></option>-->
+                        <!--&lt;!&ndash;<option value="AK">Alaska</option>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<option value="AZ">Arizona</option>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<option value="AR">Arkansas</option>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<option value="CA">California</option>&ndash;&gt;-->
+                        <!--</select>-->
+
+                        <div class="ui selection dropdown">
+                            <input type="hidden" name="typeId">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">分类</div>
+                            <div class="menu">
+                                <div th:each="type : ${types}" class="item"  th:data-value="${type.id}" th:text="${type.name}"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="field">
-                        <select name="tags" multiple="" class="ui dropdown">
-                        <option value="">标签</option>
-                        <option value="angular">Angular</option>
-                        <option value="css">CSS</option>
-                        <option value="design">Graphic Design</option>
-                        <option value="ember">Ember</option>
-                        <option value="javascript">Javascript</option>
-                        <option value="mech">Mechanical Engineering</option>
-                        <option value="meteor">Meteor</option>
-                        <option value="node">NodeJS</option>
-                        <option value="plumbing">Plumbing</option>
-                        <option value="python">Python</option>
-                        <option value="rails">Rails</option>
-                    </select>
-                    </div>
+
+                    <button id="clear-btn" class="ui button" type="reset" style="margin-left:5px; margin-right: 15px ">clear</button>
                     <div class="field">
                         <div class="ui checkbox">
                             <input type="checkbox" name="recommend" id="recommend">
                             <label for="recommend">推荐</label>
                         </div>
                     </div>
-                    <div class="field">
-                        <button class="ui labeled icon blue button"><i class="search icon"></i>提交</button>
-                    </div>
+                    <!--<div class="field">-->
+                    <!--</div>-->
+                    <button class="ui labeled icon blue button"><i class="search icon"></i>提交</button>
                 </div>
+
             </form>
 
             <!--footer-->
@@ -104,54 +101,36 @@
                             <th>序号</th>
                             <th>标题</th>
                             <th>类型</th>
-                            <th>标签</th>
                             <th>推荐</th>
+                            <th>状态</th>
                             <th>发表时间</th>
                             <th>操作</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
+                        <tr th:each="blog, iterStat : ${pageInfo.list}">
+                            <td th:text="${iterStat.count}">1</td>
+                            <td th:text="${blog.title}"></td>
+                            <td th:text="${blog.type.name}"></td>
+                            <td th:text="${blog.recommend} ? '是':'否'">是</td>
+                            <td th:text="${blog.published} ? '发布':'草稿'">发布</td>
+                            <td th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">2020-3-02</td>
                             <td>
-                                <a href="#" class="ui mini teal button"><i class="edit icon"></i>编辑</a>
-                                <a href="#" class="ui mini red button"><i class="delete icon"></i> 删除</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>
-                                <a href="#" class="ui mini teal button"><i class="edit icon"></i>编辑</a>
-                                <a href="#" class="ui mini red button"><i class="delete icon"></i> 删除</a>
+                                <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}" class="ui mini teal button"><i class="edit icon"></i>编辑</a>
+                                <a href="#" th:href="@{/admin/blogs/{id}/delete(id=${blog.id})}" class="ui mini red button"><i class="delete icon"></i>删除</a>
                             </td>
                         </tr>
                     </tbody>
                     <tfoot class="full-width">
                         <tr>
                             <th colspan="7">
-                                <div class="ui  pagination menu">
-                                    <a class=" icon item">
-                                        <i class="blue left chevron icon"></i>
-                                    </a>
-                                    <a class="item">1</a>
-                                    <a class="item">2</a>
-                                    <a class="item">3</a>
-                                    <a class="item">4</a>
-                                    <a class="icon item">
-                                        <i class="blue right chevron icon"></i>
-                                    </a>
+                                <div class="ui pagination menu">
+                                    <div class="item"><a th:href="@{/admin/blogs}">First</a></div>
+                                    <div class="item"><a th:href="@{/admin/blogs(pagenum=${pageInfo.hasPreviousPage}?${pageInfo.prePage}:1)}"><i class="blue left chevron icon"></i></a></div>
+                                    <div class="item"><a th:href="@{/admin/blogs(pagenum=${pageInfo.hasNextPage}?${pageInfo.nextPage}:${pageInfo.pages})}"><i class="blue right chevron icon"></i></a></div>
+                                    <div class="item"><a th:href="@{/admin/blogs(pagenum=${pageInfo.pages})}">Last</a></div>
                                 </div>
-                                <a href="#" class="ui teal right floated button"><i class="add icon"></i>新增</a>
+                                <a href="#" th:href="@{/admin/blogs/input}" class="ui teal right floated button"><i class="add icon"></i>新增</a>
                             </th>
                         </tr>
                     </tfoot>
@@ -159,6 +138,12 @@
             </div>
         </div>
         <br><br><br>
+    </div>
+
+    <div class="ui message" th:unless="${#strings.isEmpty(message)}">
+        <i class="close icon"></i>
+        <div class="header">操作信息：</div>
+        <p th:text="${message}"></p>
     </div>
 
     <!--/*/<th:block th:replace="admin/_fragments :: script ">/*/-->
@@ -169,6 +154,14 @@
     <script>
         $('.ui.dropdown').dropdown({
             on: 'hover'
+        });
+        $('#clear-btn').on('click', function() {
+            $('.ui.dropdown').dropdown('clear');
+            });
+        //消息提示关闭初始化
+        $('.message .close').on('click', function() {
+            $(this).closest('.message')
+                .transition('fade');
         });
     </script>
 </body>

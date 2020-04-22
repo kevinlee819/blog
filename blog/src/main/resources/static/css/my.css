@@ -150,6 +150,9 @@ nav {
     padding-bottom: 5em !important;
 }
 
+#flagMenu:hover{
+    z-index: 100;
+}
 
 /*-----container*/
 

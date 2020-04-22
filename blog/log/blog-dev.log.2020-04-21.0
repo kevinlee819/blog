@@ -1,0 +1,1332 @@
+2020-04-21 19:09:02.169  INFO 11544 --- [restartedMain] com.leekejin.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ANKEUSD with PID 11544 (D:\MyProject\blog\target\classes started by Kevin in D:\MyProject\blog)
+2020-04-21 19:09:02.197 DEBUG 11544 --- [restartedMain] com.leekejin.blog.BlogApplication        : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-04-21 19:09:02.197  INFO 11544 --- [restartedMain] com.leekejin.blog.BlogApplication        : The following profiles are active: dev
+2020-04-21 19:09:02.333  INFO 11544 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Kevin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-21 19:09:02.334  INFO 11544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-21 19:09:02.334  INFO 11544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-21 19:09:06.014  INFO 11544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-21 19:09:06.107  INFO 11544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34ms. Found 0 JPA repository interfaces.
+2020-04-21 19:09:10.576  INFO 11544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-04-21 19:09:10.590  INFO 11544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-21 19:09:10.591  INFO 11544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-21 19:09:12.617  INFO 11544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-21 19:09:12.617  INFO 11544 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 10282 ms
+2020-04-21 19:09:14.078  INFO 11544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-21 19:09:21.669  INFO 11544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-21 19:09:21.814  INFO 11544 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-21 19:09:22.436  INFO 11544 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-21 19:09:23.560  INFO 11544 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-21 19:09:24.216  INFO 11544 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-21 19:09:25.865  INFO 11544 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-21 19:09:25.920  INFO 11544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-21 19:09:27.386  WARN 11544 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-21 19:09:28.352  INFO 11544 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-21 19:09:28.669  INFO 11544 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-21 19:09:31.093  INFO 11544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-21 19:09:31.219  INFO 11544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2020-04-21 19:09:31.224  INFO 11544 --- [restartedMain] com.leekejin.blog.BlogApplication        : Started BlogApplication in 34.107 seconds (JVM running for 52.44)
+2020-04-21 19:10:36.024  INFO 11544 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-21 19:10:36.026  INFO 11544 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-21 19:10:36.058  INFO 11544 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 32 ms
+2020-04-21 19:10:36.178  INFO 11544 --- [http-nio-8082-exec-1] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/', ip='0:0:0:0:0:0:0:1', classMethod='com.leekejin.blog.controller.IndexController.Index', args=[]}
+2020-04-21 19:10:36.184  INFO 11544 --- [http-nio-8082-exec-1] com.leekejin.blog.aspect.LogAspect       : Result : index
+2020-04-21 19:10:54.208 DEBUG 11544 --- [http-nio-8082-exec-7] c.l.b.d.U.queryByUsernameAndPassword     : ==>  Preparing: select * from blog.t_user where username = ? and password = ?; 
+2020-04-21 19:10:54.473 DEBUG 11544 --- [http-nio-8082-exec-7] c.l.b.d.U.queryByUsernameAndPassword     : ==> Parameters: leekejin(String), 6447831(String)
+2020-04-21 19:10:54.661 DEBUG 11544 --- [http-nio-8082-exec-7] c.l.b.d.U.queryByUsernameAndPassword     : <==      Total: 1
+2020-04-21 19:10:57.811 DEBUG 11544 --- [http-nio-8082-exec-4] c.l.blog.dao.TypeDao.getAllType_COUNT    : ==>  Preparing: SELECT count(0) FROM t_type 
+2020-04-21 19:10:57.812 DEBUG 11544 --- [http-nio-8082-exec-4] c.l.blog.dao.TypeDao.getAllType_COUNT    : ==> Parameters: 
+2020-04-21 19:10:58.032 DEBUG 11544 --- [http-nio-8082-exec-4] c.l.blog.dao.TypeDao.getAllType_COUNT    : <==      Total: 1
+2020-04-21 19:10:58.034 DEBUG 11544 --- [http-nio-8082-exec-4] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type LIMIT ? 
+2020-04-21 19:10:58.034 DEBUG 11544 --- [http-nio-8082-exec-4] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 10(Integer)
+2020-04-21 19:10:58.036 DEBUG 11544 --- [http-nio-8082-exec-4] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 10
+2020-04-21 19:11:21.398 DEBUG 11544 --- [http-nio-8082-exec-9] c.l.blog.dao.TypeDao.getAllType_COUNT    : ==>  Preparing: SELECT count(0) FROM t_type 
+2020-04-21 19:11:21.399 DEBUG 11544 --- [http-nio-8082-exec-9] c.l.blog.dao.TypeDao.getAllType_COUNT    : ==> Parameters: 
+2020-04-21 19:11:21.402 DEBUG 11544 --- [http-nio-8082-exec-9] c.l.blog.dao.TypeDao.getAllType_COUNT    : <==      Total: 1
+2020-04-21 19:11:21.402 DEBUG 11544 --- [http-nio-8082-exec-9] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type LIMIT ? 
+2020-04-21 19:11:21.402 DEBUG 11544 --- [http-nio-8082-exec-9] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 10(Integer)
+2020-04-21 19:11:21.407 DEBUG 11544 --- [http-nio-8082-exec-9] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 10
+2020-04-21 19:11:42.193 DEBUG 11544 --- [http-nio-8082-exec-4] c.l.blog.dao.TypeDao.getAllType_COUNT    : ==>  Preparing: SELECT count(0) FROM t_type 
+2020-04-21 19:11:42.193 DEBUG 11544 --- [http-nio-8082-exec-4] c.l.blog.dao.TypeDao.getAllType_COUNT    : ==> Parameters: 
+2020-04-21 19:11:42.200 DEBUG 11544 --- [http-nio-8082-exec-4] c.l.blog.dao.TypeDao.getAllType_COUNT    : <==      Total: 1
+2020-04-21 19:11:42.201 DEBUG 11544 --- [http-nio-8082-exec-4] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type LIMIT ? 
+2020-04-21 19:11:42.202 DEBUG 11544 --- [http-nio-8082-exec-4] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 10(Integer)
+2020-04-21 19:11:42.204 DEBUG 11544 --- [http-nio-8082-exec-4] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 10
+2020-04-21 19:11:47.497 DEBUG 11544 --- [http-nio-8082-exec-6] c.l.blog.dao.TypeDao.getAllType_COUNT    : ==>  Preparing: SELECT count(0) FROM t_type 
+2020-04-21 19:11:47.498 DEBUG 11544 --- [http-nio-8082-exec-6] c.l.blog.dao.TypeDao.getAllType_COUNT    : ==> Parameters: 
+2020-04-21 19:11:47.509 DEBUG 11544 --- [http-nio-8082-exec-6] c.l.blog.dao.TypeDao.getAllType_COUNT    : <==      Total: 1
+2020-04-21 19:11:47.509 DEBUG 11544 --- [http-nio-8082-exec-6] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type LIMIT ?, ? 
+2020-04-21 19:11:47.510 DEBUG 11544 --- [http-nio-8082-exec-6] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 10(Integer), 10(Integer)
+2020-04-21 19:11:47.512 DEBUG 11544 --- [http-nio-8082-exec-6] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 3
+2020-04-21 19:11:50.891 DEBUG 11544 --- [http-nio-8082-exec-9] c.l.blog.dao.TypeDao.getAllType_COUNT    : ==>  Preparing: SELECT count(0) FROM t_type 
+2020-04-21 19:11:50.893 DEBUG 11544 --- [http-nio-8082-exec-9] c.l.blog.dao.TypeDao.getAllType_COUNT    : ==> Parameters: 
+2020-04-21 19:11:50.906 DEBUG 11544 --- [http-nio-8082-exec-9] c.l.blog.dao.TypeDao.getAllType_COUNT    : <==      Total: 1
+2020-04-21 19:11:50.906 DEBUG 11544 --- [http-nio-8082-exec-9] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type LIMIT ? 
+2020-04-21 19:11:50.907 DEBUG 11544 --- [http-nio-8082-exec-9] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 10(Integer)
+2020-04-21 19:11:50.913 DEBUG 11544 --- [http-nio-8082-exec-9] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 10
+2020-04-21 20:00:25.023 DEBUG 11544 --- [http-nio-8082-exec-5] c.l.b.d.U.queryByUsernameAndPassword     : ==>  Preparing: select * from blog.t_user where username = ? and password = ?; 
+2020-04-21 20:00:25.024 DEBUG 11544 --- [http-nio-8082-exec-5] c.l.b.d.U.queryByUsernameAndPassword     : ==> Parameters: leekejin(String), 6447831(String)
+2020-04-21 20:00:25.027 DEBUG 11544 --- [http-nio-8082-exec-5] c.l.b.d.U.queryByUsernameAndPassword     : <==      Total: 1
+2020-04-21 20:12:17.294  INFO 11544 --- [Thread-75] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-21 20:12:17.298  INFO 11544 --- [Thread-75] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-21 20:12:17.310  INFO 11544 --- [Thread-75] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-21 20:12:17.317  INFO 11544 --- [Thread-75] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-21 20:12:18.632  INFO 11544 --- [restartedMain] com.leekejin.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ANKEUSD with PID 11544 (D:\MyProject\blog\target\classes started by Kevin in D:\MyProject\blog)
+2020-04-21 20:12:18.633 DEBUG 11544 --- [restartedMain] com.leekejin.blog.BlogApplication        : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-04-21 20:12:18.633  INFO 11544 --- [restartedMain] com.leekejin.blog.BlogApplication        : The following profiles are active: dev
+2020-04-21 20:12:19.239  INFO 11544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-21 20:12:19.255  INFO 11544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+2020-04-21 20:12:20.552  INFO 11544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-04-21 20:12:20.708  INFO 11544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-21 20:12:20.708  INFO 11544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-21 20:12:21.086  INFO 11544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-21 20:12:21.086  INFO 11544 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2434 ms
+2020-04-21 20:12:21.230  INFO 11544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-04-21 20:12:21.244  INFO 11544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-04-21 20:12:21.259  INFO 11544 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-21 20:12:21.269  INFO 11544 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-21 20:12:21.315  INFO 11544 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-21 20:12:21.316  INFO 11544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-21 20:12:21.377  WARN 11544 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'typeShowController' defined in file [D:\MyProject\blog\target\classes\com\leekejin\blog\controller\TypeShowController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.leekejin.blog.controller.TypeShowController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3122cf7c]
+2020-04-21 20:12:21.377  INFO 11544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-21 20:12:21.378  INFO 11544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-04-21 20:12:21.397  INFO 11544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-04-21 20:12:21.398  INFO 11544 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-04-21 20:12:21.416  INFO 11544 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-21 20:12:21.443 ERROR 11544 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'typeShowController' defined in file [D:\MyProject\blog\target\classes\com\leekejin\blog\controller\TypeShowController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.leekejin.blog.controller.TypeShowController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3122cf7c]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.leekejin.blog.BlogApplication.main(BlogApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.leekejin.blog.controller.TypeShowController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3122cf7c]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:428)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:409)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1094)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/leekejin/blog/service/BlogService;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:729)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.leekejin.blog.service.BlogService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 30 common frames omitted
+
+2020-04-21 20:12:41.378  INFO 11544 --- [restartedMain] com.leekejin.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ANKEUSD with PID 11544 (D:\MyProject\blog\target\classes started by Kevin in D:\MyProject\blog)
+2020-04-21 20:12:41.378 DEBUG 11544 --- [restartedMain] com.leekejin.blog.BlogApplication        : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-04-21 20:12:41.379  INFO 11544 --- [restartedMain] com.leekejin.blog.BlogApplication        : The following profiles are active: dev
+2020-04-21 20:12:41.710  INFO 11544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-21 20:12:41.719  INFO 11544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 JPA repository interfaces.
+2020-04-21 20:12:42.234  INFO 11544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-04-21 20:12:42.235  INFO 11544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-21 20:12:42.235  INFO 11544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-21 20:12:42.305  INFO 11544 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-04-21 20:12:42.306  INFO 11544 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 922 ms
+2020-04-21 20:12:42.400  INFO 11544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-04-21 20:12:42.409  INFO 11544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-04-21 20:12:42.417  INFO 11544 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-21 20:12:42.421  INFO 11544 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-21 20:12:42.443  INFO 11544 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-21 20:12:42.443  INFO 11544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-21 20:12:42.482  WARN 11544 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.leekejin.blog.service.impl.UserServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2f26764d]
+2020-04-21 20:12:42.483  INFO 11544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-21 20:12:42.483  INFO 11544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2020-04-21 20:12:42.485  INFO 11544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2020-04-21 20:12:42.486  INFO 11544 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-04-21 20:12:42.497  INFO 11544 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-21 20:12:42.498 ERROR 11544 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.leekejin.blog.service.impl.UserServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2f26764d]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.leekejin.blog.BlogApplication.main(BlogApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.leekejin.blog.service.impl.UserServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2f26764d]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1286)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1201)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.leekejin.blog.service.impl.UserServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2f26764d]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267)
+	... 36 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/leekejin/blog/pojo/User
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 38 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.leekejin.blog.pojo.User
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 42 common frames omitted
+
+2020-04-21 20:12:47.513  INFO 11544 --- [restartedMain] com.leekejin.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ANKEUSD with PID 11544 (D:\MyProject\blog\target\classes started by Kevin in D:\MyProject\blog)
+2020-04-21 20:12:47.513 DEBUG 11544 --- [restartedMain] com.leekejin.blog.BlogApplication        : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-04-21 20:12:47.513  INFO 11544 --- [restartedMain] com.leekejin.blog.BlogApplication        : The following profiles are active: dev
+2020-04-21 20:12:47.867  INFO 11544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-21 20:12:47.882  INFO 11544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 JPA repository interfaces.
+2020-04-21 20:12:48.410  INFO 11544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-04-21 20:12:48.411  INFO 11544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-21 20:12:48.411  INFO 11544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-21 20:12:48.500  INFO 11544 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-04-21 20:12:48.500  INFO 11544 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 982 ms
+2020-04-21 20:12:48.783  INFO 11544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2020-04-21 20:12:48.798  INFO 11544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2020-04-21 20:12:48.811  INFO 11544 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-21 20:12:48.817  INFO 11544 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-21 20:12:48.842  INFO 11544 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-21 20:12:48.844  INFO 11544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-21 20:12:49.086  WARN 11544 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'typeShowController': Unsatisfied dependency expressed through field 'blogService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.leekejin.blog.service.BlogService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-04-21 20:12:49.086  INFO 11544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-21 20:12:49.086  INFO 11544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2020-04-21 20:12:49.104  INFO 11544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2020-04-21 20:12:49.105  INFO 11544 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-04-21 20:12:49.116  INFO 11544 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-21 20:12:49.407 ERROR 11544 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field blogService in com.leekejin.blog.controller.TypeShowController required a bean of type 'com.leekejin.blog.service.BlogService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.leekejin.blog.service.BlogService' in your configuration.
+
+2020-04-21 23:01:51.927  INFO 6844 --- [restartedMain] com.leekejin.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ANKEUSD with PID 6844 (D:\MyProject\blog\target\classes started by Kevin in D:\MyProject\blog)
+2020-04-21 23:01:51.930 DEBUG 6844 --- [restartedMain] com.leekejin.blog.BlogApplication        : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-04-21 23:01:51.931  INFO 6844 --- [restartedMain] com.leekejin.blog.BlogApplication        : The following profiles are active: dev
+2020-04-21 23:01:51.984  INFO 6844 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Kevin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-21 23:01:51.984  INFO 6844 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-21 23:01:51.984  INFO 6844 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-21 23:01:52.794  INFO 6844 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-21 23:01:52.820  INFO 6844 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 JPA repository interfaces.
+2020-04-21 23:01:53.832  INFO 6844 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-04-21 23:01:53.843  INFO 6844 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-21 23:01:53.843  INFO 6844 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-21 23:01:54.072  INFO 6844 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-21 23:01:54.072  INFO 6844 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2088 ms
+2020-04-21 23:01:54.329  INFO 6844 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-21 23:01:55.302  INFO 6844 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-21 23:01:55.357  INFO 6844 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-21 23:01:55.459  INFO 6844 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-21 23:01:55.618  INFO 6844 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-21 23:01:55.734  INFO 6844 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-21 23:01:55.987  INFO 6844 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-21 23:01:56.001  INFO 6844 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-21 23:01:56.477  WARN 6844 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-21 23:01:56.788  INFO 6844 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-21 23:01:56.899  INFO 6844 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-21 23:01:57.466  INFO 6844 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-21 23:01:57.526  INFO 6844 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2020-04-21 23:01:57.529  INFO 6844 --- [restartedMain] com.leekejin.blog.BlogApplication        : Started BlogApplication in 6.575 seconds (JVM running for 9.431)
+2020-04-21 23:02:11.045  INFO 6844 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-21 23:02:11.046  INFO 6844 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-21 23:02:11.059  INFO 6844 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-04-21 23:02:14.825 DEBUG 6844 --- [http-nio-8082-exec-1] c.l.b.d.U.queryByUsernameAndPassword     : ==>  Preparing: select * from blog.t_user where username = ? and password = ?; 
+2020-04-21 23:02:14.851 DEBUG 6844 --- [http-nio-8082-exec-1] c.l.b.d.U.queryByUsernameAndPassword     : ==> Parameters: leekejin(String), 6447831(String)
+2020-04-21 23:02:15.100 DEBUG 6844 --- [http-nio-8082-exec-1] c.l.b.d.U.queryByUsernameAndPassword     : <==      Total: 1
+2020-04-21 23:02:17.419 DEBUG 6844 --- [http-nio-8082-exec-7] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:02:17.420 DEBUG 6844 --- [http-nio-8082-exec-7] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:02:17.530 DEBUG 6844 --- [http-nio-8082-exec-7] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:02:17.561 DEBUG 6844 --- [http-nio-8082-exec-7] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:02:17.562 DEBUG 6844 --- [http-nio-8082-exec-7] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:02:17.566 DEBUG 6844 --- [http-nio-8082-exec-7] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:02:17.579 DEBUG 6844 --- [http-nio-8082-exec-7] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:02:17.579 DEBUG 6844 --- [http-nio-8082-exec-7] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:02:17.639 DEBUG 6844 --- [http-nio-8082-exec-7] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:02:51.503 DEBUG 6844 --- [http-nio-8082-exec-3] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:02:51.504 DEBUG 6844 --- [http-nio-8082-exec-3] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:02:51.505 DEBUG 6844 --- [http-nio-8082-exec-3] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:02:51.507 DEBUG 6844 --- [http-nio-8082-exec-3] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:02:51.508 DEBUG 6844 --- [http-nio-8082-exec-3] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:02:51.516 DEBUG 6844 --- [http-nio-8082-exec-3] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:02:51.519 DEBUG 6844 --- [http-nio-8082-exec-3] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:02:51.520 DEBUG 6844 --- [http-nio-8082-exec-3] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:02:51.523 DEBUG 6844 --- [http-nio-8082-exec-3] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:02:55.898 DEBUG 6844 --- [http-nio-8082-exec-10] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:02:55.898 DEBUG 6844 --- [http-nio-8082-exec-10] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:02:55.899 DEBUG 6844 --- [http-nio-8082-exec-10] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:02:55.901 DEBUG 6844 --- [http-nio-8082-exec-10] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:02:55.902 DEBUG 6844 --- [http-nio-8082-exec-10] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:02:55.905 DEBUG 6844 --- [http-nio-8082-exec-10] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:02:55.910 DEBUG 6844 --- [http-nio-8082-exec-10] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:02:55.911 DEBUG 6844 --- [http-nio-8082-exec-10] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:02:55.914 DEBUG 6844 --- [http-nio-8082-exec-10] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:06:09.670 DEBUG 6844 --- [http-nio-8082-exec-1] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:06:09.671 DEBUG 6844 --- [http-nio-8082-exec-1] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:06:09.672 DEBUG 6844 --- [http-nio-8082-exec-1] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:06:09.673 DEBUG 6844 --- [http-nio-8082-exec-1] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:06:09.674 DEBUG 6844 --- [http-nio-8082-exec-1] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:06:09.675 DEBUG 6844 --- [http-nio-8082-exec-1] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:06:09.677 DEBUG 6844 --- [http-nio-8082-exec-1] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:06:09.678 DEBUG 6844 --- [http-nio-8082-exec-1] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:06:09.682 DEBUG 6844 --- [http-nio-8082-exec-1] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:07:35.520 DEBUG 6844 --- [http-nio-8082-exec-6] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:07:35.521 DEBUG 6844 --- [http-nio-8082-exec-6] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:07:35.523 DEBUG 6844 --- [http-nio-8082-exec-6] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:07:35.526 DEBUG 6844 --- [http-nio-8082-exec-6] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:07:35.526 DEBUG 6844 --- [http-nio-8082-exec-6] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:07:35.531 DEBUG 6844 --- [http-nio-8082-exec-6] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:07:35.536 DEBUG 6844 --- [http-nio-8082-exec-6] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:07:35.538 DEBUG 6844 --- [http-nio-8082-exec-6] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:07:35.542 DEBUG 6844 --- [http-nio-8082-exec-6] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:09:15.717 DEBUG 6844 --- [http-nio-8082-exec-9] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:09:15.718 DEBUG 6844 --- [http-nio-8082-exec-9] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:09:15.719 DEBUG 6844 --- [http-nio-8082-exec-9] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:09:15.721 DEBUG 6844 --- [http-nio-8082-exec-9] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:09:15.722 DEBUG 6844 --- [http-nio-8082-exec-9] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:09:15.724 DEBUG 6844 --- [http-nio-8082-exec-9] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:09:15.727 DEBUG 6844 --- [http-nio-8082-exec-9] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:09:15.728 DEBUG 6844 --- [http-nio-8082-exec-9] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:09:15.731 DEBUG 6844 --- [http-nio-8082-exec-9] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:09:41.916 DEBUG 6844 --- [http-nio-8082-exec-3] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:09:41.917 DEBUG 6844 --- [http-nio-8082-exec-3] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:09:41.918 DEBUG 6844 --- [http-nio-8082-exec-3] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:09:41.923 DEBUG 6844 --- [http-nio-8082-exec-3] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:09:41.924 DEBUG 6844 --- [http-nio-8082-exec-3] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:09:41.927 DEBUG 6844 --- [http-nio-8082-exec-3] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:09:41.930 DEBUG 6844 --- [http-nio-8082-exec-3] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:09:41.930 DEBUG 6844 --- [http-nio-8082-exec-3] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:09:41.935 DEBUG 6844 --- [http-nio-8082-exec-3] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:10:21.394 DEBUG 6844 --- [http-nio-8082-exec-7] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:10:21.395 DEBUG 6844 --- [http-nio-8082-exec-7] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:10:21.396 DEBUG 6844 --- [http-nio-8082-exec-7] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:10:21.398 DEBUG 6844 --- [http-nio-8082-exec-7] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:10:21.400 DEBUG 6844 --- [http-nio-8082-exec-7] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:10:21.404 DEBUG 6844 --- [http-nio-8082-exec-7] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:10:21.407 DEBUG 6844 --- [http-nio-8082-exec-7] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:10:21.407 DEBUG 6844 --- [http-nio-8082-exec-7] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:10:21.408 DEBUG 6844 --- [http-nio-8082-exec-7] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:10:37.671 DEBUG 6844 --- [http-nio-8082-exec-9] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:10:37.673 DEBUG 6844 --- [http-nio-8082-exec-9] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:10:37.674 DEBUG 6844 --- [http-nio-8082-exec-9] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:10:37.676 DEBUG 6844 --- [http-nio-8082-exec-9] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:10:37.676 DEBUG 6844 --- [http-nio-8082-exec-9] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:10:37.678 DEBUG 6844 --- [http-nio-8082-exec-9] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:10:37.681 DEBUG 6844 --- [http-nio-8082-exec-9] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:10:37.681 DEBUG 6844 --- [http-nio-8082-exec-9] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:10:37.686 DEBUG 6844 --- [http-nio-8082-exec-9] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:10:40.717 DEBUG 6844 --- [http-nio-8082-exec-5] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:10:40.718 DEBUG 6844 --- [http-nio-8082-exec-5] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:10:40.721 DEBUG 6844 --- [http-nio-8082-exec-5] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:10:40.722 DEBUG 6844 --- [http-nio-8082-exec-5] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:10:40.722 DEBUG 6844 --- [http-nio-8082-exec-5] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:10:40.724 DEBUG 6844 --- [http-nio-8082-exec-5] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:10:40.726 DEBUG 6844 --- [http-nio-8082-exec-5] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:10:40.726 DEBUG 6844 --- [http-nio-8082-exec-5] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:10:40.727 DEBUG 6844 --- [http-nio-8082-exec-5] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:11:22.310 DEBUG 6844 --- [http-nio-8082-exec-3] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:11:22.311 DEBUG 6844 --- [http-nio-8082-exec-3] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:11:22.313 DEBUG 6844 --- [http-nio-8082-exec-3] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:11:22.315 DEBUG 6844 --- [http-nio-8082-exec-3] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:11:22.315 DEBUG 6844 --- [http-nio-8082-exec-3] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:11:22.317 DEBUG 6844 --- [http-nio-8082-exec-3] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:11:22.319 DEBUG 6844 --- [http-nio-8082-exec-3] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:11:22.320 DEBUG 6844 --- [http-nio-8082-exec-3] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:11:22.323 DEBUG 6844 --- [http-nio-8082-exec-3] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:11:42.082 DEBUG 6844 --- [http-nio-8082-exec-10] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:11:42.083 DEBUG 6844 --- [http-nio-8082-exec-10] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:11:42.084 DEBUG 6844 --- [http-nio-8082-exec-10] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:11:42.086 DEBUG 6844 --- [http-nio-8082-exec-10] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:11:42.086 DEBUG 6844 --- [http-nio-8082-exec-10] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:11:42.089 DEBUG 6844 --- [http-nio-8082-exec-10] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:11:42.093 DEBUG 6844 --- [http-nio-8082-exec-10] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:11:42.093 DEBUG 6844 --- [http-nio-8082-exec-10] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:11:42.094 DEBUG 6844 --- [http-nio-8082-exec-10] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:12:28.735 DEBUG 6844 --- [http-nio-8082-exec-8] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:12:28.736 DEBUG 6844 --- [http-nio-8082-exec-8] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:12:28.738 DEBUG 6844 --- [http-nio-8082-exec-8] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:12:28.744 DEBUG 6844 --- [http-nio-8082-exec-8] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:12:28.745 DEBUG 6844 --- [http-nio-8082-exec-8] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:12:28.746 DEBUG 6844 --- [http-nio-8082-exec-8] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:12:28.748 DEBUG 6844 --- [http-nio-8082-exec-8] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:12:28.748 DEBUG 6844 --- [http-nio-8082-exec-8] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:12:28.749 DEBUG 6844 --- [http-nio-8082-exec-8] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:13:28.572 DEBUG 6844 --- [http-nio-8082-exec-9] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:13:28.574 DEBUG 6844 --- [http-nio-8082-exec-9] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:13:28.578 DEBUG 6844 --- [http-nio-8082-exec-9] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:13:28.581 DEBUG 6844 --- [http-nio-8082-exec-9] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:13:28.581 DEBUG 6844 --- [http-nio-8082-exec-9] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:13:28.584 DEBUG 6844 --- [http-nio-8082-exec-9] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:13:28.590 DEBUG 6844 --- [http-nio-8082-exec-9] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:13:28.591 DEBUG 6844 --- [http-nio-8082-exec-9] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:13:28.596 DEBUG 6844 --- [http-nio-8082-exec-9] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:13:34.404 DEBUG 6844 --- [http-nio-8082-exec-7] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:13:34.405 DEBUG 6844 --- [http-nio-8082-exec-7] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:13:34.411 DEBUG 6844 --- [http-nio-8082-exec-7] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:13:34.415 DEBUG 6844 --- [http-nio-8082-exec-7] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:13:34.415 DEBUG 6844 --- [http-nio-8082-exec-7] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:13:34.417 DEBUG 6844 --- [http-nio-8082-exec-7] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:13:34.419 DEBUG 6844 --- [http-nio-8082-exec-7] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:13:34.420 DEBUG 6844 --- [http-nio-8082-exec-7] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:13:34.425 DEBUG 6844 --- [http-nio-8082-exec-7] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:13:47.891 DEBUG 6844 --- [http-nio-8082-exec-4] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:13:47.893 DEBUG 6844 --- [http-nio-8082-exec-4] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:13:47.897 DEBUG 6844 --- [http-nio-8082-exec-4] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:13:47.901 DEBUG 6844 --- [http-nio-8082-exec-4] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:13:47.901 DEBUG 6844 --- [http-nio-8082-exec-4] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:13:47.902 DEBUG 6844 --- [http-nio-8082-exec-4] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:13:47.905 DEBUG 6844 --- [http-nio-8082-exec-4] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:13:47.906 DEBUG 6844 --- [http-nio-8082-exec-4] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:13:47.907 DEBUG 6844 --- [http-nio-8082-exec-4] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:14:16.401 DEBUG 6844 --- [http-nio-8082-exec-1] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:14:16.403 DEBUG 6844 --- [http-nio-8082-exec-1] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:14:16.405 DEBUG 6844 --- [http-nio-8082-exec-1] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:14:16.407 DEBUG 6844 --- [http-nio-8082-exec-1] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:14:16.408 DEBUG 6844 --- [http-nio-8082-exec-1] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:14:16.410 DEBUG 6844 --- [http-nio-8082-exec-1] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:14:16.413 DEBUG 6844 --- [http-nio-8082-exec-1] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:14:16.413 DEBUG 6844 --- [http-nio-8082-exec-1] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:14:16.421 DEBUG 6844 --- [http-nio-8082-exec-1] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:16:30.014 DEBUG 6844 --- [http-nio-8082-exec-3] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:16:30.015 DEBUG 6844 --- [http-nio-8082-exec-3] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:16:30.018 DEBUG 6844 --- [http-nio-8082-exec-3] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:16:30.021 DEBUG 6844 --- [http-nio-8082-exec-3] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:16:30.022 DEBUG 6844 --- [http-nio-8082-exec-3] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:16:30.024 DEBUG 6844 --- [http-nio-8082-exec-3] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:16:30.027 DEBUG 6844 --- [http-nio-8082-exec-3] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:16:30.027 DEBUG 6844 --- [http-nio-8082-exec-3] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:16:30.028 DEBUG 6844 --- [http-nio-8082-exec-3] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:19:46.779  INFO 14476 --- [restartedMain] com.leekejin.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ANKEUSD with PID 14476 (D:\MyProject\blog\target\classes started by Kevin in D:\MyProject\blog)
+2020-04-21 23:19:46.880 DEBUG 14476 --- [restartedMain] com.leekejin.blog.BlogApplication        : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-04-21 23:19:46.880  INFO 14476 --- [restartedMain] com.leekejin.blog.BlogApplication        : The following profiles are active: dev
+2020-04-21 23:19:47.096  INFO 14476 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Kevin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-21 23:19:47.096  INFO 14476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-21 23:19:47.097  INFO 14476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-21 23:19:48.436  INFO 14476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-21 23:19:48.472  INFO 14476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 JPA repository interfaces.
+2020-04-21 23:19:49.957  INFO 14476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-04-21 23:19:49.974  INFO 14476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-21 23:19:49.974  INFO 14476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-21 23:19:50.235  INFO 14476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-21 23:19:50.235  INFO 14476 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3138 ms
+2020-04-21 23:19:50.568  INFO 14476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-21 23:19:51.738  INFO 14476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-21 23:19:51.800  INFO 14476 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-21 23:19:51.928  INFO 14476 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-21 23:19:52.111  INFO 14476 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-21 23:19:52.259  INFO 14476 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-21 23:19:52.505  INFO 14476 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-21 23:19:52.516  INFO 14476 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-21 23:19:53.077  WARN 14476 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-21 23:19:53.389  INFO 14476 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-21 23:19:53.540  INFO 14476 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-21 23:19:54.176  INFO 14476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-21 23:19:54.243  INFO 14476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2020-04-21 23:19:54.251  INFO 14476 --- [restartedMain] com.leekejin.blog.BlogApplication        : Started BlogApplication in 9.236 seconds (JVM running for 13.146)
+2020-04-21 23:20:03.201  INFO 14476 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-21 23:20:03.202  INFO 14476 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-21 23:20:03.233  INFO 14476 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 31 ms
+2020-04-21 23:20:06.252 DEBUG 14476 --- [http-nio-8082-exec-10] c.l.b.d.U.queryByUsernameAndPassword     : ==>  Preparing: select * from blog.t_user where username = ? and password = ?; 
+2020-04-21 23:20:06.285 DEBUG 14476 --- [http-nio-8082-exec-10] c.l.b.d.U.queryByUsernameAndPassword     : ==> Parameters: leekejin(String), 6447831(String)
+2020-04-21 23:20:06.307 DEBUG 14476 --- [http-nio-8082-exec-10] c.l.b.d.U.queryByUsernameAndPassword     : <==      Total: 1
+2020-04-21 23:20:10.313 DEBUG 14476 --- [http-nio-8082-exec-6] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:20:10.314 DEBUG 14476 --- [http-nio-8082-exec-6] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:20:10.319 DEBUG 14476 --- [http-nio-8082-exec-6] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:20:10.626 DEBUG 14476 --- [http-nio-8082-exec-6] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:20:10.627 DEBUG 14476 --- [http-nio-8082-exec-6] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:20:10.633 DEBUG 14476 --- [http-nio-8082-exec-6] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:20:10.646 DEBUG 14476 --- [http-nio-8082-exec-6] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:20:10.647 DEBUG 14476 --- [http-nio-8082-exec-6] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:20:10.651 DEBUG 14476 --- [http-nio-8082-exec-6] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:22:29.069 DEBUG 14476 --- [http-nio-8082-exec-8] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:22:29.071 DEBUG 14476 --- [http-nio-8082-exec-8] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:22:29.073 DEBUG 14476 --- [http-nio-8082-exec-8] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:22:29.075 DEBUG 14476 --- [http-nio-8082-exec-8] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:22:29.075 DEBUG 14476 --- [http-nio-8082-exec-8] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:22:29.087 DEBUG 14476 --- [http-nio-8082-exec-8] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:22:29.090 DEBUG 14476 --- [http-nio-8082-exec-8] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:22:29.091 DEBUG 14476 --- [http-nio-8082-exec-8] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:22:29.094 DEBUG 14476 --- [http-nio-8082-exec-8] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:22:49.860 DEBUG 14476 --- [http-nio-8082-exec-2] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:22:49.861 DEBUG 14476 --- [http-nio-8082-exec-2] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:22:49.864 DEBUG 14476 --- [http-nio-8082-exec-2] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:22:49.869 DEBUG 14476 --- [http-nio-8082-exec-2] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:22:49.869 DEBUG 14476 --- [http-nio-8082-exec-2] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:22:49.871 DEBUG 14476 --- [http-nio-8082-exec-2] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:22:49.890 ERROR 14476 --- [http-nio-8082-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8082-exec-2] Exception processing template "admin/blogs-input": Error resolving template [admin/blogs-input], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [admin/blogs-input], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-04-21 23:22:49.897 ERROR 14476 --- [http-nio-8082-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [admin/blogs-input], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [admin/blogs-input], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-04-21 23:27:25.421 DEBUG 14476 --- [http-nio-8082-exec-7] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:27:25.421 DEBUG 14476 --- [http-nio-8082-exec-7] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:27:25.423 DEBUG 14476 --- [http-nio-8082-exec-7] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:27:25.427 DEBUG 14476 --- [http-nio-8082-exec-7] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:27:25.427 DEBUG 14476 --- [http-nio-8082-exec-7] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:27:25.431 DEBUG 14476 --- [http-nio-8082-exec-7] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:27:25.437 ERROR 14476 --- [http-nio-8082-exec-7] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8082-exec-7] Exception processing template "admin/blogs-input": Error resolving template [admin/blogs-input], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [admin/blogs-input], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-04-21 23:27:25.469 ERROR 14476 --- [http-nio-8082-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [admin/blogs-input], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [admin/blogs-input], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-04-21 23:27:39.849  INFO 15464 --- [restartedMain] com.leekejin.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ANKEUSD with PID 15464 (D:\MyProject\blog\target\classes started by Kevin in D:\MyProject\blog)
+2020-04-21 23:27:39.858 DEBUG 15464 --- [restartedMain] com.leekejin.blog.BlogApplication        : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-04-21 23:27:39.858  INFO 15464 --- [restartedMain] com.leekejin.blog.BlogApplication        : The following profiles are active: dev
+2020-04-21 23:27:39.990  INFO 15464 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Kevin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-21 23:27:39.991  INFO 15464 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-21 23:27:39.991  INFO 15464 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-21 23:27:41.303  INFO 15464 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-21 23:27:41.332  INFO 15464 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
+2020-04-21 23:27:42.676  INFO 15464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-04-21 23:27:42.687  INFO 15464 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-21 23:27:42.688  INFO 15464 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-21 23:27:42.997  INFO 15464 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-21 23:27:42.998  INFO 15464 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3006 ms
+2020-04-21 23:27:43.410  INFO 15464 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-21 23:27:44.839  INFO 15464 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-21 23:27:44.954  INFO 15464 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-21 23:27:45.220  INFO 15464 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-21 23:27:45.456  INFO 15464 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-21 23:27:45.690  INFO 15464 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-21 23:27:46.057  INFO 15464 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-21 23:27:46.080  INFO 15464 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-21 23:27:46.711  WARN 15464 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-21 23:27:47.167  INFO 15464 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-21 23:27:47.381  INFO 15464 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-21 23:27:48.073  INFO 15464 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-21 23:27:48.161  INFO 15464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2020-04-21 23:27:48.169  INFO 15464 --- [restartedMain] com.leekejin.blog.BlogApplication        : Started BlogApplication in 10.154 seconds (JVM running for 13.959)
+2020-04-21 23:28:06.043  INFO 15464 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-21 23:28:06.043  INFO 15464 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-21 23:28:06.061  INFO 15464 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-04-21 23:28:08.785 DEBUG 15464 --- [http-nio-8082-exec-3] c.l.b.d.U.queryByUsernameAndPassword     : ==>  Preparing: select * from blog.t_user where username = ? and password = ?; 
+2020-04-21 23:28:08.807 DEBUG 15464 --- [http-nio-8082-exec-3] c.l.b.d.U.queryByUsernameAndPassword     : ==> Parameters: leekejin(String), 6447831(String)
+2020-04-21 23:28:09.048 DEBUG 15464 --- [http-nio-8082-exec-3] c.l.b.d.U.queryByUsernameAndPassword     : <==      Total: 1
+2020-04-21 23:28:49.510  INFO 14116 --- [restartedMain] com.leekejin.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ANKEUSD with PID 14116 (D:\MyProject\blog\target\classes started by Kevin in D:\MyProject\blog)
+2020-04-21 23:28:49.515 DEBUG 14116 --- [restartedMain] com.leekejin.blog.BlogApplication        : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-04-21 23:28:49.515  INFO 14116 --- [restartedMain] com.leekejin.blog.BlogApplication        : The following profiles are active: dev
+2020-04-21 23:28:49.631  INFO 14116 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Kevin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-21 23:28:49.632  INFO 14116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-21 23:28:49.632  INFO 14116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-21 23:28:50.670  INFO 14116 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-21 23:28:50.698  INFO 14116 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 JPA repository interfaces.
+2020-04-21 23:28:51.915  INFO 14116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-04-21 23:28:51.926  INFO 14116 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-21 23:28:51.927  INFO 14116 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-21 23:28:52.175  INFO 14116 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-21 23:28:52.175  INFO 14116 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2543 ms
+2020-04-21 23:28:52.472  INFO 14116 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-21 23:28:53.528  INFO 14116 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-21 23:28:53.602  INFO 14116 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-21 23:28:53.763  INFO 14116 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-21 23:28:53.912  INFO 14116 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-21 23:28:54.037  INFO 14116 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-21 23:28:54.232  INFO 14116 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-21 23:28:54.242  INFO 14116 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-21 23:28:54.708  WARN 14116 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-21 23:28:54.979  INFO 14116 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-21 23:28:55.104  INFO 14116 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-21 23:28:55.650  INFO 14116 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-21 23:28:55.708  INFO 14116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2020-04-21 23:28:55.712  INFO 14116 --- [restartedMain] com.leekejin.blog.BlogApplication        : Started BlogApplication in 8.067 seconds (JVM running for 11.262)
+2020-04-21 23:29:00.878  INFO 14116 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-21 23:29:00.878  INFO 14116 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-21 23:29:00.895  INFO 14116 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-04-21 23:29:04.169 DEBUG 14116 --- [http-nio-8082-exec-2] c.l.b.d.U.queryByUsernameAndPassword     : ==>  Preparing: select * from blog.t_user where username = ? and password = ?; 
+2020-04-21 23:29:04.194 DEBUG 14116 --- [http-nio-8082-exec-2] c.l.b.d.U.queryByUsernameAndPassword     : ==> Parameters: leekejin(String), 6447831(String)
+2020-04-21 23:29:04.408 DEBUG 14116 --- [http-nio-8082-exec-2] c.l.b.d.U.queryByUsernameAndPassword     : <==      Total: 1
+2020-04-21 23:29:07.978 DEBUG 14116 --- [http-nio-8082-exec-5] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:29:07.979 DEBUG 14116 --- [http-nio-8082-exec-5] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:29:07.980 DEBUG 14116 --- [http-nio-8082-exec-5] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:29:08.011 DEBUG 14116 --- [http-nio-8082-exec-5] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:29:08.011 DEBUG 14116 --- [http-nio-8082-exec-5] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:29:08.013 DEBUG 14116 --- [http-nio-8082-exec-5] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:29:08.024 DEBUG 14116 --- [http-nio-8082-exec-5] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:29:08.024 DEBUG 14116 --- [http-nio-8082-exec-5] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:29:08.027 DEBUG 14116 --- [http-nio-8082-exec-5] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:29:10.630 DEBUG 14116 --- [http-nio-8082-exec-7] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:29:10.631 DEBUG 14116 --- [http-nio-8082-exec-7] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:29:10.636 DEBUG 14116 --- [http-nio-8082-exec-7] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:29:10.639 DEBUG 14116 --- [http-nio-8082-exec-7] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:29:10.639 DEBUG 14116 --- [http-nio-8082-exec-7] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:29:10.642 DEBUG 14116 --- [http-nio-8082-exec-7] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:32:38.504 DEBUG 14116 --- [http-nio-8082-exec-10] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:32:38.505 DEBUG 14116 --- [http-nio-8082-exec-10] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:32:38.508 DEBUG 14116 --- [http-nio-8082-exec-10] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:32:38.514 DEBUG 14116 --- [http-nio-8082-exec-10] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:32:38.515 DEBUG 14116 --- [http-nio-8082-exec-10] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:32:38.517 DEBUG 14116 --- [http-nio-8082-exec-10] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:36:29.169 DEBUG 14116 --- [http-nio-8082-exec-2] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:36:29.171 DEBUG 14116 --- [http-nio-8082-exec-2] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:36:29.173 DEBUG 14116 --- [http-nio-8082-exec-2] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:36:29.177 DEBUG 14116 --- [http-nio-8082-exec-2] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:36:29.177 DEBUG 14116 --- [http-nio-8082-exec-2] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:36:29.179 DEBUG 14116 --- [http-nio-8082-exec-2] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:36:29.212 ERROR 14116 --- [http-nio-8082-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8082-exec-2] Exception processing template "admin/blog-input": An error happened during template parsing (template: "class path resource [templates/admin/blog-input.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/blog-input.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Could not parse as expression: "text/javascript" (template: "admin/_fragments" - line 48, col 17)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "text/javascript" (template: "admin/_fragments" - line 48, col 17)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+
+2020-04-21 23:36:29.219 ERROR 14116 --- [http-nio-8082-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/blog-input.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "text/javascript" (template: "admin/_fragments" - line 48, col 17)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-04-21 23:36:49.807  INFO 6044 --- [restartedMain] com.leekejin.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ANKEUSD with PID 6044 (D:\MyProject\blog\target\classes started by Kevin in D:\MyProject\blog)
+2020-04-21 23:36:49.812 DEBUG 6044 --- [restartedMain] com.leekejin.blog.BlogApplication        : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-04-21 23:36:49.812  INFO 6044 --- [restartedMain] com.leekejin.blog.BlogApplication        : The following profiles are active: dev
+2020-04-21 23:36:49.902  INFO 6044 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Kevin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-21 23:36:49.902  INFO 6044 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-21 23:36:49.902  INFO 6044 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-21 23:36:51.086  INFO 6044 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-21 23:36:51.135  INFO 6044 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 JPA repository interfaces.
+2020-04-21 23:36:52.818  INFO 6044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-04-21 23:36:52.832  INFO 6044 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-21 23:36:52.832  INFO 6044 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-21 23:36:53.183  INFO 6044 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-21 23:36:53.183  INFO 6044 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3280 ms
+2020-04-21 23:36:53.723  INFO 6044 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-21 23:36:55.133  INFO 6044 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-21 23:36:55.212  INFO 6044 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-21 23:36:55.370  INFO 6044 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-21 23:36:55.584  INFO 6044 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-21 23:36:55.795  INFO 6044 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-21 23:36:56.118  INFO 6044 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-21 23:36:56.140  INFO 6044 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-21 23:36:56.960  WARN 6044 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-21 23:36:57.413  INFO 6044 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-21 23:36:57.573  INFO 6044 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-21 23:36:58.245  INFO 6044 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-21 23:36:58.324  INFO 6044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2020-04-21 23:36:58.329  INFO 6044 --- [restartedMain] com.leekejin.blog.BlogApplication        : Started BlogApplication in 9.683 seconds (JVM running for 13.724)
+2020-04-21 23:37:36.072  INFO 6044 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-21 23:37:36.072  INFO 6044 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-21 23:37:36.089  INFO 6044 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-04-21 23:37:36.718 ERROR 6044 --- [http-nio-8082-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8082-exec-2] Exception processing template "admin/login": An error happened during template parsing (template: "class path resource [templates/admin/login.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/login.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Could not parse as expression: "text/javascript" (template: "admin/_fragments" - line 48, col 17)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "text/javascript" (template: "admin/_fragments" - line 48, col 17)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+
+2020-04-21 23:37:36.724 ERROR 6044 --- [http-nio-8082-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/login.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "text/javascript" (template: "admin/_fragments" - line 48, col 17)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-04-21 23:38:35.033  INFO 14884 --- [restartedMain] com.leekejin.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ANKEUSD with PID 14884 (D:\MyProject\blog\target\classes started by Kevin in D:\MyProject\blog)
+2020-04-21 23:38:35.038 DEBUG 14884 --- [restartedMain] com.leekejin.blog.BlogApplication        : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-04-21 23:38:35.038  INFO 14884 --- [restartedMain] com.leekejin.blog.BlogApplication        : The following profiles are active: dev
+2020-04-21 23:38:35.131  INFO 14884 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Kevin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-21 23:38:35.132  INFO 14884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-21 23:38:35.132  INFO 14884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-21 23:38:36.683  INFO 14884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-21 23:38:36.738  INFO 14884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33ms. Found 0 JPA repository interfaces.
+2020-04-21 23:38:38.648  INFO 14884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-04-21 23:38:38.668  INFO 14884 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-21 23:38:38.668  INFO 14884 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-21 23:38:39.000  INFO 14884 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-21 23:38:39.000  INFO 14884 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3867 ms
+2020-04-21 23:38:39.426  INFO 14884 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-21 23:38:41.063  INFO 14884 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-21 23:38:41.172  INFO 14884 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-21 23:38:41.377  INFO 14884 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-21 23:38:41.699  INFO 14884 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-21 23:38:41.927  INFO 14884 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-21 23:38:42.398  INFO 14884 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-21 23:38:42.443  INFO 14884 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-21 23:38:43.747  WARN 14884 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-21 23:38:44.458  INFO 14884 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-21 23:38:44.837  INFO 14884 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-21 23:38:46.232  INFO 14884 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-21 23:38:46.363  INFO 14884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2020-04-21 23:38:46.383  INFO 14884 --- [restartedMain] com.leekejin.blog.BlogApplication        : Started BlogApplication in 12.631 seconds (JVM running for 17.858)
+2020-04-21 23:39:45.263  INFO 14884 --- [http-nio-8082-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-21 23:39:45.263  INFO 14884 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-21 23:39:45.285  INFO 14884 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2020-04-21 23:39:52.438 DEBUG 14884 --- [http-nio-8082-exec-10] c.l.b.d.U.queryByUsernameAndPassword     : ==>  Preparing: select * from blog.t_user where username = ? and password = ?; 
+2020-04-21 23:39:52.462 DEBUG 14884 --- [http-nio-8082-exec-10] c.l.b.d.U.queryByUsernameAndPassword     : ==> Parameters: leekejin(String), 6447831(String)
+2020-04-21 23:39:52.717 DEBUG 14884 --- [http-nio-8082-exec-10] c.l.b.d.U.queryByUsernameAndPassword     : <==      Total: 1
+2020-04-21 23:39:59.768 DEBUG 14884 --- [http-nio-8082-exec-4] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:39:59.768 DEBUG 14884 --- [http-nio-8082-exec-4] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:39:59.770 DEBUG 14884 --- [http-nio-8082-exec-4] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:39:59.810 DEBUG 14884 --- [http-nio-8082-exec-4] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:39:59.810 DEBUG 14884 --- [http-nio-8082-exec-4] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:39:59.815 DEBUG 14884 --- [http-nio-8082-exec-4] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:39:59.827 DEBUG 14884 --- [http-nio-8082-exec-4] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:39:59.827 DEBUG 14884 --- [http-nio-8082-exec-4] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:39:59.831 DEBUG 14884 --- [http-nio-8082-exec-4] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:40:02.785 DEBUG 14884 --- [http-nio-8082-exec-3] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:40:02.786 DEBUG 14884 --- [http-nio-8082-exec-3] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:40:02.791 DEBUG 14884 --- [http-nio-8082-exec-3] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:40:02.793 DEBUG 14884 --- [http-nio-8082-exec-3] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:40:02.794 DEBUG 14884 --- [http-nio-8082-exec-3] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:40:02.798 DEBUG 14884 --- [http-nio-8082-exec-3] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:47:19.491  INFO 3840 --- [restartedMain] com.leekejin.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ANKEUSD with PID 3840 (D:\MyProject\blog\target\classes started by Kevin in D:\MyProject\blog)
+2020-04-21 23:47:19.495 DEBUG 3840 --- [restartedMain] com.leekejin.blog.BlogApplication        : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-04-21 23:47:19.495  INFO 3840 --- [restartedMain] com.leekejin.blog.BlogApplication        : The following profiles are active: dev
+2020-04-21 23:47:19.785  INFO 3840 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Kevin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-21 23:47:19.786  INFO 3840 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-21 23:47:19.786  INFO 3840 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-21 23:47:21.764  INFO 3840 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-21 23:47:21.791  INFO 3840 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 JPA repository interfaces.
+2020-04-21 23:47:23.481  INFO 3840 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-04-21 23:47:23.581  INFO 3840 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-21 23:47:23.592  INFO 3840 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-21 23:47:24.262  INFO 3840 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-21 23:47:24.264  INFO 3840 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4477 ms
+2020-04-21 23:47:25.240  INFO 3840 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-21 23:47:26.501  INFO 3840 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-21 23:47:26.554  INFO 3840 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-21 23:47:26.688  INFO 3840 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-21 23:47:27.809  INFO 3840 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-21 23:47:28.375  INFO 3840 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-21 23:47:28.854  INFO 3840 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-21 23:47:28.892  INFO 3840 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-21 23:47:30.236  WARN 3840 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-21 23:47:30.809  INFO 3840 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-21 23:47:30.978  INFO 3840 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-21 23:47:31.773  INFO 3840 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-21 23:47:31.851  INFO 3840 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2020-04-21 23:47:31.855  INFO 3840 --- [restartedMain] com.leekejin.blog.BlogApplication        : Started BlogApplication in 13.879 seconds (JVM running for 22.198)
+2020-04-21 23:49:48.331  INFO 3840 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-21 23:49:48.332  INFO 3840 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-21 23:49:48.351  INFO 3840 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2020-04-21 23:49:52.153 DEBUG 3840 --- [http-nio-8082-exec-2] c.l.b.d.U.queryByUsernameAndPassword     : ==>  Preparing: select * from blog.t_user where username = ? and password = ?; 
+2020-04-21 23:49:52.181 DEBUG 3840 --- [http-nio-8082-exec-2] c.l.b.d.U.queryByUsernameAndPassword     : ==> Parameters: leekejin(String), 6447831(String)
+2020-04-21 23:49:52.446 DEBUG 3840 --- [http-nio-8082-exec-2] c.l.b.d.U.queryByUsernameAndPassword     : <==      Total: 1
+2020-04-21 23:49:59.175 DEBUG 3840 --- [http-nio-8082-exec-6] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:49:59.175 DEBUG 3840 --- [http-nio-8082-exec-6] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:49:59.177 DEBUG 3840 --- [http-nio-8082-exec-6] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:49:59.235 DEBUG 3840 --- [http-nio-8082-exec-6] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:49:59.237 DEBUG 3840 --- [http-nio-8082-exec-6] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:49:59.241 DEBUG 3840 --- [http-nio-8082-exec-6] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:49:59.257 DEBUG 3840 --- [http-nio-8082-exec-6] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:49:59.258 DEBUG 3840 --- [http-nio-8082-exec-6] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:49:59.261 DEBUG 3840 --- [http-nio-8082-exec-6] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:50:03.031 DEBUG 3840 --- [http-nio-8082-exec-10] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:50:03.032 DEBUG 3840 --- [http-nio-8082-exec-10] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:50:03.037 DEBUG 3840 --- [http-nio-8082-exec-10] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:50:03.041 DEBUG 3840 --- [http-nio-8082-exec-10] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:50:03.043 DEBUG 3840 --- [http-nio-8082-exec-10] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:50:03.049 DEBUG 3840 --- [http-nio-8082-exec-10] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:53:54.480 DEBUG 3840 --- [http-nio-8082-exec-6] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:53:54.482 DEBUG 3840 --- [http-nio-8082-exec-6] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:53:54.485 DEBUG 3840 --- [http-nio-8082-exec-6] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:53:54.492 DEBUG 3840 --- [http-nio-8082-exec-6] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:53:54.492 DEBUG 3840 --- [http-nio-8082-exec-6] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:53:54.495 DEBUG 3840 --- [http-nio-8082-exec-6] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:55:03.038  INFO 11948 --- [restartedMain] com.leekejin.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ANKEUSD with PID 11948 (D:\MyProject\blog\target\classes started by Kevin in D:\MyProject\blog)
+2020-04-21 23:55:03.043 DEBUG 11948 --- [restartedMain] com.leekejin.blog.BlogApplication        : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-04-21 23:55:03.043  INFO 11948 --- [restartedMain] com.leekejin.blog.BlogApplication        : The following profiles are active: dev
+2020-04-21 23:55:03.128  INFO 11948 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Kevin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-21 23:55:03.128  INFO 11948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-21 23:55:03.129  INFO 11948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-21 23:55:04.372  INFO 11948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-21 23:55:04.420  INFO 11948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32ms. Found 0 JPA repository interfaces.
+2020-04-21 23:55:05.832  INFO 11948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-04-21 23:55:05.847  INFO 11948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-21 23:55:05.847  INFO 11948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-21 23:55:06.126  INFO 11948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-21 23:55:06.128  INFO 11948 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2998 ms
+2020-04-21 23:55:06.449  INFO 11948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-21 23:55:07.461  INFO 11948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-21 23:55:07.515  INFO 11948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-21 23:55:07.612  INFO 11948 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-21 23:55:07.818  INFO 11948 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-21 23:55:07.956  INFO 11948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-21 23:55:08.200  INFO 11948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-21 23:55:08.211  INFO 11948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-21 23:55:08.786  WARN 11948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-21 23:55:09.162  INFO 11948 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-21 23:55:09.299  INFO 11948 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-21 23:55:10.094  INFO 11948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-21 23:55:10.168  INFO 11948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2020-04-21 23:55:10.172  INFO 11948 --- [restartedMain] com.leekejin.blog.BlogApplication        : Started BlogApplication in 8.501 seconds (JVM running for 12.484)
+2020-04-21 23:55:45.256  INFO 11948 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-21 23:55:45.257  INFO 11948 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-21 23:55:45.274  INFO 11948 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-04-21 23:55:47.925 DEBUG 11948 --- [http-nio-8082-exec-1] c.l.b.d.U.queryByUsernameAndPassword     : ==>  Preparing: select * from blog.t_user where username = ? and password = ?; 
+2020-04-21 23:55:47.950 DEBUG 11948 --- [http-nio-8082-exec-1] c.l.b.d.U.queryByUsernameAndPassword     : ==> Parameters: leekejin(String), 6447831(String)
+2020-04-21 23:55:48.209 DEBUG 11948 --- [http-nio-8082-exec-1] c.l.b.d.U.queryByUsernameAndPassword     : <==      Total: 1
+2020-04-21 23:55:50.197 DEBUG 11948 --- [http-nio-8082-exec-3] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog 
+2020-04-21 23:55:50.198 DEBUG 11948 --- [http-nio-8082-exec-3] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : ==> Parameters: 
+2020-04-21 23:55:50.200 DEBUG 11948 --- [http-nio-8082-exec-3] c.l.blog.dao.BlogDao.getAllBlogs_COUNT   : <==      Total: 1
+2020-04-21 23:55:50.231 DEBUG 11948 --- [http-nio-8082-exec-3] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:55:50.231 DEBUG 11948 --- [http-nio-8082-exec-3] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:55:50.235 DEBUG 11948 --- [http-nio-8082-exec-3] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:55:50.244 DEBUG 11948 --- [http-nio-8082-exec-3] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:55:50.245 DEBUG 11948 --- [http-nio-8082-exec-3] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:55:50.247 DEBUG 11948 --- [http-nio-8082-exec-3] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11
+2020-04-21 23:55:51.651 DEBUG 11948 --- [http-nio-8082-exec-4] c.leekejin.blog.dao.TypeDao.getAllType   : ==>  Preparing: select * from t_type 
+2020-04-21 23:55:51.651 DEBUG 11948 --- [http-nio-8082-exec-4] c.leekejin.blog.dao.TypeDao.getAllType   : ==> Parameters: 
+2020-04-21 23:55:51.656 DEBUG 11948 --- [http-nio-8082-exec-4] c.leekejin.blog.dao.TypeDao.getAllType   : <==      Total: 13
+2020-04-21 23:55:51.659 DEBUG 11948 --- [http-nio-8082-exec-4] com.leekejin.blog.dao.TagDao.getAllTags  : ==>  Preparing: select * from t_tag 
+2020-04-21 23:55:51.659 DEBUG 11948 --- [http-nio-8082-exec-4] com.leekejin.blog.dao.TagDao.getAllTags  : ==> Parameters: 
+2020-04-21 23:55:51.662 DEBUG 11948 --- [http-nio-8082-exec-4] com.leekejin.blog.dao.TagDao.getAllTags  : <==      Total: 11

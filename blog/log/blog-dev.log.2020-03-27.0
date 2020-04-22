@@ -2139,7 +2139,7 @@ java.lang.ArithmeticException: / by zero
 2020-03-27 13:26:54.652  INFO 9972 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
 2020-03-27 13:26:54.690 ERROR 9972 --- [http-nio-8082-exec-1] c.l.b.h.ControllerExceptionHandler       : Request : URL http://localhost:8082/, Exception : {}
 
-com.leekejin.blog.NotFoundException: blog not found!
+com.leekejin.blog.exceptions.NotFoundException: blog not found!
 	at com.leekejin.webtroller.index(IndexController.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -2192,10 +2192,10 @@ com.leekejin.blog.NotFoundException: blog not found!
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2020-03-27 13:26:54.701  WARN 9972 --- [http-nio-8082-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.leekejin.blog.NotFoundException: blog not found!]
+2020-03-27 13:26:54.701  WARN 9972 --- [http-nio-8082-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.leekejin.blog.exceptions.NotFoundException: blog not found!]
 2020-03-27 13:26:56.603 ERROR 9972 --- [http-nio-8082-exec-2] c.l.b.h.ControllerExceptionHandler       : Request : URL http://localhost:8082/, Exception : {}
 
-com.leekejin.blog.NotFoundException: blog not found!
+com.leekejin.blog.exceptions.NotFoundException: blog not found!
 	at com.leekejin.webtroller.index(IndexController.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -2248,10 +2248,10 @@ com.leekejin.blog.NotFoundException: blog not found!
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2020-03-27 13:26:56.604  WARN 9972 --- [http-nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.leekejin.blog.NotFoundException: blog not found!]
+2020-03-27 13:26:56.604  WARN 9972 --- [http-nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.leekejin.blog.exceptions.NotFoundException: blog not found!]
 2020-03-27 13:26:57.273 ERROR 9972 --- [http-nio-8082-exec-3] c.l.b.h.ControllerExceptionHandler       : Request : URL http://localhost:8082/, Exception : {}
 
-com.leekejin.blog.NotFoundException: blog not found!
+com.leekejin.blog.exceptions.NotFoundException: blog not found!
 	at com.leekejin.webtroller.index(IndexController.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -2304,10 +2304,10 @@ com.leekejin.blog.NotFoundException: blog not found!
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2020-03-27 13:26:57.274  WARN 9972 --- [http-nio-8082-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.leekejin.blog.NotFoundException: blog not found!]
+2020-03-27 13:26:57.274  WARN 9972 --- [http-nio-8082-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.leekejin.blog.exceptions.NotFoundException: blog not found!]
 2020-03-27 13:26:57.640 ERROR 9972 --- [http-nio-8082-exec-4] c.l.b.h.ControllerExceptionHandler       : Request : URL http://localhost:8082/, Exception : {}
 
-com.leekejin.blog.NotFoundException: blog not found!
+com.leekejin.blog.exceptions.NotFoundException: blog not found!
 	at com.leekejin.webtroller.index(IndexController.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -2360,10 +2360,10 @@ com.leekejin.blog.NotFoundException: blog not found!
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2020-03-27 13:26:57.642  WARN 9972 --- [http-nio-8082-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.leekejin.blog.NotFoundException: blog not found!]
+2020-03-27 13:26:57.642  WARN 9972 --- [http-nio-8082-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.leekejin.blog.exceptions.NotFoundException: blog not found!]
 2020-03-27 13:26:57.855 ERROR 9972 --- [http-nio-8082-exec-5] c.l.b.h.ControllerExceptionHandler       : Request : URL http://localhost:8082/, Exception : {}
 
-com.leekejin.blog.NotFoundException: blog not found!
+com.leekejin.blog.exceptions.NotFoundException: blog not found!
 	at com.leekejin.webtroller.index(IndexController.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -2416,10 +2416,10 @@ com.leekejin.blog.NotFoundException: blog not found!
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2020-03-27 13:26:57.858  WARN 9972 --- [http-nio-8082-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.leekejin.blog.NotFoundException: blog not found!]
+2020-03-27 13:26:57.858  WARN 9972 --- [http-nio-8082-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.leekejin.blog.exceptions.NotFoundException: blog not found!]
 2020-03-27 13:26:58.057 ERROR 9972 --- [http-nio-8082-exec-6] c.l.b.h.ControllerExceptionHandler       : Request : URL http://localhost:8082/, Exception : {}
 
-com.leekejin.blog.NotFoundException: blog not found!
+com.leekejin.blog.exceptions.NotFoundException: blog not found!
 	at com.leekejin.IndexControllerx(IndexController.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -2472,7 +2472,7 @@ com.leekejin.blog.NotFoundException: blog not found!
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2020-03-27 13:26:58.062  WARN 9972 --- [http-nio-8082-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.leekejin.blog.NotFoundException: blog not found!]
+2020-03-27 13:26:58.062  WARN 9972 --- [http-nio-8082-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.leekejin.blog.exceptions.NotFoundException: blog not found!]
 2020-03-27 13:31:36.588  INFO 4408 --- [restartedMain] com.leekejin.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ANKEUSD with PID 4408 (D:\MyProject\blog\target\classes started by Kevin in D:\MyProject\blog)
 2020-03-27 13:31:36.594 DEBUG 4408 --- [restartedMain] com.leekejin.blog.BlogApplication        : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
 2020-03-27 13:31:36.596  INFO 4408 --- [restartedMain] com.leekejin.blog.BlogApplication        : The following profiles are active: dev
@@ -2494,7 +2494,7 @@ com.leekejin.blog.NotFoundException: blog not found!
 2020-03-27 13:31:49.819  INFO 4408 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
 2020-03-27 13:31:49.878 ERROR 4408 --- [http-nio-8082-exec-1] c.l.b.h.ControllerExceptionHandler       : Request : URL http://localhost:8082/, Exception : {}
 
-com.leekejin.blog.NotFoundException: blog not found!
+com.leekejin.blog.exceptions.NotFoundException: blog not found!
 	at com.leekejin.webtroller.index(IndexController.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -2547,7 +2547,7 @@ com.leekejin.blog.NotFoundException: blog not found!
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2020-03-27 13:31:49.884  WARN 4408 --- [http-nio-8082-exec-1] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [com.leekejin.blog.NotFoundException: blog not found!]
+2020-03-27 13:31:49.884  WARN 4408 --- [http-nio-8082-exec-1] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [com.leekejin.blog.exceptions.NotFoundException: blog not found!]
 2020-03-27 13:54:25.328  INFO 3520 --- [restartedMain] com.leekejin.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ANKEUSD with PID 3520 (D:\MyProject\blog\target\classes started by Kevin in D:\MyProject\blog)
 2020-03-27 13:54:25.336 DEBUG 3520 --- [restartedMain] com.leekejin.blog.BlogApplication        : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
 2020-03-27 13:54:25.336  INFO 3520 --- [restartedMain] com.leekejin.blog.BlogApplication        : The following profiles are active: dev

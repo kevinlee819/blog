@@ -21,10 +21,12 @@ public interface BlogDao {
     List<Blog> getSearchBlog(String query);  // 全局搜索博客
 
     List<Blog> searchAllBlog(Blog blog); // 搜索博客
-
+    List<String> findGroupYear();  //查询所有年份，返回一个集合
     List<Blog> findByYear(String year);
     int saveBlog(Blog blog);
     int updateBlog(Blog blog);
-    int saveBlogAndTag(Long bid, Long tid);
+    int saveBlogAndTag(Long tid, Long bid);
     int deleteBlog(Long id);
+    int deleteBlogAndTag(Long tid, Long bid);
+
 }

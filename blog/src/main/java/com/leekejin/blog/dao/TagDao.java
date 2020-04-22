@@ -19,6 +19,8 @@ public interface TagDao {
 
     List<Tag> getBlogTags();  //博客标签
 
+    List<Tag> getTagsByBlogId(Long bid);
+
     int updateTag(Tag tag);
 
     int deleteTag(Long id);

@@ -18,4 +18,6 @@ public interface TagService {
     int updateTag(Tag tag);
 
     int deleteTag(Long id);
+
+    public List<Tag> getTagByString(String text);
 }
