@@ -14,7 +14,7 @@
 
     <resultMap id="type" type="Type">
         <id property="id" column="tid"/>
-        <result property="name" column="name"/>
+        <result property="name" column="tname"/>
         <collection property="blogs" ofType="Blog">
             <id property="id" column="bid"/>
             <result property="title" column="title"/>

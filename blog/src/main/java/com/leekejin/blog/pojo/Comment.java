@@ -28,4 +28,28 @@ public class Comment {
     //回复评论
     private List<Comment> replyComments = new ArrayList<>();
     private Comment parentComment;
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
+    public Long getBlogId() {
+        return blogId;
+    }
+
+    public void setBlogId(Long blogId) {
+        this.blogId = blogId;
+    }
 }

@@ -11,35 +11,7 @@
 </head>
 <body>
 <!--导航-->
-<nav th:replace="_fragments :: menu(1)" class="ui sticky attached segment my-padding-mini my-shadow ">
-    <div class="ui container">
-        <div class="ui  secondary stackable menu ">
-            <h2 class="ui blue header" style="margin-top:0.1em; margin-bottom: 0.1em;">Lee's Blog</h2>
-            <a href="#" class="item my-mobile-hide mitem"><i class="home icon"></i>首页</a>
-            <a href="#" class="item my-mobile-hide mitem"><i class="folder icon"></i>分类</a>
-            <a href="#" class="item my-mobile-hide mitem"><i class="tags icon"></i>标签</a>
-            <a href="#" class="item my-mobile-hide mitem"><i class="clone icon"></i>归档</a>
-            <!-- <a href="#" class="item my-mobile-hide mitem"><i class="info icon"></i>作者</a> -->
-
-            <div class="right stackable menu my-mobile-hide mitem">
-                <div class="item">
-                    <div class="ui icon transparent input">
-                        <input type="text" placeholder="搜索...">
-                        <i class="search link icon"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="ui buttons my-mobile-hide mitem">
-                <button class="ui  button lightTheme"><i class="icon lightbulb outline"></i></button>
-                <div class="or"></div>
-                <button class="ui  button darkTheme"><i class="icon lightbulb"></i></button>
-            </div>
-        </div>
-    </div>
-    <a href="#" class="ui icon button my-mobile-show togglemenu" style="position: absolute; right: 0;top:0.3em;">
-        <i class="bars icon"></i></a>
-</nav>
-
+<nav th:replace="_fragments :: menu(1)"></nav>
 
 <!--中间内容-->
 <div class="main ">
@@ -49,20 +21,17 @@
 
             <div class="eleven wide column">
                 <!--header-->
-                <div class="ui top attached  segment my-shadow">
+                <div class="ui top  segment my-shadow">
                     <div class="ui middle aligned two column grid">
                         <div class="column">
-                            <h3 class="ui icon header" style="margin-bottom: 0;">
-                                <i class=" book icon"></i>
-                                <div class="content" style="color: rgb(219,40,40);">
-                                    Blogs
-                                </div>
-                            </h3>
+                            <h1 class="ui black header" style="margin-bottom: 0; font-family:FangSong;">
+                                —博客—
+                            </h1>
                         </div>
                         <div class="right aligned column">
-                            <div class="ui red statistic">
-                                <div class="value" th:text="${pageInfo.total}">
-                                x
+                            <div class="ui red small statistic">
+                                <div class="value" th:text="${pageInfo.total}" style="font-family: fangsong;">
+
                                 </div>
                                 <div class="label">
                                     Total
@@ -71,227 +40,50 @@
                         </div>
                     </div>
                 </div>
+
                 <!--body-->
-                <!--卡片形式显示,记得这里以后要更改-->
                 <div class="ui attached segment my-shadow">
-                    <div class="ui  link three stackable cards" style="align-items:center;">
+                    <div class="ui link three stackable cards" style="align-items:center;">
                         <div class="card" th:each="blog : ${pageInfo.list}">
                             <div class="content">
-                                <div class="right floated meta" th:text="|分类: ${blog.type.name}|"></div>
-                                <img class="ui avatar image" src="#" th:src="@{${blog.user.avatar}}">
+                                <div class="right floated meta" th:text="|分类->${blog.type.name}|"></div>
+                                <img class="ui avatar image" src="https://api.uomg.com/api/rand.avatar?sort=女&format=images" th:src="@{${blog.user.avatar}}">
                             </div>
                             <a class="image" href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">
                                 <img src="../static/images/matthew.png" th:src="@{${blog.firstPicture}}">
                             </a>
                             <div class="content">
-                                <div class="header" th:text="${blog.title}">Matt Giampietro</div>
-                                <div class="meta">
-                                    <a></a>
-                                </div>
-                                <div class="description" th:text="|${blog.description}...|">
-                                    Matthew is an interior designer living in New York.
-                                </div>
+                                <div class="header" th:text="${blog.title}"></div>
+                                <div class="description" th:text="|${blog.description}...|"></div>
                             </div>
                             <div class="extra content">
-                                <span class="right floated" th:text="${#dates.format(blog.updateTime, 'yyyy-MM-dd')}">
-                                    Joined in 2013
-                                </span>
+                                <span class="right floated" th:text="${#dates.format(blog.updateTime, 'yyyy-MM-dd')}"></span>
                                 <i class="eye icon"></i>
-                                <span th:text="${blog.views}">
-                                    75
-                                </span>
+                                <span th:text="${blog.views}"></span>
                             </div>
                         </div>
-
-                        <!--<div class=" card">-->
-                            <!--<a class="image" href="#">-->
-                                <!--<img src="../static/images/molly.png" th:href="@{/images/molly.png}">-->
-                            <!--</a>-->
-                            <!--<div class="content">-->
-                                <!--<div class="header">Molly</div>-->
-                                <!--<div class="meta">-->
-                                    <!--<span class="date">Coworker</span>-->
-                                <!--</div>-->
-                                <!--<div class="description">-->
-                                    <!--Molly is a personal assistant living in Paris.-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="extra content">-->
-                                        <!--<span class="right floated">-->
-                                          <!--Joined in 2011-->
-                                        <!--</span>-->
-                                <!--<span>-->
-                                          <!--<i class="eye icon"></i>-->
-                                          <!--35 -->
-                                        <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-
-                        <!--<div class=" card">-->
-                            <!--<a class="image" href="#">-->
-                                <!--<img src="../static/images/elyse.png">-->
-                            <!--</a>-->
-                            <!--<div class="content">-->
-                                <!--<div class="header">Elyse</div>-->
-                                <!--<div class="meta">-->
-                                    <!--<a>Coworker</a>-->
-                                <!--</div>-->
-                                <!--<div class="description">-->
-                                    <!--Elyse is a copywriter working in New York.-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="extra content">-->
-                                            <!--<span class="right floated">-->
-                                                <!--Joined in 2014-->
-                                            <!--</span>-->
-                                <!--<span>-->
-                                            <!--<i class="eye icon"></i>-->
-                                            <!--151 -->
-                                            <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-
-
-                        <!--<div class=" card">-->
-                            <!--<a class="image" href="#">-->
-                                <!--<img src="../static/images/moon.jpg">-->
-                            <!--</a>-->
-                            <!--<div class="content">-->
-                                <!--<div class="header">Moon</div>-->
-                                <!--<div class="meta">-->
-                                    <!--<a>Coworker</a>-->
-                                <!--</div>-->
-                                <!--<div class="description">-->
-                                    <!--Elyse is a copywriter working in New York.-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="extra content">-->
-                                            <!--<span class="right floated">-->
-                                                <!--Joined in 2020-->
-                                            <!--</span>-->
-                                <!--<span>-->
-                                            <!--<i class="eye icon"></i>-->
-                                            <!--151 -->
-                                            <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-
-                        <!--<div class=" card">-->
-                            <!--<a class="image" href="#">-->
-                                <!--<img src="../static/images/girl.jpg">-->
-                            <!--</a>-->
-                            <!--<div class="content">-->
-                                <!--<div class="header">Gril</div>-->
-                                <!--<div class="meta">-->
-                                    <!--<a>Coworker</a>-->
-                                <!--</div>-->
-                                <!--<div class="description">-->
-                                    <!--Elyse is a copywriter working in New York.-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="extra content">-->
-                                            <!--<span class="right floated">-->
-                                                <!--Joined in 2020-->
-                                            <!--</span>-->
-                                <!--<span>-->
-                                            <!--<i class="eye icon"></i>-->
-                                            <!--151 -->
-                                            <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-
-                        <!--<div class=" card">-->
-                            <!--<a class="image" href="#">-->
-                                <!--<img src="../static/images/matthew.png">-->
-                            <!--</a>-->
-                            <!--<div class="content">-->
-                                <!--<div class="header">Matt Giampietro</div>-->
-                                <!--<div class="meta">-->
-                                    <!--<a></a>-->
-                                <!--</div>-->
-                                <!--<div class="description">-->
-                                    <!--Matthew is an interior designer living in New York.-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="extra content">-->
-                                            <!--<span class="right floated">-->
-                                              <!--Joined in 2013-->
-                                            <!--</span>-->
-                                <!--<span>-->
-                                              <!--<i class="eye icon"></i>-->
-                                              <!--75 -->
-                                            <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-
-                        <!--<div class=" card">-->
-                            <!--<a class="image" href="#">-->
-                                <!--<img src="../static/images/molly.png">-->
-                            <!--</a>-->
-                            <!--<div class="content">-->
-                                <!--<div class="header">Molly</div>-->
-                                <!--<div class="meta">-->
-                                    <!--<span class="date">Coworker</span>-->
-                                <!--</div>-->
-                                <!--<div class="description">-->
-                                    <!--Molly is a personal assistant living in Paris.-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="extra content">-->
-                                            <!--<span class="right floated">-->
-                                              <!--Joined in 2011-->
-                                            <!--</span>-->
-                                <!--<span>-->
-                                              <!--<i class="eye icon"></i>-->
-                                              <!--35 -->
-                                            <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-
-                        <!--<div class=" card">-->
-                            <!--<a class="image" href="#">-->
-                                <!--<img src="../static/images/elyse.png">-->
-                            <!--</a>-->
-                            <!--<div class="content">-->
-                                <!--<div class="header">Elyse</div>-->
-                                <!--<div class="meta">-->
-                                    <!--<a>Coworker</a>-->
-                                <!--</div>-->
-                                <!--<div class="description">-->
-                                    <!--Elyse is a copywriter working in New York.-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="extra content">-->
-                                                <!--<span class="right floated">-->
-                                                    <!--Joined in 2014-->
-                                                <!--</span>-->
-                                <!--<span>-->
-                                                <!--<i class="eye icon"></i>-->
-                                                <!--151 -->
-                                                <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-
                     </div><!--cards end-->
                 </div>
                 <!--footer-->
                 <div class="ui attached segment my-shadow">
                     <div class="ui middle aligned two column  grid">
                         <div class="column">
-                            <button class="ui labeled icon blue button">
+                            <a th:href="@{/(pageNum=${pageInfo.hasPreviousPage}?${pageInfo.prePage}:1)}" class="ui labeled icon blue button">
                                 <i class="left arrow icon"></i>
                                 Prev
-                            </button>
+                            </a>
                         </div>
                         <div class="right aligned column">
-                            <button class="ui right labeled icon blue button">
+                            <a th:href="@{/(pageNum=${pageInfo.hasNextPage}?${pageInfo.nextPage}:${pageInfo.pages})}" class="ui right labeled icon blue button">
                                 <i class="right arrow icon"></i>
                                 Next
-                            </button>
+                            </a>
                         </div>
                     </div>
+                    <div class="ui secondary segment m-inline-block">
+                        <p >当前第<span th:text="${pageInfo.pageNum}"></span>页, 总<span th:text="${pageInfo.pages}"></span>页, 共<span th:text="${pageInfo.total}"></span>条记录</p>
+                    </div>
                 </div>
-
             </div>
 
 
@@ -303,26 +95,15 @@
                                 <i class="folder icon"></i>分类
                             </div>
                             <div class="right aligned column">
-                                <a href="#" target="_blank">more</a>
+                                <a href="#" th:href="@{types/-1}" target="_blank" class="ui tiny blue header">more</a>
                             </div>
                         </div>
                     </div>
                     <div class="ui segment">
                         <div class="ui secondary fluid vertical stackable menu ">
-                            <a href="#" class="item">前端
-                                <div class="ui  label">11</div>
-                            </a>
-                            <a href="#" class="item">后端
-                                <div class="ui  label">15</div>
-                            </a>
-                            <a href="#" class="item">机器学习
-                                <div class="ui  label">21</div>
-                            </a>
-                            <a href="#" class="item">算法
-                                <div class="ui  label">2</div>
-                            </a>
-                            <a href="#" class="item">编程语言
-                                <div class="ui  label">6</div>
+                            <a href="#" th:href="@{/types/{id}(id=${type.id})}" class="item" th:each="type: ${types}">
+                                <span class="ui teal tiny header" th:text="${type.name}"></span>
+                                <div class="ui label" th:text="${#arrays.length(type.blogs)}">11</div>
                             </a>
                         </div>
                     </div>
@@ -335,26 +116,15 @@
                                 <i class="tags icon"></i>标签
                             </div>
                             <div class="right aligned column">
-                                <a href="#" target="_blank">more</a>
+                                <a href="#" th:href="@{tags/-1}" target="_blank" class="ui tiny blue header">more</a>
                             </div>
                         </div>
                     </div>
                     <div class="ui segment">
                         <div class="ui tag labels">
-                            <a href="#" target="_blank" class="ui teal label">Java
-                                <div class="detail">8</div>
-                            </a>
-                            <a href="#" target="_blank" class="ui teal label">Java
-                                <div class="detail">8</div>
-                            </a>
-                            <a href="#" target="_blank" class="ui teal label">PHP
-                                <div class="detail">12</div>
-                            </a>
-                            <a href="#" target="_blank" class="ui teal label">C++
-                                <div class="detail">14</div>
-                            </a>
-                            <a href="#" target="_blank" class="ui teal label">Python
-                                <div class="detail">5</div>
+                            <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" target="_blank" th:each="tag : ${tags}" class="ui teal label">
+                                <span th:text="${tag.name}"></span>
+                                <div class="detail" th:text="${#arrays.length(tag.blogs)}"></div>
                             </a>
                         </div>
                     </div>
@@ -367,12 +137,7 @@
                     </div>
                     <div class="ui segment">
                         <div class="ui secondary fluid vertical stackable menu">
-                            <a href="#" class="item">前端</a>
-                            <a href="#" class="item">后端</a>
-                            <a href="#" class="item">机器学习</a>
-                            <a href="#" class="item">编译技术</a>
-                            <a href="#" class="item">算法</a>
-                            <a href="#" class="item">嵌入式</a>
+                            <a href="#" class="item ui teal tiny header" th:each="recommendBlog : ${recommendBlogs}" th:href="@{/blog/{id}(id=${recommendBlog.id})}" th:text="${recommendBlog.title}">前端</a>
                         </div>
                     </div>
                 </div>
@@ -410,35 +175,7 @@
 
 
 <!--页脚-->
-<footer class="ui vertical segment my-shadow-up ">
-    <div class="ui center aligned container ">
-        <div class="ui divided stackable  grid">
-            <div class="five wide column">
-                <div class="ui large header">Contact me</div>
-                <div class="ui link list">
-                    <p class="item"><i class="mail icon"></i> Email:leekejin@foxmail.com</p>
-                    <p class="item"><i class="qq icon"></i>QQ:1422784284</p>
-                </div>
-            </div>
-            <div class="five wide column ">
-                <div class="ui large header">Reward me</div>
-                <img src="../static/images/alipay.png" th:src="@{/images/alipay.png}" class="eight wide" alt="Alipay"
-                     style="width: 10em;">
-                <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" class="eight wide" alt="Wechat"
-                     style="width: 10em;">
-            </div>
-            <div class="six wide column">
-                <div class="ui large header">About me</div>
-                <p class="my-text-opcity">Welcome to this website! This is a personal Blog developed by Leekejin.
-                    I hope you can get something form here. If you have any questions,just contact me.
-                    Have fun!
-                </p>
-            </div>
-        </div>
-        <div class="ui section divider"></div>
-        <p class="my-text-opcity">Copyright © 2020 by Leekejin</p>
-    </div>
-</footer>
+<footer th:replace="_fragments :: footer"></footer>
 
 <!--/*/<th:block th:replace="_fragments :: script">/*/-->
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>

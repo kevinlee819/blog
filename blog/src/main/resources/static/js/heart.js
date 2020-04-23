@@ -80,8 +80,12 @@ $('.togglemenu').click(function () {
 $('.darkTheme').click(function () {
     $('.ui').addClass("inverted");
     $('.card').attr("style", "background-color: dimgray;");
-    $('.card >.content').attr("style", "background-color: dimgray;");
-    $(".main").attr("style", "background: url(\"../static/images/bgdark.png\");");
+    $('.card >.content').attr("style", "background-color:#323232;");
+    $('.card >.content>.header').attr("style","color: white");
+    $('.card >.content>.description').attr("style","color: lightgray");
+    $('.card >.content>.meta').attr("style","color: lightgray");
+    $('.card >.content>span').attr("style","color: dimgray");
+    $(".main").attr("style", "background: url(\"../images/bgdark.png\");");
     $(".field>input").attr("style", "background-color:dimgrey;");
     $(".field>textarea").attr("style", "background-color: dimgray;");
     $(".comment>.content>.author").attr("style", "color:lightgrey;");
@@ -94,7 +98,11 @@ $('.lightTheme').click(function () {
     $('.card').removeAttr("style");
     $('.card >.content').removeAttr("style");
     $(".main").removeAttr("style");
-    //attr("style","background: url(\"./images/bg.png\");");
+    $('.card >.content').removeAttr("style");
+    $('.card >.content>.header').removeAttr("style");
+    $('.card >.content>.description').removeAttr("style");
+    $('.card >.content>.meta').removeAttr("style");
+    $('.card >.content>span').removeAttr("style");
     $(".field>input").removeAttr("style");
     $(".field>textarea").removeAttr("style");
     $(".comment>.content>.author").removeAttr("style");
