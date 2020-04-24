@@ -12,10 +12,14 @@ import java.util.List;
 @Repository
 public interface CommentDao {
     //根据创建时间倒序来排
-    List<Comment> findByBlogIdAndParentCommentNull(@Param("blogId") Long blogId, @Param("blogParentId") Long blogParentId);
+    List<Comment> findByBlogIdAndParentCommentNull(@Param("blogId") Long blogId, @Param("CommentParentId") Long CommentParentId);
 
     //查询父级对象
     Comment findByParentCommentId(@Param("parentCommentId")Long parentcommentid);
+
+    List<Comment> findByAncesterCommentId(@Param("ancesterCommentId")Long ancesterCommentId);
+
+    Comment findById(Long id);
 
     //添加一个评论
     int saveComment(Comment comment);

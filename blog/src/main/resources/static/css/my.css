@@ -35,6 +35,8 @@
 .my-margin-mini {
     margin-top: 0.5em !important;
     margin-bottom: 0.5em !important;
+    margin-left: 1em !important;
+    margin-right: 1em !important;
 }
 
 .my-margin-small {
@@ -164,4 +166,31 @@ nav {
 .m-container-small {
     max-width: 60em !important;
     margin: auto !important;
+}
+
+/*评论区可编辑div样式*/
+#commentEditor{
+    height: 130px !important;
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset !important;
+    color: #555 !important;
+    display: block !important;
+    font-size: 14px !important;
+    line-height: 1.42857 !important;
+    padding: 6px 12px !important;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/*可编辑div实现placeholder效果*/
+#commentEditor:empty:before {
+    content: attr(data-placeholder) !important;
+    color:#bbb !important;
+}
+#commentEditor:focus:before {
+    content:none !important;
 }

@@ -17,13 +17,13 @@ public class Comment {
     private String email;
     private String content;
 
-    //头像
-    private String avatar;
+    private boolean adminComment;  //是否为管理员评论
+    private String avatar; //头像
     private Date createTime;
 
     private Long blogId;
     private Long parentCommentId;
-    private String parentNickname;
+    private Long ancesterCommentId;
 
     //回复评论
     private List<Comment> replyComments = new ArrayList<>();
@@ -51,5 +51,69 @@ public class Comment {
 
     public void setBlogId(Long blogId) {
         this.blogId = blogId;
+    }
+
+    public Long getParentCommentId() {
+        return parentCommentId;
+    }
+
+    public void setParentCommentId(Long parentCommentId) {
+        this.parentCommentId = parentCommentId;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Comment getParentComment() {
+        return parentComment;
+    }
+
+    public void setParentComment(Comment parentComment) {
+        this.parentComment = parentComment;
+    }
+
+    public boolean isAdminComment() {
+        return adminComment;
+    }
+
+    public void setAdminComment(boolean adminComment) {
+        this.adminComment = adminComment;
+    }
+
+    public Long getAncesterCommentId() {
+        return ancesterCommentId;
+    }
+
+    public void setAncesterCommentId(Long ancesterCommentId) {
+        this.ancesterCommentId = ancesterCommentId;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public List<Comment> getReplyComments() {
+        return replyComments;
+    }
+
+    public void setReplyComments(List<Comment> replyComments) {
+        this.replyComments = replyComments;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

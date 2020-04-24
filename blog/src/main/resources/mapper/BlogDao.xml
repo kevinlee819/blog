@@ -106,7 +106,9 @@
     </select>
 
     <select id="getRecommendBlog" resultMap="blog">
-        select id, title, recommend from t_blog order by update_time desc;
+        select id, title, recommend from t_blog
+        where recommend = "1"
+        order by update_time desc;
     </select>
 
     <select id="getSearchBlog" resultMap="blog">

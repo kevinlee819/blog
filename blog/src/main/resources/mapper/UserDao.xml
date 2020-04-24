@@ -9,4 +9,14 @@
         where username = #{username} and password = #{password};
     </select>
 
+    <insert id="createUser">
+        insert into t_user(nickname, email, avatar, type, create_time, update_time)
+        values (#{nickname}, #{email}, #{avatar}, #{type}, #{createTime}, #{updateTime})
+    </insert>
+
+    <select id="searchUser" resultType="User">
+        select * from t_user
+        where t_user.email = #{email}
+    </select>
+
 </mapper>

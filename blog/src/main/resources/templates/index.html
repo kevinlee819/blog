@@ -46,7 +46,7 @@
                     <div class="ui link three stackable cards" style="align-items:center;">
                         <div class="card" th:each="blog : ${pageInfo.list}">
                             <div class="content">
-                                <div class="right floated meta" th:text="|分类->${blog.type.name}|"></div>
+                                <div class="right floated meta" th:text="|分类 -> ${blog.type.name}|"></div>
                                 <img class="ui avatar image" src="https://api.uomg.com/api/rand.avatar?sort=女&format=images" th:src="@{${blog.user.avatar}}">
                             </div>
                             <a class="image" href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">

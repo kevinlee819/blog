@@ -12,24 +12,29 @@
         <result property="createTime" column="create_time"/>
         <result property="blogId" column="blog_id"/>
         <result property="parentCommentId" column="parent_comment_id"/>
-        <association property="blog" javaType="Blog">
-            <id property="id" column="id"/>
-        </association>
+        <result property="ancesterCommentId" column="ancester_comment_id"/>
+        <!--<association property="blog" javaType="Blog">-->
+            <!--<id property="id" column="id"/>-->
+        <!--</association>-->
     </resultMap>
 
     <select id="findByBlogIdAndParentCommentNull" resultMap="comment">
         select c.id cid,c.nickname,c.email,c.content,c.avatar,
-        c.create_time,c.blog_id,c.parent_comment_id
-        from t_comment c, t_blog b
-        where c.blog_id = b.id and c.blog_id = #{blogId} and c.parent_comment_id = #{blogParentId}
+        c.create_time,c.parent_comment_id
+        from t_comment c
+        where c.blog_id = #{blogId} and c.parent_comment_id = #{CommentParentId}
         order by c.create_time desc
+    </select>
+
+    <select id="findById" resultType="Comment">
+        select * from t_comment where id = #{id}
     </select>
 
     <insert id="saveComment" parameterType="Comment">
         insert into blog.t_comment (nickname,email,content,avatar,
-                                    create_time,blog_id,parent_comment_id)
+                                    create_time,blog_id,parent_comment_id,ancester_comment_id)
         values (#{nickname},#{email},#{content},#{avatar},
-                #{createTime},#{blogId},#{parentCommentId});
+                #{createTime},#{blogId},#{parentCommentId},#{ancesterCommentId});
     </insert>
 
     <select id="findByParentCommentId" resultMap="comment">
@@ -37,6 +42,13 @@
                c.create_time, c.blog_id, c.parent_comment_id
         from t_comment c
         where c.parent_comment_id = #{parentCommentId}
+    </select>
+
+    <select id="findByAncesterCommentId" resultMap="comment">
+        select c.id cid, c.nickname, c.email, c.content, c.avatar,
+               c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id
+        from t_comment c
+        where c.ancester_comment_id = #{ancesterCommentId} order by c.create_time desc
     </select>
     
     <delete id="deleteOneComment">

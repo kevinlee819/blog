@@ -7,6 +7,8 @@ import com.leekejin.blog.util.MD5Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
+
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired
@@ -18,4 +20,21 @@ public class UserServiceImpl implements UserService {
         return user;
     }
     //MD5Utils.code(password)
+
+    @Override
+    public int createUser(String nickname, String email, Integer type, String avatar){
+        User existUser = searchUser(email);
+        if (existUser != null){
+            return 0;
+        }
+        Date createTime = new Date();
+        Date updateTime = new Date();
+        return userDao.createUser(nickname, email,type,avatar,createTime,updateTime);
+    }
+
+    @Override
+    public User searchUser(String email){
+        return userDao.searchUser(email);
+    }
+
 }

@@ -18,7 +18,7 @@ public class User {
     private String password;
     private String email;
     private String avatar;
-    private Integer type;
+    private Integer type; //1为管理员，2为游客
     private Date createTime;
     private Date updateTime;
 
@@ -30,5 +30,29 @@ public class User {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Integer getType() {
+        return type;
+    }
+
+    public void setType(Integer type) {
+        this.type = type;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
     }
 }
