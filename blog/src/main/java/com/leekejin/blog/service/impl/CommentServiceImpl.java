@@ -6,6 +6,7 @@ import com.leekejin.blog.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.Date;
 import java.util.List;
 
@@ -14,12 +15,14 @@ public class CommentServiceImpl implements CommentService {
     @Autowired
     public CommentDao commentDao;
 
+    @Transactional
     @Override
     public List<Comment> getCommentByBlogId(Long blogId) { // 这里获得的是父ID == -1的评论
         List<Comment> comments = commentDao.findByBlogIdAndParentCommentNull(blogId, Long.parseLong("-1"));
         return comments;
     }
 
+    @Transactional
     @Override
     public int saveComment(Comment comment) {
 //        //获得父id
@@ -37,6 +40,7 @@ public class CommentServiceImpl implements CommentService {
         return commentDao.saveComment(comment);
     }
 
+    @Transactional
     @Override
     public List<Comment> listCommentByBlogId(Long blogId){
         List<Comment> ancesterComments = getCommentByBlogId(blogId);

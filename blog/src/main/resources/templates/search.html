@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
+    <title>搜索结果</title>
+</head>
+<body>
+<nav th:replace="_fragments :: menu(0)" class="ui sticky attached segment my-padding-mini my-shadow ">
+</nav>
+
+<div class="my-padding-big main">
+    <div class="ui container">
+        <div class="ui top attached padded segment my-shadow" style="z-index: 1!important;" th:each="blog : ${pageInfo.list}">
+            <div class="ui middle aligned mobile reversed stackable grid">
+                <div class="sixteen wide column">
+                    <h3 class="ui header" ><a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black" th:text="${blog.title}"></a></h3>
+                    <p class="m-text" th:text="|${blog.description}...|"></p>
+                    <div class="ui grid">
+                        <div class="eleven wide column">
+                            <div class="ui mini horizontal link list">
+                                <div class="item">
+                                    <img  th:src="@{${blog.user.avatar}}" alt="" class="ui avatar image">
+                                    <div class="content"><a href="#" class="header" th:text="${blog.user.nickname}" ></a></div>
+                                </div>
+                                <div class="item">
+                                    <i class="calendar icon"></i><span th:text="${#dates.format(blog.updateTime, 'yyyy-MM-dd')}"></span>
+                                </div>
+                                <div class="item">
+                                    <i class="eye icon"></i> <span th:text="${blog.views}"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right aligned five wide column">
+                            <a href="#" target="_blank" class="ui teal  label " th:text="${blog.type.name}"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div th:if="${pageInfo.total} == 0" class="ui segment my-shadow">
+            <div  class="ui center aligned middle grey header" style="font-family: Courier, 'Courier New', monospace">没有搜到任何东西, 请检查您的输入</div>
+        </div>
+        <div class="ui segment my-shadow">
+            <div class="ui middle aligned two column grid">
+                <div class="column">
+                    <a th:href="@{/(pageNum=${pageInfo.hasPreviousPage}?${pageInfo.prePage}:1)}" class="ui labeled icon blue button">
+                        <i class="left arrow icon"></i>
+                        Prev
+                    </a>
+                </div>
+                <div class="right aligned column">
+                    <a th:href="@{/(pageNum=${pageInfo.hasNextPage}?${pageInfo.nextPage}:${pageInfo.pages})}" class="ui right labeled icon blue button">
+                        <i class="right arrow icon"></i>
+                        Next
+                    </a>
+                </div>
+            </div>
+            <div class="ui secondary segment m-inline-block">
+                <p >当前第<span th:text="${pageInfo.pageNum}"></span>页, 总<span th:text="${pageInfo.pages}"></span>页, 共<span th:text="${pageInfo.total}"></span>条记录</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer th:replace="_fragments::footer"></footer>
+<!--/*/<th:block th:replace="_fragments :: script">/*/-->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="../static/js/heart.js"></script>
+<!--/*/</th:block>/*/-->
+</body>
+</html>

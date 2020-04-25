@@ -17,7 +17,7 @@ public class Comment {
     private String email;
     private String content;
 
-    private boolean adminComment;  //是否为管理员评论
+    private int type;  //1为站长，2为访客
     private String avatar; //头像
     private Date createTime;
 
@@ -77,12 +77,12 @@ public class Comment {
         this.parentComment = parentComment;
     }
 
-    public boolean isAdminComment() {
-        return adminComment;
+    public int getType() {
+        return type;
     }
 
-    public void setAdminComment(boolean adminComment) {
-        this.adminComment = adminComment;
+    public void setType(int type) {
+        this.type = type;
     }
 
     public Long getAncesterCommentId() {

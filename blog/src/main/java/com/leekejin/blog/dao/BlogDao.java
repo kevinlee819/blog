@@ -28,5 +28,6 @@ public interface BlogDao {
     int saveBlogAndTag(Long tid, Long bid);
     int deleteBlog(Long id);
     int deleteBlogAndTag(Long tid, Long bid);
+    int updateViews(Long blogId);
 
 }

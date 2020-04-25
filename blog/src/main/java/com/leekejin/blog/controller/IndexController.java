@@ -51,7 +51,7 @@ public class IndexController {
     public String search(@RequestParam(required = false,defaultValue = "1",value = "pagenum")int pagenum,
                          @RequestParam String query, Model model){
 
-        PageHelper.startPage(pagenum, 5);
+        PageHelper.startPage(pagenum, 10);
         List<Blog> searchBlog = blogService.getSearchBlog(query);
         PageInfo pageInfo = new PageInfo(searchBlog);
         model.addAttribute("pageInfo", pageInfo);

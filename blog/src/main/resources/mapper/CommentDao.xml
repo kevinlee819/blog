@@ -13,6 +13,7 @@
         <result property="blogId" column="blog_id"/>
         <result property="parentCommentId" column="parent_comment_id"/>
         <result property="ancesterCommentId" column="ancester_comment_id"/>
+        <result property="type" column="type"/>
         <!--<association property="blog" javaType="Blog">-->
             <!--<id property="id" column="id"/>-->
         <!--</association>-->
@@ -20,7 +21,7 @@
 
     <select id="findByBlogIdAndParentCommentNull" resultMap="comment">
         select c.id cid,c.nickname,c.email,c.content,c.avatar,
-        c.create_time,c.parent_comment_id
+        c.create_time,c.parent_comment_id,c.type
         from t_comment c
         where c.blog_id = #{blogId} and c.parent_comment_id = #{CommentParentId}
         order by c.create_time desc
@@ -32,21 +33,21 @@
 
     <insert id="saveComment" parameterType="Comment">
         insert into blog.t_comment (nickname,email,content,avatar,
-                                    create_time,blog_id,parent_comment_id,ancester_comment_id)
+                                    create_time,blog_id,parent_comment_id,ancester_comment_id,type)
         values (#{nickname},#{email},#{content},#{avatar},
-                #{createTime},#{blogId},#{parentCommentId},#{ancesterCommentId});
+                #{createTime},#{blogId},#{parentCommentId},#{ancesterCommentId},#{type});
     </insert>
 
     <select id="findByParentCommentId" resultMap="comment">
         select c.id cid, c.nickname, c.email, c.content, c.avatar,
-               c.create_time, c.blog_id, c.parent_comment_id
+               c.create_time, c.blog_id, c.parent_comment_id, c.type
         from t_comment c
         where c.parent_comment_id = #{parentCommentId}
     </select>
 
     <select id="findByAncesterCommentId" resultMap="comment">
         select c.id cid, c.nickname, c.email, c.content, c.avatar,
-               c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id
+               c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id, c.type
         from t_comment c
         where c.ancester_comment_id = #{ancesterCommentId} order by c.create_time desc
     </select>

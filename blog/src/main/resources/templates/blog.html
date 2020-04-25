@@ -18,39 +18,12 @@
 <body style="line-height: 2em!important;">
 <!--导航-->
 <nav th:replace="_fragments :: menu(0)" class="ui sticky attached segment my-padding-mini my-shadow">
-    <div class="ui container">
-        <div class="ui secondary stackable menu ">
-            <h2 class="ui teal header" style="margin-top:0.1em; margin-bottom: 0.1em;">MyBlog</h2>
-            <a href="#" class="item my-mobile-hide mitem"><i class="home icon"></i>首页</a>
-            <a href="#" class="item my-mobile-hide mitem"><i class="folder icon"></i>分类</a>
-            <a href="#" class="item my-mobile-hide mitem"><i class="tags icon"></i>标签</a>
-            <a href="#" class="item my-mobile-hide mitem"><i class="clone icon"></i>归档</a>
-
-            <div class="right stackable menu my-mobile-hide mitem">
-                <div class="item">
-                    <div class="ui icon transparent input">
-                        <input type="text" placeholder="搜索...">
-                        <i class="search link icon"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="ui buttons my-mobile-hide mitem">
-                <button class="ui  button lightTheme"><i class="icon lightbulb outline"></i></button>
-                <div class="or"></div>
-                <button class="ui  button darkTheme"><i class="icon lightbulb"></i></button>
-            </div>
-        </div>
-    </div>
-    <a href="#" class="ui icon button my-mobile-show togglemenu" style="position: absolute; right: 0;top:0.3em;">
-        <i class="bars icon"></i></a>
 </nav>
 
-<div class="my-padding-big main ">
+<div class="my-padding-big main">
     <div class="ui container">
-        <!--左侧-->
-        <div class="ui top attached padded segment my-shadow animated slideInDown" style="z-index: 1!important;">
+        <div class="ui top attached padded segment my-shadow" style="z-index: 1!important;">
             <div class="ui center aligned huge header" th:text="${blog.title}" style="font-size: 3em;">标题测试</div>
-            <div th:text="${blog.id}" style="display: none" id="bid"></div>
             <div class="ui horizontal link list">
                 <div class="ui teal label"><span th:text="${blog.flag}"></span></div>
                 <div class="item"><i class="user icon" style="vertical-align:top"></i><span
@@ -64,12 +37,12 @@
             <h5 class="ui horizontal divider header">
                 <i class="hand spock outline icon"></i> rua
             </h5>
+
             <!--封面图-->
             <img src="../static/images/girl2.jpeg" th:src="@{${blog.firstPicture}}" class="ui fluid rounded image">
+
             <!--正文-->
-            <div class="typo typo-selection content my-padding-middle js-toc-content" th:utext="${blog.content}"
-                 style="font-size: 1.5em; "
-                 id="my-content">
+            <div class="typo typo-selection content my-padding-middle js-toc-content" th:utext="${blog.content}" style="font-size: 1.5em; " id="my-content">
             </div>
             <h5 class="ui horizontal divider header">end</h5>
             <!--标签-->
@@ -99,9 +72,10 @@
 
 
         <!--留言区-->
-        <div id="comment-container" class="ui bottom  segment my-shadow animated slideInUp"
-             th:if="${blog.commentabled}">
+        <div id="comment-container" class="ui bottom  segment my-shadow" th:if="${blog.commentabled}">
             <div th:fragment="commentList">
+                <div class="ui top left attached blue label">留言区</div>
+                <div th:if="${#arrays.isEmpty(comments)}" class="ui center aligned middle grey header" style="font-family: Courier, 'Courier New', monospace">这里空空如也，来留个言吧</div>
                 <!--评论-->
                 <div class="ui comments my-padding-middle">
                     <div class="comment" th:each="comment : ${comments}">
@@ -111,7 +85,7 @@
                         <div class="content">
                             <div class="author" >
                                 <span th:text="${comment.nickname}">Matt</span>
-                                <div class="ui tiny orange label"  style="padding: 0.2em !important;" th:if="${comment.adminComment}==1">站长</div>
+                                <div class="ui tiny orange label"  style="padding: 0.2em !important;" th:if="${comment.type} == 1">站长</div>
                             </div>
                             <div class="metadata">
                                 <span class="date" th:text="${#dates.format(comment.createTime,'yyyy-MM-dd HH:mm')}">Yesterday at 12:30AM</span>
@@ -131,8 +105,8 @@
                                 <div class="content">
                                     <div class="author" >
                                         <span th:text="${reply.nickname}">Matt</span>
-                                        <div class="ui tiny orange label"  style="padding: 0.2em !important;" th:if="${comment.adminComment}==1">站长</div>
-                                        <span th:text="|：@ ${reply.parentComment.nickname}|" style="color: #00B5AD !important;">@ 小白</span>
+                                        <div class="ui tiny orange label"  style="padding: 0.2em !important;" th:if="${reply.type} == 1">站长</div>
+                                        <span th:text="|@ ${reply.parentComment.nickname}|" style="color: #00B5AD !important;">@ 小白</span>
                                     </div>
                                     <div class="metadata">
                                         <span class="date" th:text="${#dates.format(reply.createTime,'yyyy-MM-dd HH:mm')}">Just now</span>
@@ -149,10 +123,10 @@
                     </div>
                 </div>
             </div>
-
         </div>
+
         <!--留言-->
-        <div class="ui bottom  segment my-shadow animated slideInUp" id="comments">
+        <div class="ui bottom  segment my-shadow" id="comments" th:if="${blog.commentabled}">
             <div class="ui form">
                 <input type="hidden" name="blogId" th:value="${blog.id}">
                 <input type="hidden" name="parentCommentId" value="-1">
@@ -161,26 +135,22 @@
                 <div id="commentEditor" name="content" class="field" contenteditable="true"
                      data-placeholder="请输入评论信息..."></div>
 
-                <div class="ui fields basic segment ">
+                <div class="ui fields basic segment">
                     <div class="ui left icon input field my-margin-mini">
                         <input type="text" name="nickname" id="nickname" placeholder="昵称">
                         <i class="user icon"></i>
                     </div>
                     <div class="ui left icon input field my-margin-mini">
                         <input type="text" name="email" id="email" placeholder="邮箱">
-                        <i class="mail icon"></i>
+                        <i class="mail icon"></i> z
                     </div>
 
                     <button id="emojiBtn" type="button" class="ui right floated yellow labeled icon button my-margin-mini">
                         <i class="icon  smile outline"></i>表情</button>
-
                     <button class="ui grey labeled icon button my-margin-mini"  id="clear-btn" type="reset" onclick="clearContent();">
                         <i class="icon trash alternate outline"></i>清空</button>
-
                     <div class="ui teal labeled submit icon button my-margin-mini" id="commentpost-btn" type="button">
                         <i class="icon edit"></i>发布</div>
-
-
                 </div>
             </div>
         </div>
@@ -193,11 +163,9 @@
                 <div class="ui image popup toccontainer  transition hidden"
                      style="width: 15em; text-align: left;">
                     <ol class="js-toc">
-
                     </ol>
                 </div>
                 <a href="#comments" class="ui teal button"><i class="comments outline icon"></i> 留言</a>
-
                 <button class="ui icon button" id="totop"><i class="arrow up icon"></i></button>
             </div>
         </div>
@@ -217,7 +185,7 @@
 <!--/*/</th:block>/*/-->
 <script src="/js/jquery.emoji.js"></script>
 <script src="/js/emoji.list.js"></script>
-<script>
+<script th:inline="javascript">
     /*加载emoji表情*/
     onload = function () {
         $("#commentEditor").emoji({
@@ -246,6 +214,7 @@
     $('#totop').click(function () {
         $(window).scrollTo(0, 500);
     });
+
     tocbot.init({
         // Where to render the table of contents.
         tocSelector: '.js-toc',
@@ -256,6 +225,7 @@
         // For headings inside relative or absolute positioned containers within content.
         hasInnerContainers: true
     });
+
     var waypoint = new Waypoint({
         element: document.getElementById('my-content'),
         handler: function (direction) {
@@ -277,24 +247,31 @@
         $('#commentEditor').empty();
         $("#nickname").val('');
         $("#email").val('');
-    };
+    }
+
     function postData() {
-        $("#comment-container").load(/*[[@{/comments}]]*/ "/comments",{
+        $("#comment-container").load(/*[[@{/comments}]]*/ "",{
             "parentCommentId" : $("[name='parentCommentId']").val(),
             "ancesterCommentId" : $("[name='ancesterCommentId']").val(),
             "blogId" : $("[name='blogId']").val(),
             "nickname": $("[name='nickname']").val(),
             "email"   : $("[name='email']").val(),
-            //"content" : $("[name='content']").val()
             "content" : document.getElementById("commentEditor").innerHTML
         },function (responseTxt, statusTxt, xhr) {
-//        $(window).scrollTo($('#comment-container'),500);
             clearContent();
         });
-    };
+    }
 
     $('#commentpost-btn').click(function () {
         var boo = $('.ui.form').form('validate form');
+        if ($('#commentEditor').text().trim().length == 0) {
+            alert("请在留言框中写点东西吧");
+            boo = false;
+        }
+        if ($('#commentEditor').text().trim().length >= 200) {
+            alert("请将留言内容控制在200个字符内哦");
+            boo = false;
+        }
         if (boo) {
             console.log('校验成功');
             postData();
@@ -308,13 +285,6 @@
     //评论表单验证
     $('.ui.form').form({
         fields: {
-            title: {
-                identifier: 'content',
-                rules: [{
-                    type: 'empty',
-                    prompt: '请输入评论内容'
-                }]
-            },
             content: {
                 identifier: 'nickname',
                 rules: [{
@@ -331,11 +301,9 @@
             }
         }
     });
-    var bid =  document.getElementById("bid").innerHTML;
-    var url = "/comments/" + bid;
 
     $(function () {
-        $("#comment-container").load(/*[[@{/comments/{id}(id=${blog.id})}]]*/url);
+        $("#comment-container").load(/*[[@{/comments/{id}(id=${blog.id})}]]*/"comments/20");
     });
 
     function reply(obj) {

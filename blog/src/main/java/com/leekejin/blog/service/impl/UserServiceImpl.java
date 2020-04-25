@@ -7,6 +7,7 @@ import com.leekejin.blog.util.MD5Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.Date;
 
 @Service
@@ -14,6 +15,7 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
 
+    @Transactional
     @Override
     public User checkUser(String username, String password) {
         User user = userDao.queryByUsernameAndPassword(username, password);
@@ -21,6 +23,7 @@ public class UserServiceImpl implements UserService {
     }
     //MD5Utils.code(password)
 
+    @Transactional
     @Override
     public int createUser(String nickname, String email, Integer type, String avatar){
         User existUser = searchUser(email);
@@ -32,6 +35,7 @@ public class UserServiceImpl implements UserService {
         return userDao.createUser(nickname, email,type,avatar,createTime,updateTime);
     }
 
+    @Transactional
     @Override
     public User searchUser(String email){
         return userDao.searchUser(email);

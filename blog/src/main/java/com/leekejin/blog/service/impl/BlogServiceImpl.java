@@ -10,6 +10,7 @@ import com.leekejin.blog.util.MarkdownUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.*;
 
 @Service
@@ -26,6 +27,7 @@ public class BlogServiceImpl implements BlogService {
         return blogDao.getBlogById(id);
     }
 
+    @Transactional
     @Override
     public Blog getDetailedBlog(Long id) {
         Blog blog = blogDao.getDetailedBlog(id);
@@ -34,19 +36,23 @@ public class BlogServiceImpl implements BlogService {
         }
         String content = blog.getContent();
         blog.setContent(MarkdownUtils.markdownToHtmlExtensions(content));  //将Markdown格式转换成html
+        blogDao.updateViews(blog.getId());
         return blog;
     }
 
+    @Transactional
     @Override
     public List<Blog> getAllBlogs() {
         return blogDao.getAllBlogs();
     }
 
+    @Transactional
     @Override
     public List<Blog> getByTypeId(Long typeId) {
         return blogDao.getByTypeId(typeId);
     }
 
+    @Transactional
     @Override
     public List<Blog> getByTagId(Long tagId) {
         return blogDao.getByTagId(tagId);
@@ -57,16 +63,19 @@ public class BlogServiceImpl implements BlogService {
         return blogDao.getIndexBlog();
     }
 
+    @Transactional
     @Override
     public List<Blog> getAllRecommendBlog() {
         return blogDao.getRecommendBlog();
     }
 
+    @Transactional
     @Override
     public List<Blog> getSearchBlog(String query) {
         return blogDao.getSearchBlog(query);
     }
 
+    @Transactional
     @Override
     public Map<String, List<Blog>> archiveBlog() {
         List<String> years = blogDao.findGroupYear();
@@ -78,11 +87,13 @@ public class BlogServiceImpl implements BlogService {
         return map;
     }
 
+    @Transactional
     @Override
     public int countBlog() {
         return blogDao.getAllBlogs().size();
     }
 
+    @Transactional
     @Override
     public int saveBlog(Blog blog) {
         blog.setCreateTime(new Date());
@@ -100,6 +111,7 @@ public class BlogServiceImpl implements BlogService {
         return 1;
     }
 
+    @Transactional
     @Override
     public int updateBlog(Blog blog) {
         List<Tag> originTags = tagDao.getTagsByBlogId(blog.getId());
@@ -119,11 +131,13 @@ public class BlogServiceImpl implements BlogService {
         return blogDao.updateBlog(blog);
     }
 
+    @Transactional
     @Override
     public int deleteBlog(Long id) {
         return blogDao.deleteBlog(id);
     }
 
+    @Transactional
     @Override
     public List<Blog> searchAllBlog(Blog blog) {
         return blogDao.searchAllBlog(blog);

@@ -43,9 +43,10 @@ public class CommentController {
         if (user != null){   //用户为管理员
             comment.setAvatar(user.getAvatar());
             comment.setNickname(user.getNickname());
-            comment.setAdminComment(true);
+            comment.setType(1);
         }else {
             comment.setAvatar(avatar);
+            comment.setType(2);
         }
         commentService.saveComment(comment);
         return "redirect:/comments/" + blogId;

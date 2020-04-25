@@ -117,7 +117,7 @@
         t.name typename,
         u.nickname, u.avatar
         from t_blog b, t_type t, t_user u
-        where b.type_id = t.id and  u.id = b.user_id and (b.title like #{pattern} or b.content like  #{pattern})
+        where b.type_id = t.id and  u.id = b.user_id and (b.title like #{pattern} or b.content like  #{pattern} or t.name like #{pattern})
         order by b.update_time desc
     </select>
 
@@ -156,6 +156,11 @@
                           title = #{title}, content = #{content}, type_id = #{typeId}, tag_ids = #{tagIds},
                           first_picture = #{firstPicture} , description = #{description} , recommend = #{recommend} ,
                           update_time = #{updateTime}, commentabled = #{commentabled} where id = #{id};
+    </update>
+
+    <update id="updateViews" parameterType="Blog">
+        update t_blog set views = views + 1
+        where id = #{blogId}
     </update>
 
     <!--useGeneratedKeys="true"；使用自增主键获取主键值策略
