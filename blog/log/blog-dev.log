@@ -5152,3 +5152,630 @@ java.lang.IllegalArgumentException: Cannot get array length of null
 2020-04-25 14:15:21.882 DEBUG 14760 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.BlogDao.getAllBlogs  : ==> Parameters: 
 2020-04-25 14:15:21.886 DEBUG 14760 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.BlogDao.getAllBlogs  : <==      Total: 4
 2020-04-25 14:15:21.888  INFO 14760 --- [http-nio-127.0.0.1-8082-exec-1] com.leekejin.blog.aspect.LogAspect       : Result : archive
+2020-04-25 14:29:33.930  INFO 11196 --- [restartedMain] com.leekejin.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ANKEUSD with PID 11196 (D:\MyProject\blog\target\classes started by Kevin in D:\MyProject\blog)
+2020-04-25 14:29:33.940 DEBUG 11196 --- [restartedMain] com.leekejin.blog.BlogApplication        : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-04-25 14:29:33.940  INFO 11196 --- [restartedMain] com.leekejin.blog.BlogApplication        : The following profiles are active: dev
+2020-04-25 14:29:34.244  INFO 11196 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Kevin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-25 14:29:34.245  INFO 11196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-25 14:29:34.246  INFO 11196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-25 14:29:35.525  INFO 11196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-25 14:29:35.574  INFO 11196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32ms. Found 0 JPA repository interfaces.
+2020-04-25 14:29:37.415  INFO 11196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-04-25 14:29:37.430  INFO 11196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-25 14:29:37.431  INFO 11196 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-25 14:29:37.841  INFO 11196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-25 14:29:37.841  INFO 11196 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3595 ms
+2020-04-25 14:29:38.274  INFO 11196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-25 14:29:39.589  INFO 11196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-25 14:29:39.651  INFO 11196 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-25 14:29:39.764  INFO 11196 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-25 14:29:39.956  INFO 11196 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-25 14:29:40.083  INFO 11196 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-25 14:29:40.312  INFO 11196 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-25 14:29:40.321  INFO 11196 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-25 14:29:40.880  WARN 11196 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-25 14:29:41.229  INFO 11196 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-25 14:29:41.374  INFO 11196 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-25 14:29:42.120  INFO 11196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-25 14:29:42.184  INFO 11196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2020-04-25 14:29:42.188  INFO 11196 --- [restartedMain] com.leekejin.blog.BlogApplication        : Started BlogApplication in 10.159 seconds (JVM running for 14.029)
+2020-04-25 14:29:53.407  INFO 11196 --- [http-nio-127.0.0.1-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-25 14:29:53.408  INFO 11196 --- [http-nio-127.0.0.1-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-25 14:29:53.428  INFO 11196 --- [http-nio-127.0.0.1-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2020-04-25 14:29:53.568  INFO 11196 --- [http-nio-127.0.0.1-8082-exec-1] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toIndex', args=[1, {}]}
+2020-04-25 14:29:53.661 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t, t_user u WHERE b.type_id = t.id AND u.id = b.user_id 
+2020-04-25 14:29:53.704 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==> Parameters: 
+2020-04-25 14:29:53.722 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : <==      Total: 1
+2020-04-25 14:29:53.727 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog        : ==>  Preparing: select b.id, b.title, b.first_picture, b.views, b.update_time, b.description, t.name typename, t.id typeid, u.nickname, u.avatar from t_blog b, t_type t, t_user u where b.type_id = t.id and u.id = b.user_id order by b.update_time desc LIMIT ? 
+2020-04-25 14:29:53.728 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog        : ==> Parameters: 9(Integer)
+2020-04-25 14:29:53.744 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog        : <==      Total: 4
+2020-04-25 14:29:53.783 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:29:53.784 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:29:53.788 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:29:53.796 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:29:53.796 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:29:53.804 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:29:53.807 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:29:53.807 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:29:53.809 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:29:53.816  INFO 11196 --- [http-nio-127.0.0.1-8082-exec-1] com.leekejin.blog.aspect.LogAspect       : Result : index
+2020-04-25 14:32:23.887  INFO 11196 --- [http-nio-127.0.0.1-8082-exec-7] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toIndex', args=[1, {}]}
+2020-04-25 14:32:23.891 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t, t_user u WHERE b.type_id = t.id AND u.id = b.user_id 
+2020-04-25 14:32:23.891 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==> Parameters: 
+2020-04-25 14:32:23.894 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : <==      Total: 1
+2020-04-25 14:32:23.895 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog        : ==>  Preparing: select b.id, b.title, b.first_picture, b.views, b.update_time, b.description, t.name typename, t.id typeid, u.nickname, u.avatar from t_blog b, t_type t, t_user u where b.type_id = t.id and u.id = b.user_id order by b.update_time desc LIMIT ? 
+2020-04-25 14:32:23.896 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog        : ==> Parameters: 9(Integer)
+2020-04-25 14:32:23.904 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog        : <==      Total: 4
+2020-04-25 14:32:23.905 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:32:23.906 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:32:23.911 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:32:23.915 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:32:23.915 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:32:23.920 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:32:23.924 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:32:23.924 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:32:23.928 DEBUG 11196 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:32:23.932  INFO 11196 --- [http-nio-127.0.0.1-8082-exec-7] com.leekejin.blog.aspect.LogAspect       : Result : index
+2020-04-25 14:32:38.614  INFO 14980 --- [restartedMain] com.leekejin.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ANKEUSD with PID 14980 (D:\MyProject\blog\target\classes started by Kevin in D:\MyProject\blog)
+2020-04-25 14:32:38.620 DEBUG 14980 --- [restartedMain] com.leekejin.blog.BlogApplication        : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-04-25 14:32:38.620  INFO 14980 --- [restartedMain] com.leekejin.blog.BlogApplication        : The following profiles are active: dev
+2020-04-25 14:32:38.760  INFO 14980 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Kevin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-25 14:32:38.761  INFO 14980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-25 14:32:38.761  INFO 14980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-25 14:32:39.684  INFO 14980 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-25 14:32:39.713  INFO 14980 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 JPA repository interfaces.
+2020-04-25 14:32:40.799  INFO 14980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-04-25 14:32:40.814  INFO 14980 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-25 14:32:40.815  INFO 14980 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-25 14:32:41.080  INFO 14980 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-25 14:32:41.081  INFO 14980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2320 ms
+2020-04-25 14:32:41.414  INFO 14980 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-25 14:32:42.506  INFO 14980 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-25 14:32:42.560  INFO 14980 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-25 14:32:42.670  INFO 14980 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-25 14:32:42.829  INFO 14980 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-25 14:32:42.954  INFO 14980 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-25 14:32:43.174  INFO 14980 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-25 14:32:43.184  INFO 14980 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-25 14:32:43.728  WARN 14980 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-25 14:32:44.033  INFO 14980 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-25 14:32:44.158  INFO 14980 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-25 14:32:44.843  INFO 14980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-25 14:32:44.899  INFO 14980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2020-04-25 14:32:44.903  INFO 14980 --- [restartedMain] com.leekejin.blog.BlogApplication        : Started BlogApplication in 7.766 seconds (JVM running for 10.571)
+2020-04-25 14:32:47.737  INFO 14980 --- [http-nio-127.0.0.1-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-25 14:32:47.737  INFO 14980 --- [http-nio-127.0.0.1-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-25 14:32:47.752  INFO 14980 --- [http-nio-127.0.0.1-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-04-25 14:32:47.888  INFO 14980 --- [http-nio-127.0.0.1-8082-exec-1] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toIndex', args=[1, {}]}
+2020-04-25 14:32:47.983 DEBUG 14980 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t, t_user u WHERE b.type_id = t.id AND u.id = b.user_id 
+2020-04-25 14:32:48.008 DEBUG 14980 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==> Parameters: 
+2020-04-25 14:32:48.021 DEBUG 14980 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : <==      Total: 1
+2020-04-25 14:32:48.024 DEBUG 14980 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog        : ==>  Preparing: select b.id, b.title, b.first_picture, b.views, b.update_time, b.description, t.name typename, t.id typeid, u.nickname, u.avatar from t_blog b, t_type t, t_user u where b.type_id = t.id and u.id = b.user_id order by b.update_time desc LIMIT ? 
+2020-04-25 14:32:48.025 DEBUG 14980 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog        : ==> Parameters: 9(Integer)
+2020-04-25 14:32:48.033 DEBUG 14980 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog        : <==      Total: 4
+2020-04-25 14:32:48.061 DEBUG 14980 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:32:48.061 DEBUG 14980 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:32:48.064 DEBUG 14980 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:32:48.071 DEBUG 14980 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:32:48.072 DEBUG 14980 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:32:48.081 DEBUG 14980 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:32:48.083 DEBUG 14980 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:32:48.084 DEBUG 14980 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:32:48.086 DEBUG 14980 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:32:48.089  INFO 14980 --- [http-nio-127.0.0.1-8082-exec-1] com.leekejin.blog.aspect.LogAspect       : Result : index
+2020-04-25 14:35:36.459  INFO 9276 --- [restartedMain] com.leekejin.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ANKEUSD with PID 9276 (D:\MyProject\blog\target\classes started by Kevin in D:\MyProject\blog)
+2020-04-25 14:35:36.463 DEBUG 9276 --- [restartedMain] com.leekejin.blog.BlogApplication        : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-04-25 14:35:36.463  INFO 9276 --- [restartedMain] com.leekejin.blog.BlogApplication        : The following profiles are active: dev
+2020-04-25 14:35:36.669  INFO 9276 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Kevin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-25 14:35:36.670  INFO 9276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-25 14:35:36.670  INFO 9276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-25 14:35:37.767  INFO 9276 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-25 14:35:37.798  INFO 9276 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 JPA repository interfaces.
+2020-04-25 14:35:39.149  INFO 9276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-04-25 14:35:39.161  INFO 9276 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-25 14:35:39.161  INFO 9276 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-25 14:35:39.383  INFO 9276 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-25 14:35:39.384  INFO 9276 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2714 ms
+2020-04-25 14:35:39.735  INFO 9276 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-25 14:35:40.782  INFO 9276 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-25 14:35:40.838  INFO 9276 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-25 14:35:40.930  INFO 9276 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-25 14:35:41.096  INFO 9276 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-25 14:35:41.252  INFO 9276 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-25 14:35:41.465  INFO 9276 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-25 14:35:41.475  INFO 9276 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-25 14:35:42.000  WARN 9276 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-25 14:35:42.302  INFO 9276 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-25 14:35:42.423  INFO 9276 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-25 14:35:43.101  INFO 9276 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-25 14:35:43.154  INFO 9276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2020-04-25 14:35:43.158  INFO 9276 --- [restartedMain] com.leekejin.blog.BlogApplication        : Started BlogApplication in 8.195 seconds (JVM running for 10.821)
+2020-04-25 14:35:47.504  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-25 14:35:47.505  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-25 14:35:47.522  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-04-25 14:35:47.647  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-1] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toIndex', args=[1, {}]}
+2020-04-25 14:35:47.735 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t, t_user u WHERE b.type_id = t.id AND u.id = b.user_id 
+2020-04-25 14:35:47.756 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==> Parameters: 
+2020-04-25 14:35:47.771 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : <==      Total: 1
+2020-04-25 14:35:47.774 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog        : ==>  Preparing: select b.id, b.title, b.first_picture, b.views, b.update_time, b.description, t.name typename, t.id typeid, u.nickname, u.avatar from t_blog b, t_type t, t_user u where b.type_id = t.id and u.id = b.user_id order by b.update_time desc LIMIT ? 
+2020-04-25 14:35:47.775 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog        : ==> Parameters: 9(Integer)
+2020-04-25 14:35:47.785 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog        : <==      Total: 4
+2020-04-25 14:35:47.808 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:35:47.808 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:35:47.811 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:35:47.821 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:35:47.822 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:35:47.827 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:35:47.831 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:35:47.832 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:35:47.836 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:35:47.839  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-1] com.leekejin.blog.aspect.LogAspect       : Result : index
+2020-04-25 14:36:33.395  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-8] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/blog/21', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toLogin', args=[21, {}]}
+2020-04-25 14:36:33.409 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.blog.dao.BlogDao.getDetailedBlog     : ==>  Preparing: select b.id, b.first_picture, b.flag, b.title, b.content, b.views,b.update_time,b.commentabled, u.nickname, u.avatar, tag.id tagid, tag.name tagname from t_blog b, t_user u, t_tag tag, t_blog_tags tb where b.user_id = u.id and tb.blog_id = b.id and tb.tag_id = tag.id and b.id = ? 
+2020-04-25 14:36:33.410 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.blog.dao.BlogDao.getDetailedBlog     : ==> Parameters: 21(Long)
+2020-04-25 14:36:33.418 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.blog.dao.BlogDao.getDetailedBlog     : <==      Total: 2
+2020-04-25 14:36:33.507 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.BlogDao.updateViews  : ==>  Preparing: update t_blog set views = views + 1 where id = ? 
+2020-04-25 14:36:33.508 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.BlogDao.updateViews  : ==> Parameters: 21(Long)
+2020-04-25 14:36:33.509 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.BlogDao.updateViews  : <==    Updates: 1
+2020-04-25 14:36:33.589 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:36:33.590 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:36:33.593 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:36:33.595 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:36:33.596 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:36:33.599 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:36:33.604 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:36:33.605 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:36:33.606 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:36:33.608  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-8] com.leekejin.blog.aspect.LogAspect       : Result : blog
+2020-04-25 14:36:34.458  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-8] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/comments/21', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.CommentController.comments', args=[21, {}]}
+2020-04-25 14:36:34.480 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] l.b.d.C.findByBlogIdAndParentCommentNull : ==>  Preparing: select c.id cid,c.nickname,c.email,c.content,c.avatar, c.create_time,c.parent_comment_id,c.type from t_comment c where c.blog_id = ? and c.parent_comment_id = ? order by c.create_time desc 
+2020-04-25 14:36:34.482 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] l.b.d.C.findByBlogIdAndParentCommentNull : ==> Parameters: 21(Long), -1(Long)
+2020-04-25 14:36:34.487 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] l.b.d.C.findByBlogIdAndParentCommentNull : <==      Total: 1
+2020-04-25 14:36:34.488 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : ==>  Preparing: select c.id cid, c.nickname, c.email, c.content, c.avatar, c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id, c.type from t_comment c where c.ancester_comment_id = ? order by c.create_time desc 
+2020-04-25 14:36:34.489 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : ==> Parameters: 23(Long)
+2020-04-25 14:36:34.491 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : <==      Total: 1
+2020-04-25 14:36:34.492 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.CommentDao.findById  : ==>  Preparing: select * from t_comment where id = ? 
+2020-04-25 14:36:34.493 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.CommentDao.findById  : ==> Parameters: 23(Long)
+2020-04-25 14:36:34.495 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.CommentDao.findById  : <==      Total: 1
+2020-04-25 14:36:34.498  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-8] com.leekejin.blog.aspect.LogAspect       : Result : blog :: commentList
+2020-04-25 14:39:24.239  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-3] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toIndex', args=[1, {}]}
+2020-04-25 14:39:24.247 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t, t_user u WHERE b.type_id = t.id AND u.id = b.user_id 
+2020-04-25 14:39:24.247 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==> Parameters: 
+2020-04-25 14:39:24.250 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : <==      Total: 1
+2020-04-25 14:39:24.251 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getIndexBlog        : ==>  Preparing: select b.id, b.title, b.first_picture, b.views, b.update_time, b.description, t.name typename, t.id typeid, u.nickname, u.avatar from t_blog b, t_type t, t_user u where b.type_id = t.id and u.id = b.user_id order by b.update_time desc LIMIT ? 
+2020-04-25 14:39:24.253 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getIndexBlog        : ==> Parameters: 9(Integer)
+2020-04-25 14:39:24.259 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getIndexBlog        : <==      Total: 4
+2020-04-25 14:39:24.262 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:39:24.263 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:39:24.266 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:39:24.271 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:39:24.272 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:39:24.278 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:39:24.284 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:39:24.285 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:39:24.287 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:39:24.289  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-3] com.leekejin.blog.aspect.LogAspect       : Result : index
+2020-04-25 14:39:34.380  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-3] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/blog/20', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toLogin', args=[20, {}]}
+2020-04-25 14:39:34.384 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getDetailedBlog     : ==>  Preparing: select b.id, b.first_picture, b.flag, b.title, b.content, b.views,b.update_time,b.commentabled, u.nickname, u.avatar, tag.id tagid, tag.name tagname from t_blog b, t_user u, t_tag tag, t_blog_tags tb where b.user_id = u.id and tb.blog_id = b.id and tb.tag_id = tag.id and b.id = ? 
+2020-04-25 14:39:34.385 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getDetailedBlog     : ==> Parameters: 20(Long)
+2020-04-25 14:39:34.389 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getDetailedBlog     : <==      Total: 3
+2020-04-25 14:39:34.395 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.BlogDao.updateViews  : ==>  Preparing: update t_blog set views = views + 1 where id = ? 
+2020-04-25 14:39:34.395 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.BlogDao.updateViews  : ==> Parameters: 20(Long)
+2020-04-25 14:39:34.397 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.BlogDao.updateViews  : <==    Updates: 1
+2020-04-25 14:39:34.463 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:39:34.464 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:39:34.467 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:39:34.471 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:39:34.471 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:39:34.476 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:39:34.479 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:39:34.480 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:39:34.482 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:39:34.484  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-3] com.leekejin.blog.aspect.LogAspect       : Result : blog
+2020-04-25 14:39:35.364  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-6] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/comments/20', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.CommentController.comments', args=[20, {}]}
+2020-04-25 14:39:35.367 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] l.b.d.C.findByBlogIdAndParentCommentNull : ==>  Preparing: select c.id cid,c.nickname,c.email,c.content,c.avatar, c.create_time,c.parent_comment_id,c.type from t_comment c where c.blog_id = ? and c.parent_comment_id = ? order by c.create_time desc 
+2020-04-25 14:39:35.368 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] l.b.d.C.findByBlogIdAndParentCommentNull : ==> Parameters: 20(Long), -1(Long)
+2020-04-25 14:39:35.375 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] l.b.d.C.findByBlogIdAndParentCommentNull : <==      Total: 4
+2020-04-25 14:39:35.376 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.l.b.d.C.findByAncesterCommentId        : ==>  Preparing: select c.id cid, c.nickname, c.email, c.content, c.avatar, c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id, c.type from t_comment c where c.ancester_comment_id = ? order by c.create_time desc 
+2020-04-25 14:39:35.376 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.l.b.d.C.findByAncesterCommentId        : ==> Parameters: 21(Long)
+2020-04-25 14:39:35.378 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.l.b.d.C.findByAncesterCommentId        : <==      Total: 0
+2020-04-25 14:39:35.378 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.l.b.d.C.findByAncesterCommentId        : ==>  Preparing: select c.id cid, c.nickname, c.email, c.content, c.avatar, c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id, c.type from t_comment c where c.ancester_comment_id = ? order by c.create_time desc 
+2020-04-25 14:39:35.379 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.l.b.d.C.findByAncesterCommentId        : ==> Parameters: 12(Long)
+2020-04-25 14:39:35.380 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.l.b.d.C.findByAncesterCommentId        : <==      Total: 0
+2020-04-25 14:39:35.381 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.l.b.d.C.findByAncesterCommentId        : ==>  Preparing: select c.id cid, c.nickname, c.email, c.content, c.avatar, c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id, c.type from t_comment c where c.ancester_comment_id = ? order by c.create_time desc 
+2020-04-25 14:39:35.382 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.l.b.d.C.findByAncesterCommentId        : ==> Parameters: 9(Long)
+2020-04-25 14:39:35.384 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.l.b.d.C.findByAncesterCommentId        : <==      Total: 0
+2020-04-25 14:39:35.384 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.l.b.d.C.findByAncesterCommentId        : ==>  Preparing: select c.id cid, c.nickname, c.email, c.content, c.avatar, c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id, c.type from t_comment c where c.ancester_comment_id = ? order by c.create_time desc 
+2020-04-25 14:39:35.385 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.l.b.d.C.findByAncesterCommentId        : ==> Parameters: 1(Long)
+2020-04-25 14:39:35.386 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.l.b.d.C.findByAncesterCommentId        : <==      Total: 2
+2020-04-25 14:39:35.388 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.CommentDao.findById  : ==>  Preparing: select * from t_comment where id = ? 
+2020-04-25 14:39:35.389 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.CommentDao.findById  : ==> Parameters: 10(Long)
+2020-04-25 14:39:35.393 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.CommentDao.findById  : <==      Total: 1
+2020-04-25 14:39:35.395 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.CommentDao.findById  : ==>  Preparing: select * from t_comment where id = ? 
+2020-04-25 14:39:35.396 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.CommentDao.findById  : ==> Parameters: 1(Long)
+2020-04-25 14:39:35.398 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.CommentDao.findById  : <==      Total: 1
+2020-04-25 14:39:35.400  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-6] com.leekejin.blog.aspect.LogAspect       : Result : blog :: commentList
+2020-04-25 14:43:39.510  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-6] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/blog/20', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toLogin', args=[20, {}]}
+2020-04-25 14:43:39.512 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.l.blog.dao.BlogDao.getDetailedBlog     : ==>  Preparing: select b.id, b.first_picture, b.flag, b.title, b.content, b.views,b.update_time,b.commentabled, u.nickname, u.avatar, tag.id tagid, tag.name tagname from t_blog b, t_user u, t_tag tag, t_blog_tags tb where b.user_id = u.id and tb.blog_id = b.id and tb.tag_id = tag.id and b.id = ? 
+2020-04-25 14:43:39.513 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.l.blog.dao.BlogDao.getDetailedBlog     : ==> Parameters: 20(Long)
+2020-04-25 14:43:39.519 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.l.blog.dao.BlogDao.getDetailedBlog     : <==      Total: 3
+2020-04-25 14:43:39.521 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.BlogDao.updateViews  : ==>  Preparing: update t_blog set views = views + 1 where id = ? 
+2020-04-25 14:43:39.521 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.BlogDao.updateViews  : ==> Parameters: 20(Long)
+2020-04-25 14:43:39.523 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.BlogDao.updateViews  : <==    Updates: 1
+2020-04-25 14:43:39.656 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:43:39.657 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:43:39.661 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:43:39.668 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:43:39.669 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:43:39.675 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:43:39.680 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:43:39.680 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:43:39.684 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-6] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:43:39.686  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-6] com.leekejin.blog.aspect.LogAspect       : Result : blog
+2020-04-25 14:43:41.554  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-8] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/comments/20', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.CommentController.comments', args=[20, {}]}
+2020-04-25 14:43:41.557 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] l.b.d.C.findByBlogIdAndParentCommentNull : ==>  Preparing: select c.id cid,c.nickname,c.email,c.content,c.avatar, c.create_time,c.parent_comment_id,c.type from t_comment c where c.blog_id = ? and c.parent_comment_id = ? order by c.create_time desc 
+2020-04-25 14:43:41.557 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] l.b.d.C.findByBlogIdAndParentCommentNull : ==> Parameters: 20(Long), -1(Long)
+2020-04-25 14:43:41.559 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] l.b.d.C.findByBlogIdAndParentCommentNull : <==      Total: 4
+2020-04-25 14:43:41.562 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : ==>  Preparing: select c.id cid, c.nickname, c.email, c.content, c.avatar, c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id, c.type from t_comment c where c.ancester_comment_id = ? order by c.create_time desc 
+2020-04-25 14:43:41.563 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : ==> Parameters: 21(Long)
+2020-04-25 14:43:41.564 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : <==      Total: 0
+2020-04-25 14:43:41.565 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : ==>  Preparing: select c.id cid, c.nickname, c.email, c.content, c.avatar, c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id, c.type from t_comment c where c.ancester_comment_id = ? order by c.create_time desc 
+2020-04-25 14:43:41.565 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : ==> Parameters: 12(Long)
+2020-04-25 14:43:41.566 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : <==      Total: 0
+2020-04-25 14:43:41.567 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : ==>  Preparing: select c.id cid, c.nickname, c.email, c.content, c.avatar, c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id, c.type from t_comment c where c.ancester_comment_id = ? order by c.create_time desc 
+2020-04-25 14:43:41.567 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : ==> Parameters: 9(Long)
+2020-04-25 14:43:41.568 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : <==      Total: 0
+2020-04-25 14:43:41.569 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : ==>  Preparing: select c.id cid, c.nickname, c.email, c.content, c.avatar, c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id, c.type from t_comment c where c.ancester_comment_id = ? order by c.create_time desc 
+2020-04-25 14:43:41.570 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : ==> Parameters: 1(Long)
+2020-04-25 14:43:41.573 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : <==      Total: 2
+2020-04-25 14:43:41.575 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.CommentDao.findById  : ==>  Preparing: select * from t_comment where id = ? 
+2020-04-25 14:43:41.575 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.CommentDao.findById  : ==> Parameters: 10(Long)
+2020-04-25 14:43:41.577 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.CommentDao.findById  : <==      Total: 1
+2020-04-25 14:43:41.579 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.CommentDao.findById  : ==>  Preparing: select * from t_comment where id = ? 
+2020-04-25 14:43:41.579 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.CommentDao.findById  : ==> Parameters: 1(Long)
+2020-04-25 14:43:41.581 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.CommentDao.findById  : <==      Total: 1
+2020-04-25 14:43:41.582  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-8] com.leekejin.blog.aspect.LogAspect       : Result : blog :: commentList
+2020-04-25 14:43:52.524  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-8] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toIndex', args=[1, {}]}
+2020-04-25 14:43:52.526 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t, t_user u WHERE b.type_id = t.id AND u.id = b.user_id 
+2020-04-25 14:43:52.527 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==> Parameters: 
+2020-04-25 14:43:52.528 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : <==      Total: 1
+2020-04-25 14:43:52.529 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.blog.dao.BlogDao.getIndexBlog        : ==>  Preparing: select b.id, b.title, b.first_picture, b.views, b.update_time, b.description, t.name typename, t.id typeid, u.nickname, u.avatar from t_blog b, t_type t, t_user u where b.type_id = t.id and u.id = b.user_id order by b.update_time desc LIMIT ? 
+2020-04-25 14:43:52.529 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.blog.dao.BlogDao.getIndexBlog        : ==> Parameters: 9(Integer)
+2020-04-25 14:43:52.531 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.blog.dao.BlogDao.getIndexBlog        : <==      Total: 4
+2020-04-25 14:43:52.533 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:43:52.534 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:43:52.538 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:43:52.541 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:43:52.541 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:43:52.542 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:43:52.544 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:43:52.544 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:43:52.545 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-8] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:43:52.547  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-8] com.leekejin.blog.aspect.LogAspect       : Result : index
+2020-04-25 14:46:59.186  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-10] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toIndex', args=[1, {}]}
+2020-04-25 14:46:59.196 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-10] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t, t_user u WHERE b.type_id = t.id AND u.id = b.user_id 
+2020-04-25 14:46:59.196 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-10] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==> Parameters: 
+2020-04-25 14:46:59.198 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-10] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : <==      Total: 1
+2020-04-25 14:46:59.200 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-10] c.l.blog.dao.BlogDao.getIndexBlog        : ==>  Preparing: select b.id, b.title, b.first_picture, b.views, b.update_time, b.description, t.name typename, t.id typeid, u.nickname, u.avatar from t_blog b, t_type t, t_user u where b.type_id = t.id and u.id = b.user_id order by b.update_time desc LIMIT ? 
+2020-04-25 14:46:59.201 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-10] c.l.blog.dao.BlogDao.getIndexBlog        : ==> Parameters: 9(Integer)
+2020-04-25 14:46:59.207 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-10] c.l.blog.dao.BlogDao.getIndexBlog        : <==      Total: 4
+2020-04-25 14:46:59.209 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-10] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:46:59.210 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-10] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:46:59.216 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-10] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:46:59.220 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-10] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:46:59.221 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-10] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:46:59.223 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-10] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:46:59.229 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-10] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:46:59.230 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-10] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:46:59.233 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-10] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:46:59.235  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-10] com.leekejin.blog.aspect.LogAspect       : Result : index
+2020-04-25 14:47:13.728  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-9] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toIndex', args=[1, {}]}
+2020-04-25 14:47:13.731 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-9] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t, t_user u WHERE b.type_id = t.id AND u.id = b.user_id 
+2020-04-25 14:47:13.731 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-9] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==> Parameters: 
+2020-04-25 14:47:13.732 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-9] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : <==      Total: 1
+2020-04-25 14:47:13.733 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-9] c.l.blog.dao.BlogDao.getIndexBlog        : ==>  Preparing: select b.id, b.title, b.first_picture, b.views, b.update_time, b.description, t.name typename, t.id typeid, u.nickname, u.avatar from t_blog b, t_type t, t_user u where b.type_id = t.id and u.id = b.user_id order by b.update_time desc LIMIT ? 
+2020-04-25 14:47:13.734 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-9] c.l.blog.dao.BlogDao.getIndexBlog        : ==> Parameters: 9(Integer)
+2020-04-25 14:47:13.742 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-9] c.l.blog.dao.BlogDao.getIndexBlog        : <==      Total: 4
+2020-04-25 14:47:13.744 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-9] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:47:13.744 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-9] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:47:13.746 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-9] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:47:13.748 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-9] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:47:13.748 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-9] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:47:13.750 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-9] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:47:13.756 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-9] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:47:13.756 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-9] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:47:13.758 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-9] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:47:13.760  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-9] com.leekejin.blog.aspect.LogAspect       : Result : index
+2020-04-25 14:47:19.021  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-2] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toIndex', args=[1, {}]}
+2020-04-25 14:47:19.023 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-2] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t, t_user u WHERE b.type_id = t.id AND u.id = b.user_id 
+2020-04-25 14:47:19.023 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-2] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==> Parameters: 
+2020-04-25 14:47:19.025 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-2] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : <==      Total: 1
+2020-04-25 14:47:19.025 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-2] c.l.blog.dao.BlogDao.getIndexBlog        : ==>  Preparing: select b.id, b.title, b.first_picture, b.views, b.update_time, b.description, t.name typename, t.id typeid, u.nickname, u.avatar from t_blog b, t_type t, t_user u where b.type_id = t.id and u.id = b.user_id order by b.update_time desc LIMIT ? 
+2020-04-25 14:47:19.025 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-2] c.l.blog.dao.BlogDao.getIndexBlog        : ==> Parameters: 9(Integer)
+2020-04-25 14:47:19.030 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-2] c.l.blog.dao.BlogDao.getIndexBlog        : <==      Total: 4
+2020-04-25 14:47:19.033 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-2] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:47:19.034 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-2] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:47:19.037 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-2] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:47:19.042 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-2] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:47:19.042 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-2] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:47:19.044 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-2] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:47:19.048 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-2] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:47:19.049 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-2] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:47:19.053 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-2] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:47:19.055  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-2] com.leekejin.blog.aspect.LogAspect       : Result : index
+2020-04-25 14:47:32.881  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-7] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toIndex', args=[1, {}]}
+2020-04-25 14:47:32.885 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t, t_user u WHERE b.type_id = t.id AND u.id = b.user_id 
+2020-04-25 14:47:32.885 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==> Parameters: 
+2020-04-25 14:47:32.887 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : <==      Total: 1
+2020-04-25 14:47:32.887 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog        : ==>  Preparing: select b.id, b.title, b.first_picture, b.views, b.update_time, b.description, t.name typename, t.id typeid, u.nickname, u.avatar from t_blog b, t_type t, t_user u where b.type_id = t.id and u.id = b.user_id order by b.update_time desc LIMIT ? 
+2020-04-25 14:47:32.888 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog        : ==> Parameters: 9(Integer)
+2020-04-25 14:47:32.890 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog        : <==      Total: 4
+2020-04-25 14:47:32.893 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:47:32.893 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:47:32.895 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:47:32.898 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:47:32.898 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:47:32.901 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:47:32.904 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:47:32.904 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:47:32.905 DEBUG 9276 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:47:32.907  INFO 9276 --- [http-nio-127.0.0.1-8082-exec-7] com.leekejin.blog.aspect.LogAspect       : Result : index
+2020-04-25 14:50:30.421  INFO 12856 --- [restartedMain] com.leekejin.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ANKEUSD with PID 12856 (D:\MyProject\blog\target\classes started by Kevin in D:\MyProject\blog)
+2020-04-25 14:50:30.426 DEBUG 12856 --- [restartedMain] com.leekejin.blog.BlogApplication        : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-04-25 14:50:30.426  INFO 12856 --- [restartedMain] com.leekejin.blog.BlogApplication        : The following profiles are active: dev
+2020-04-25 14:50:30.487  INFO 12856 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Kevin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-25 14:50:30.487  INFO 12856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-25 14:50:30.488  INFO 12856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-25 14:50:31.498  INFO 12856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-25 14:50:31.528  INFO 12856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 JPA repository interfaces.
+2020-04-25 14:50:32.761  INFO 12856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-04-25 14:50:32.772  INFO 12856 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-25 14:50:32.772  INFO 12856 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-25 14:50:32.984  INFO 12856 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-25 14:50:32.984  INFO 12856 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2496 ms
+2020-04-25 14:50:33.302  INFO 12856 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-25 14:50:34.590  INFO 12856 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-25 14:50:34.651  INFO 12856 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-25 14:50:34.775  INFO 12856 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-25 14:50:34.955  INFO 12856 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-25 14:50:35.099  INFO 12856 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-25 14:50:35.358  INFO 12856 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-25 14:50:35.370  INFO 12856 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-25 14:50:36.097  WARN 12856 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-25 14:50:36.434  INFO 12856 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-25 14:50:36.608  INFO 12856 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-25 14:50:37.343  INFO 12856 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-25 14:50:37.406  INFO 12856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2020-04-25 14:50:37.411  INFO 12856 --- [restartedMain] com.leekejin.blog.BlogApplication        : Started BlogApplication in 9.55 seconds (JVM running for 13.467)
+2020-04-25 14:50:40.841  INFO 12856 --- [http-nio-127.0.0.1-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-25 14:50:40.841  INFO 12856 --- [http-nio-127.0.0.1-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-25 14:50:40.858  INFO 12856 --- [http-nio-127.0.0.1-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-04-25 14:50:41.010  INFO 12856 --- [http-nio-127.0.0.1-8082-exec-1] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toIndex', args=[1, {}]}
+2020-04-25 14:50:41.114 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t, t_user u WHERE b.type_id = t.id AND u.id = b.user_id 
+2020-04-25 14:50:41.147 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==> Parameters: 
+2020-04-25 14:50:41.165 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : <==      Total: 1
+2020-04-25 14:50:41.170 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog        : ==>  Preparing: select b.id, b.title, b.first_picture, b.views, b.update_time, b.description, t.name typename, t.id typeid, u.nickname, u.avatar from t_blog b, t_type t, t_user u where b.type_id = t.id and u.id = b.user_id order by b.update_time desc LIMIT ? 
+2020-04-25 14:50:41.171 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog        : ==> Parameters: 9(Integer)
+2020-04-25 14:50:41.183 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog        : <==      Total: 4
+2020-04-25 14:50:41.227 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:50:41.227 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:50:41.237 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:50:41.251 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:50:41.252 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:50:41.260 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:50:41.266 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:50:41.266 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:50:41.269 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:50:41.273  INFO 12856 --- [http-nio-127.0.0.1-8082-exec-1] com.leekejin.blog.aspect.LogAspect       : Result : index
+2020-04-25 14:51:35.554  INFO 12856 --- [http-nio-127.0.0.1-8082-exec-10] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toIndex', args=[1, {}]}
+2020-04-25 14:51:35.558 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-10] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t, t_user u WHERE b.type_id = t.id AND u.id = b.user_id 
+2020-04-25 14:51:35.558 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-10] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==> Parameters: 
+2020-04-25 14:51:35.562 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-10] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : <==      Total: 1
+2020-04-25 14:51:35.563 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-10] c.l.blog.dao.BlogDao.getIndexBlog        : ==>  Preparing: select b.id, b.title, b.first_picture, b.views, b.update_time, b.description, t.name typename, t.id typeid, u.nickname, u.avatar from t_blog b, t_type t, t_user u where b.type_id = t.id and u.id = b.user_id order by b.update_time desc LIMIT ? 
+2020-04-25 14:51:35.565 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-10] c.l.blog.dao.BlogDao.getIndexBlog        : ==> Parameters: 9(Integer)
+2020-04-25 14:51:35.571 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-10] c.l.blog.dao.BlogDao.getIndexBlog        : <==      Total: 4
+2020-04-25 14:51:35.574 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-10] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:51:35.577 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-10] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:51:35.583 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-10] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:51:35.586 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-10] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:51:35.586 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-10] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:51:35.589 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-10] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:51:35.595 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-10] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:51:35.595 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-10] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:51:35.600 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-10] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:51:35.604  INFO 12856 --- [http-nio-127.0.0.1-8082-exec-10] com.leekejin.blog.aspect.LogAspect       : Result : index
+2020-04-25 14:53:43.209  INFO 12856 --- [http-nio-127.0.0.1-8082-exec-7] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toIndex', args=[1, {}]}
+2020-04-25 14:53:43.212 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t, t_user u WHERE b.type_id = t.id AND u.id = b.user_id 
+2020-04-25 14:53:43.212 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==> Parameters: 
+2020-04-25 14:53:43.214 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : <==      Total: 1
+2020-04-25 14:53:43.215 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog        : ==>  Preparing: select b.id, b.title, b.first_picture, b.views, b.update_time, b.description, t.name typename, t.id typeid, u.nickname, u.avatar from t_blog b, t_type t, t_user u where b.type_id = t.id and u.id = b.user_id order by b.update_time desc LIMIT ? 
+2020-04-25 14:53:43.217 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog        : ==> Parameters: 9(Integer)
+2020-04-25 14:53:43.223 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog        : <==      Total: 4
+2020-04-25 14:53:43.225 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:53:43.226 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:53:43.229 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:53:43.235 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:53:43.236 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:53:43.241 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:53:43.246 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:53:43.246 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:53:43.248 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:53:43.252  INFO 12856 --- [http-nio-127.0.0.1-8082-exec-7] com.leekejin.blog.aspect.LogAspect       : Result : index
+2020-04-25 14:55:01.160  INFO 12856 --- [http-nio-127.0.0.1-8082-exec-1] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toIndex', args=[1, {}]}
+2020-04-25 14:55:01.171 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t, t_user u WHERE b.type_id = t.id AND u.id = b.user_id 
+2020-04-25 14:55:01.172 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==> Parameters: 
+2020-04-25 14:55:01.177 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : <==      Total: 1
+2020-04-25 14:55:01.179 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog        : ==>  Preparing: select b.id, b.title, b.first_picture, b.views, b.update_time, b.description, t.name typename, t.id typeid, u.nickname, u.avatar from t_blog b, t_type t, t_user u where b.type_id = t.id and u.id = b.user_id order by b.update_time desc LIMIT ? 
+2020-04-25 14:55:01.180 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog        : ==> Parameters: 9(Integer)
+2020-04-25 14:55:01.186 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog        : <==      Total: 4
+2020-04-25 14:55:01.188 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:55:01.188 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:55:01.192 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:55:01.197 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:55:01.197 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:55:01.201 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:55:01.206 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:55:01.207 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:55:01.209 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:55:01.212  INFO 12856 --- [http-nio-127.0.0.1-8082-exec-1] com.leekejin.blog.aspect.LogAspect       : Result : index
+2020-04-25 14:55:22.008  INFO 12856 --- [http-nio-127.0.0.1-8082-exec-6] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toIndex', args=[1, {}]}
+2020-04-25 14:55:22.011 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-6] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t, t_user u WHERE b.type_id = t.id AND u.id = b.user_id 
+2020-04-25 14:55:22.011 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-6] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==> Parameters: 
+2020-04-25 14:55:22.012 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-6] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : <==      Total: 1
+2020-04-25 14:55:22.013 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-6] c.l.blog.dao.BlogDao.getIndexBlog        : ==>  Preparing: select b.id, b.title, b.first_picture, b.views, b.update_time, b.description, t.name typename, t.id typeid, u.nickname, u.avatar from t_blog b, t_type t, t_user u where b.type_id = t.id and u.id = b.user_id order by b.update_time desc LIMIT ? 
+2020-04-25 14:55:22.013 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-6] c.l.blog.dao.BlogDao.getIndexBlog        : ==> Parameters: 9(Integer)
+2020-04-25 14:55:22.016 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-6] c.l.blog.dao.BlogDao.getIndexBlog        : <==      Total: 4
+2020-04-25 14:55:22.020 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:55:22.020 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:55:22.022 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:55:22.025 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:55:22.025 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:55:22.027 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-6] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:55:22.030 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-6] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:55:22.031 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-6] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:55:22.032 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-6] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:55:22.034  INFO 12856 --- [http-nio-127.0.0.1-8082-exec-6] com.leekejin.blog.aspect.LogAspect       : Result : index
+2020-04-25 14:55:49.181  INFO 12856 --- [http-nio-127.0.0.1-8082-exec-7] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toIndex', args=[1, {}]}
+2020-04-25 14:55:49.184 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t, t_user u WHERE b.type_id = t.id AND u.id = b.user_id 
+2020-04-25 14:55:49.184 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==> Parameters: 
+2020-04-25 14:55:49.187 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : <==      Total: 1
+2020-04-25 14:55:49.187 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog        : ==>  Preparing: select b.id, b.title, b.first_picture, b.views, b.update_time, b.description, t.name typename, t.id typeid, u.nickname, u.avatar from t_blog b, t_type t, t_user u where b.type_id = t.id and u.id = b.user_id order by b.update_time desc LIMIT ? 
+2020-04-25 14:55:49.188 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog        : ==> Parameters: 9(Integer)
+2020-04-25 14:55:49.194 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getIndexBlog        : <==      Total: 4
+2020-04-25 14:55:49.202 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:55:49.203 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:55:49.205 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:55:49.210 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:55:49.210 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:55:49.215 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:55:49.222 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:55:49.222 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:55:49.228 DEBUG 12856 --- [http-nio-127.0.0.1-8082-exec-7] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:55:49.230  INFO 12856 --- [http-nio-127.0.0.1-8082-exec-7] com.leekejin.blog.aspect.LogAspect       : Result : index
+2020-04-25 14:57:56.469  INFO 11076 --- [restartedMain] com.leekejin.blog.BlogApplication        : Starting BlogApplication on DESKTOP-ANKEUSD with PID 11076 (D:\MyProject\blog\target\classes started by Kevin in D:\MyProject\blog)
+2020-04-25 14:57:56.476 DEBUG 11076 --- [restartedMain] com.leekejin.blog.BlogApplication        : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-04-25 14:57:56.517  INFO 11076 --- [restartedMain] com.leekejin.blog.BlogApplication        : The following profiles are active: dev
+2020-04-25 14:57:56.624  INFO 11076 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Kevin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/Kevin/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-25 14:57:56.624  INFO 11076 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-25 14:57:56.625  INFO 11076 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-25 14:57:57.569  INFO 11076 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-25 14:57:57.608  INFO 11076 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 JPA repository interfaces.
+2020-04-25 14:57:58.748  INFO 11076 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-04-25 14:57:58.758  INFO 11076 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-25 14:57:58.759  INFO 11076 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-25 14:57:58.990  INFO 11076 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-25 14:57:58.991  INFO 11076 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2366 ms
+2020-04-25 14:57:59.255  INFO 11076 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-25 14:58:00.328  INFO 11076 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-25 14:58:00.379  INFO 11076 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-25 14:58:00.475  INFO 11076 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-25 14:58:00.641  INFO 11076 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-25 14:58:00.765  INFO 11076 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-25 14:58:00.974  INFO 11076 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-25 14:58:00.983  INFO 11076 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-25 14:58:01.547  WARN 11076 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-25 14:58:01.853  INFO 11076 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-25 14:58:01.979  INFO 11076 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-25 14:58:02.644  INFO 11076 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-25 14:58:02.697  INFO 11076 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2020-04-25 14:58:02.700  INFO 11076 --- [restartedMain] com.leekejin.blog.BlogApplication        : Started BlogApplication in 7.703 seconds (JVM running for 10.469)
+2020-04-25 14:58:07.801  INFO 11076 --- [http-nio-127.0.0.1-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-25 14:58:07.801  INFO 11076 --- [http-nio-127.0.0.1-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-25 14:58:07.820  INFO 11076 --- [http-nio-127.0.0.1-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2020-04-25 14:58:07.999  INFO 11076 --- [http-nio-127.0.0.1-8082-exec-1] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toIndex', args=[1, {}]}
+2020-04-25 14:58:08.095 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t, t_user u WHERE b.type_id = t.id AND u.id = b.user_id 
+2020-04-25 14:58:08.127 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : ==> Parameters: 
+2020-04-25 14:58:08.147 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog_COUNT  : <==      Total: 1
+2020-04-25 14:58:08.150 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog        : ==>  Preparing: select b.id, b.title, b.first_picture, b.views, b.update_time, b.description, t.name typename, t.id typeid, u.nickname, u.avatar from t_blog b, t_type t, t_user u where b.type_id = t.id and u.id = b.user_id order by b.update_time desc LIMIT ? 
+2020-04-25 14:58:08.150 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog        : ==> Parameters: 9(Integer)
+2020-04-25 14:58:08.163 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getIndexBlog        : <==      Total: 4
+2020-04-25 14:58:08.200 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:58:08.201 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:58:08.204 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:58:08.214 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:58:08.215 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:58:08.225 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-1] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:58:08.227 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:58:08.227 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:58:08.229 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-1] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:58:08.234  INFO 11076 --- [http-nio-127.0.0.1-8082-exec-1] com.leekejin.blog.aspect.LogAspect       : Result : index
+2020-04-25 14:58:16.386  INFO 11076 --- [http-nio-127.0.0.1-8082-exec-4] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/blog/20', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toLogin', args=[20, {}]}
+2020-04-25 14:58:16.392 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-4] c.l.blog.dao.BlogDao.getDetailedBlog     : ==>  Preparing: select b.id, b.first_picture, b.flag, b.title, b.content, b.views,b.update_time,b.commentabled, u.nickname, u.avatar, tag.id tagid, tag.name tagname from t_blog b, t_user u, t_tag tag, t_blog_tags tb where b.user_id = u.id and tb.blog_id = b.id and tb.tag_id = tag.id and b.id = ? 
+2020-04-25 14:58:16.394 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-4] c.l.blog.dao.BlogDao.getDetailedBlog     : ==> Parameters: 20(Long)
+2020-04-25 14:58:16.401 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-4] c.l.blog.dao.BlogDao.getDetailedBlog     : <==      Total: 3
+2020-04-25 14:58:16.484 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-4] c.leekejin.blog.dao.BlogDao.updateViews  : ==>  Preparing: update t_blog set views = views + 1 where id = ? 
+2020-04-25 14:58:16.484 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-4] c.leekejin.blog.dao.BlogDao.updateViews  : ==> Parameters: 20(Long)
+2020-04-25 14:58:16.486 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-4] c.leekejin.blog.dao.BlogDao.updateViews  : <==    Updates: 1
+2020-04-25 14:58:16.569 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-4] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:58:16.570 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-4] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:58:16.573 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-4] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:58:16.577 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-4] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:58:16.577 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-4] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:58:16.587 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-4] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:58:16.591 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-4] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:58:16.592 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-4] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:58:16.596 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-4] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:58:16.600  INFO 11076 --- [http-nio-127.0.0.1-8082-exec-4] com.leekejin.blog.aspect.LogAspect       : Result : blog
+2020-04-25 14:58:17.300  INFO 11076 --- [http-nio-127.0.0.1-8082-exec-3] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/comments/20', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.CommentController.comments', args=[20, {}]}
+2020-04-25 14:58:17.316 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] l.b.d.C.findByBlogIdAndParentCommentNull : ==>  Preparing: select c.id cid,c.nickname,c.email,c.content,c.avatar, c.create_time,c.parent_comment_id,c.type from t_comment c where c.blog_id = ? and c.parent_comment_id = ? order by c.create_time desc 
+2020-04-25 14:58:17.316 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] l.b.d.C.findByBlogIdAndParentCommentNull : ==> Parameters: 20(Long), -1(Long)
+2020-04-25 14:58:17.321 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] l.b.d.C.findByBlogIdAndParentCommentNull : <==      Total: 4
+2020-04-25 14:58:17.323 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.l.b.d.C.findByAncesterCommentId        : ==>  Preparing: select c.id cid, c.nickname, c.email, c.content, c.avatar, c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id, c.type from t_comment c where c.ancester_comment_id = ? order by c.create_time desc 
+2020-04-25 14:58:17.324 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.l.b.d.C.findByAncesterCommentId        : ==> Parameters: 21(Long)
+2020-04-25 14:58:17.326 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.l.b.d.C.findByAncesterCommentId        : <==      Total: 0
+2020-04-25 14:58:17.327 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.l.b.d.C.findByAncesterCommentId        : ==>  Preparing: select c.id cid, c.nickname, c.email, c.content, c.avatar, c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id, c.type from t_comment c where c.ancester_comment_id = ? order by c.create_time desc 
+2020-04-25 14:58:17.327 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.l.b.d.C.findByAncesterCommentId        : ==> Parameters: 12(Long)
+2020-04-25 14:58:17.329 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.l.b.d.C.findByAncesterCommentId        : <==      Total: 0
+2020-04-25 14:58:17.330 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.l.b.d.C.findByAncesterCommentId        : ==>  Preparing: select c.id cid, c.nickname, c.email, c.content, c.avatar, c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id, c.type from t_comment c where c.ancester_comment_id = ? order by c.create_time desc 
+2020-04-25 14:58:17.331 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.l.b.d.C.findByAncesterCommentId        : ==> Parameters: 9(Long)
+2020-04-25 14:58:17.333 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.l.b.d.C.findByAncesterCommentId        : <==      Total: 0
+2020-04-25 14:58:17.335 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.l.b.d.C.findByAncesterCommentId        : ==>  Preparing: select c.id cid, c.nickname, c.email, c.content, c.avatar, c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id, c.type from t_comment c where c.ancester_comment_id = ? order by c.create_time desc 
+2020-04-25 14:58:17.336 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.l.b.d.C.findByAncesterCommentId        : ==> Parameters: 1(Long)
+2020-04-25 14:58:17.340 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.l.b.d.C.findByAncesterCommentId        : <==      Total: 2
+2020-04-25 14:58:17.341 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.CommentDao.findById  : ==>  Preparing: select * from t_comment where id = ? 
+2020-04-25 14:58:17.342 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.CommentDao.findById  : ==> Parameters: 10(Long)
+2020-04-25 14:58:17.350 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.CommentDao.findById  : <==      Total: 1
+2020-04-25 14:58:17.356 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.CommentDao.findById  : ==>  Preparing: select * from t_comment where id = ? 
+2020-04-25 14:58:17.357 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.CommentDao.findById  : ==> Parameters: 1(Long)
+2020-04-25 14:58:17.361 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.CommentDao.findById  : <==      Total: 1
+2020-04-25 14:58:17.367  INFO 11076 --- [http-nio-127.0.0.1-8082-exec-3] com.leekejin.blog.aspect.LogAspect       : Result : blog :: commentList
+2020-04-25 14:58:47.262  INFO 11076 --- [http-nio-127.0.0.1-8082-exec-3] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/blog/20', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.IndexController.toLogin', args=[20, {}]}
+2020-04-25 14:58:47.268 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getDetailedBlog     : ==>  Preparing: select b.id, b.first_picture, b.flag, b.title, b.content, b.views,b.update_time,b.commentabled, u.nickname, u.avatar, tag.id tagid, tag.name tagname from t_blog b, t_user u, t_tag tag, t_blog_tags tb where b.user_id = u.id and tb.blog_id = b.id and tb.tag_id = tag.id and b.id = ? 
+2020-04-25 14:58:47.271 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getDetailedBlog     : ==> Parameters: 20(Long)
+2020-04-25 14:58:47.276 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getDetailedBlog     : <==      Total: 3
+2020-04-25 14:58:47.277 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.BlogDao.updateViews  : ==>  Preparing: update t_blog set views = views + 1 where id = ? 
+2020-04-25 14:58:47.278 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.BlogDao.updateViews  : ==> Parameters: 20(Long)
+2020-04-25 14:58:47.280 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.BlogDao.updateViews  : <==    Updates: 1
+2020-04-25 14:58:47.346 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.TypeDao.getBlogType  : ==>  Preparing: select t.id tid, t.name tname, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2020-04-25 14:58:47.346 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.TypeDao.getBlogType  : ==> Parameters: 
+2020-04-25 14:58:47.350 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.TypeDao.getBlogType  : <==      Total: 4
+2020-04-25 14:58:47.354 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.TagDao.getBlogTags   : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2020-04-25 14:58:47.355 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.TagDao.getBlogTags   : ==> Parameters: 
+2020-04-25 14:58:47.359 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.leekejin.blog.dao.TagDao.getBlogTags   : <==      Total: 12
+2020-04-25 14:58:47.362 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getRecommendBlog    : ==>  Preparing: select id, title, recommend from t_blog where recommend = "1" order by update_time desc; 
+2020-04-25 14:58:47.363 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getRecommendBlog    : ==> Parameters: 
+2020-04-25 14:58:47.367 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-3] c.l.blog.dao.BlogDao.getRecommendBlog    : <==      Total: 2
+2020-04-25 14:58:47.368  INFO 11076 --- [http-nio-127.0.0.1-8082-exec-3] com.leekejin.blog.aspect.LogAspect       : Result : blog
+2020-04-25 14:58:49.287  INFO 11076 --- [http-nio-127.0.0.1-8082-exec-8] com.leekejin.blog.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8082/comments/20', ip='127.0.0.1', classMethod='com.leekejin.blog.controller.CommentController.comments', args=[20, {}]}
+2020-04-25 14:58:49.290 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] l.b.d.C.findByBlogIdAndParentCommentNull : ==>  Preparing: select c.id cid,c.nickname,c.email,c.content,c.avatar, c.create_time,c.parent_comment_id,c.type from t_comment c where c.blog_id = ? and c.parent_comment_id = ? order by c.create_time desc 
+2020-04-25 14:58:49.291 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] l.b.d.C.findByBlogIdAndParentCommentNull : ==> Parameters: 20(Long), -1(Long)
+2020-04-25 14:58:49.295 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] l.b.d.C.findByBlogIdAndParentCommentNull : <==      Total: 4
+2020-04-25 14:58:49.296 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : ==>  Preparing: select c.id cid, c.nickname, c.email, c.content, c.avatar, c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id, c.type from t_comment c where c.ancester_comment_id = ? order by c.create_time desc 
+2020-04-25 14:58:49.297 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : ==> Parameters: 21(Long)
+2020-04-25 14:58:49.298 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : <==      Total: 0
+2020-04-25 14:58:49.299 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : ==>  Preparing: select c.id cid, c.nickname, c.email, c.content, c.avatar, c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id, c.type from t_comment c where c.ancester_comment_id = ? order by c.create_time desc 
+2020-04-25 14:58:49.301 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : ==> Parameters: 12(Long)
+2020-04-25 14:58:49.304 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : <==      Total: 0
+2020-04-25 14:58:49.305 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : ==>  Preparing: select c.id cid, c.nickname, c.email, c.content, c.avatar, c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id, c.type from t_comment c where c.ancester_comment_id = ? order by c.create_time desc 
+2020-04-25 14:58:49.307 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : ==> Parameters: 9(Long)
+2020-04-25 14:58:49.308 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : <==      Total: 0
+2020-04-25 14:58:49.309 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : ==>  Preparing: select c.id cid, c.nickname, c.email, c.content, c.avatar, c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id, c.type from t_comment c where c.ancester_comment_id = ? order by c.create_time desc 
+2020-04-25 14:58:49.310 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : ==> Parameters: 1(Long)
+2020-04-25 14:58:49.323 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] c.l.b.d.C.findByAncesterCommentId        : <==      Total: 2
+2020-04-25 14:58:49.324 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.CommentDao.findById  : ==>  Preparing: select * from t_comment where id = ? 
+2020-04-25 14:58:49.324 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.CommentDao.findById  : ==> Parameters: 10(Long)
+2020-04-25 14:58:49.326 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.CommentDao.findById  : <==      Total: 1
+2020-04-25 14:58:49.327 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.CommentDao.findById  : ==>  Preparing: select * from t_comment where id = ? 
+2020-04-25 14:58:49.327 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.CommentDao.findById  : ==> Parameters: 1(Long)
+2020-04-25 14:58:49.336 DEBUG 11076 --- [http-nio-127.0.0.1-8082-exec-8] c.leekejin.blog.dao.CommentDao.findById  : <==      Total: 1
+2020-04-25 14:58:49.338  INFO 11076 --- [http-nio-127.0.0.1-8082-exec-8] com.leekejin.blog.aspect.LogAspect       : Result : blog :: commentList

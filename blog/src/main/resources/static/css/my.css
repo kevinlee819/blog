@@ -83,7 +83,9 @@ nav {
 }
 
 .main {
-    background: url("../images/bg.png");
+    background-image: url("../images/maple.jpg");
+    background-attachment:fixed;
+    background-size: 100%;
 }
 
 .tag-list a:nth-child(12n+1) {
@@ -193,4 +195,8 @@ nav {
 }
 #commentEditor:focus:before {
     content:none !important;
+}
+
+.container{
+    opacity: 0.95;
 }
