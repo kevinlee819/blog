@@ -1,52 +1,59 @@
 package com.leekejin.blog.controller.admin;
 
 
-import com.leekejin.blog.pojo.User;
 import com.leekejin.blog.service.UserService;
+import com.leekejin.blog.util.MD5Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.IncorrectCredentialsException;
+import org.apache.shiro.authc.UnknownAccountException;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.subject.Subject;
 
-import javax.servlet.http.HttpSession;
 
 
 @Controller
-@RequestMapping("/admin")
 public class LoginController {
 
     @Autowired
     private UserService userService;
 
-    @GetMapping()
-    public String loginPage(){
+    @GetMapping("/admin")
+    public String loginPage() {
         return "admin/login";
     }
 
-    @PostMapping("/login")
+    @RequestMapping("/login")
     public String login(@RequestParam String username,
                         @RequestParam String password,
-                        HttpSession session,
-                        RedirectAttributes attributes){
-        User user = userService.checkUser(username, password);
-        System.out.println(username + password);
-        if (user != null) {
-            user.setPassword(null);
-            session.setAttribute("user", user);
+                        RedirectAttributes attributes) {
+
+        //获取当前用户
+        Subject subject = SecurityUtils.getSubject();
+        //封装登录数据
+        UsernamePasswordToken token = new UsernamePasswordToken(username, MD5Utils.code(password));
+        try {
+            subject.login(token);
             return "admin/index";
-        } else {
+        } catch (UnknownAccountException e) {
+            attributes.addFlashAttribute("msg", "用户名或密码错误");
+            return "redirect:/admin";
+        } catch (IncorrectCredentialsException e) {
             attributes.addFlashAttribute("msg", "用户名或密码错误");
             return "redirect:/admin";
         }
     }
 
     @GetMapping("/logout")
-    public String logout(HttpSession session){
-        session.removeAttribute("user");
-        return "redirect:/admin";
+    public String logout() {
+        Subject subject = SecurityUtils.getSubject();
+        subject.logout();
+        return "admin/login";
     }
 
 }

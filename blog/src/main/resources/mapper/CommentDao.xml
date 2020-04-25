@@ -49,7 +49,7 @@
         select c.id cid, c.nickname, c.email, c.content, c.avatar,
                c.create_time, c.blog_id, c.parent_comment_id, c.ancester_comment_id, c.type
         from t_comment c
-        where c.ancester_comment_id = #{ancesterCommentId} order by c.create_time desc
+        where c.ancester_comment_id = #{ancesterCommentId} order by c.create_time asc
     </select>
     
     <delete id="deleteOneComment">

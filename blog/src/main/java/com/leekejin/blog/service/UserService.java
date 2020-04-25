@@ -6,7 +6,7 @@ import java.util.Date;
 
 
 public interface UserService {
-    User checkUser(String username, String password);
+    User checkUser(String username);
 
     int createUser(String nickname, String email, Integer type, String avatar);
 

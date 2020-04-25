@@ -10,7 +10,7 @@ import java.util.Date;
 @Mapper
 @Repository
 public interface UserDao {
-    User queryByUsernameAndPassword(@Param("username") String username, @Param("password") String password);
+    User queryByUsernameAndPassword(@Param("username") String username);
 
     int createUser(@Param("nickname")String nickname, @Param("email") String email, @Param("type") Integer type, @Param("avatar") String avatar, @Param("createTime")Date createTime,  @Param("updateTime")Date updateTime);
 

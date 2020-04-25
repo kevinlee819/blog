@@ -35,11 +35,10 @@ public class IndexController {
 
         PageHelper.startPage(pagenum, 9);
         List<Blog> allBlog = blogService.getIndexBlog();
-        List<Type> allType = typeService.getBlogType();  //获取博客的类型(联表查询)
-        List<Tag> allTag = tagService.getBlogTags();  //获取博客的标签(联表查询)
+        List<Type> allType = typeService.getBlogType();  //获取博客类型
+        List<Tag> allTag = tagService.getBlogTags();  //获取博客标签
         List<Blog> recommendBlog =blogService.getAllRecommendBlog();  //获取推荐博客
 
-        //得到分页结果对象
         PageInfo pageInfo = new PageInfo(allBlog);
         model.addAttribute("pageInfo", pageInfo);
         model.addAttribute("tags", allTag);
@@ -71,13 +70,5 @@ public class IndexController {
         model.addAttribute("blog", blog);
         return "blog";
     }
-//    @GetMapping("/blog")
-//    public String blog(){
-//        return "blog";
-//    }
-//
-//    @GetMapping("/types")
-//    public String type(){
-//        return "types";
-//    }
+
 }

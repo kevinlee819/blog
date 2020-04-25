@@ -6,7 +6,7 @@
 
     <select id="queryByUsernameAndPassword" resultType="User">
         select * from blog.t_user
-        where username = #{username} and password = #{password};
+        where username = #{username};
     </select>
 
     <insert id="createUser">

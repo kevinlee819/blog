@@ -17,8 +17,8 @@ public class UserServiceImpl implements UserService {
 
     @Transactional
     @Override
-    public User checkUser(String username, String password) {
-        User user = userDao.queryByUsernameAndPassword(username, password);
+    public User checkUser(String username) {
+        User user = userDao.queryByUsernameAndPassword(username);
         return user;
     }
     //MD5Utils.code(password)

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../../static/css/my.css" th:href="@{/css/my.css}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
     <style th:inline="text">
-        body{background: url("[[@{/}]]images/logbg.jpg");background-size: 100%;}
+        body{background: url("[[@{/}]]images/sea.jpg");background-size: 100%;}
     </style>
 
 </head>
@@ -23,13 +23,13 @@
         <div class="ui container">
             <div class="ui middle aligned center aligned grid">
 
-                <div class="column ui card">
+                <div class="sixteen column ui card">
                     <h2 class="ui teal image header" style="background:white;">
                         <div class="content">
                             管理后台登录
                         </div>
                     </h2>
-                    <form class="ui large form" method="post" action="#" th:action="@{/admin/login}">
+                    <form class="ui large form" method="post" action="#" th:action="@{/login}">
                         <div class="ui basic segment">
                             <div class="field">
                                 <div class="ui left icon input">
@@ -50,7 +50,9 @@
                         <div class="ui mini negative message" th:unless="${#strings.isEmpty(msg)}" th:text="${msg}">用户名和密码错误</div>
 
                     </form>
-
+                    <div class="sixteen column">
+                    <a class="ui circular linkedin icon button" th:href="@{/}"><i class="icon home"></i></a>
+                    </div>
                 </div>
 
             </div>

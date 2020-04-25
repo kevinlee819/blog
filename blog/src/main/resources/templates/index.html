@@ -102,7 +102,7 @@
                     <div class="ui segment">
                         <div class="ui secondary fluid vertical stackable menu ">
                             <a href="#" th:href="@{/types/{id}(id=${type.id})}" class="item" th:each="type: ${types}">
-                                <span class="ui teal tiny header" th:text="${type.name}"></span>
+                                <span class="ui grey tiny header" th:text="${type.name}"></span>
                                 <div class="ui label" th:text="${#arrays.length(type.blogs)}">11</div>
                             </a>
                         </div>
@@ -137,7 +137,7 @@
                     </div>
                     <div class="ui segment">
                         <div class="ui secondary fluid vertical stackable menu">
-                            <a href="#" class="item ui teal tiny header" th:each="recommendBlog : ${recommendBlogs}" th:href="@{/blog/{id}(id=${recommendBlog.id})}" th:text="${recommendBlog.title}">前端</a>
+                            <a href="#" class="item ui grey tiny header" th:each="recommendBlog : ${recommendBlogs}" th:href="@{/blog/{id}(id=${recommendBlog.id})}" th:text="${recommendBlog.title}">前端</a>
                         </div>
                     </div>
                 </div>
@@ -156,12 +156,12 @@
                     <div class="content">
                         <a class="header">Lee Kejin</a>
                         <div class="meta">
-                            <span class="date">创建本站于2020.3</span>
+                            <span class="date">创建本站于2020.4</span>
                         </div>
                     </div>
                     <div class="extra content">
-                        一个在编程海洋中苦苦挣扎的计算机小白，
-                        一个被现实暴打的当代大学生，
+                        一个在编程海洋中苦苦挣扎的计算机小白,
+                        一个被现实暴打的当代大学生,
                         一个理性的怪物。
                     </div>
                 </div>
