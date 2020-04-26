@@ -11,4 +11,8 @@ public interface CommentService {
     int saveComment(Comment comment);
 
     List<Comment> listCommentByBlogId(Long blogId);
+
+    void deleteComment(Long commentId);
+
+    Comment findById(Long commentId);
 }

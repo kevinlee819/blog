@@ -95,6 +95,7 @@
                             </div>
                             <div class="actions">
                                 <a class="reply" th:attr="data-ancesterid=${comment.id},data-commentid=${comment.id},data-commentnickname=${comment.nickname}" onclick="reply(this)">Reply</a>
+                                <a class="delete" th:if="${session.user} != null" th:href="@{/comments/{id}/delete(id=${comment.id})}">删除</a>
                             </div>
                         </div>
                         <div class="comments" th:if="${#arrays.length(comment.replyComments)}>0">
@@ -115,7 +116,8 @@
                                         Elliot you are always so right :)
                                     </div>
                                     <div class="actions">
-                                        <a class="reply" data-commentid="1" data-commentnickname="Matt" th:attr="data-ancesterid=${comment.id},data-commentid=${reply.id},data-commentnickname=${reply.nickname}" onclick="reply(this)">reply</a>
+                                        <a class="reply" data-commentid="1" data-commentnickname="Matt" th:attr="data-ancesterid=${comment.id},data-commentid=${reply.id},data-commentnickname=${reply.nickname}" onclick="reply(this)">Reply</a>
+                                        <a class="delete" th:if="${session.user} != null" th:href="@{/comments/{id}/delete(id=${reply.id})}">删除</a>
                                     </div>
                                 </div>
                             </div>

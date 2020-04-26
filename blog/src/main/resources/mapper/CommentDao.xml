@@ -27,7 +27,7 @@
         order by c.create_time desc
     </select>
 
-    <select id="findById" resultType="Comment">
+    <select id="findById" resultMap="comment">
         select * from t_comment where id = #{id}
     </select>
 

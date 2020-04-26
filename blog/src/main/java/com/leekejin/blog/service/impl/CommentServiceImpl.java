@@ -55,4 +55,19 @@ public class CommentServiceImpl implements CommentService {
         }
         return ancesterComments;
     }
+
+    @Transactional
+    @Override
+    public void deleteComment(Long commentId) {
+        commentDao.deleteOneComment(commentId);
+        if (commentDao.findByParentCommentId(commentId) != null) {
+            commentDao.deleteOneComment(commentId);
+        }
+    }
+
+    @Transactional
+    @Override
+    public Comment findById(Long commentId) {
+        return commentDao.findById(commentId);
+    }
 }
